@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 78, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_common.scss */
 p {
-	color: #B2A59F;
+	color: #756595;
 	font-family :'S-CoreDream-2ExtraLight';
 	line-height : 28px;
 	font-size: 16px;
@@ -1343,7 +1343,7 @@ ul {
 
 /* line 660, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_blog.scss */
 .blog_right_sidebar .single_sidebar_widget {
-	background: #fbf9ff;
+	background: #f2f0f594;
 	padding: 30px;
 	margin-bottom: 30px;
 }
@@ -1416,7 +1416,7 @@ ul {
 
 /* line 735, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_blog.scss */
 .blog_right_sidebar .newsletter_widget .input-group button {
-	background: #fff;
+	background: #756595;
 	border-left: 0;
 	border: 1px solid #f0e9ff;
 	padding: 4px 15px;
@@ -1427,12 +1427,12 @@ ul {
 .blog_right_sidebar .newsletter_widget .input-group button i,
 	.blog_right_sidebar .newsletter_widget .input-group button span {
 	font-size: 14px;
-	color: #999999;
+	color: #756595;
 }
 
 /* line 755, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_blog.scss */
 .blog_right_sidebar .post_category_widget .cat-list li {
-	border-bottom: 1px solid #f0e9ff;
+	border-bottom: 1px solid #756595;
 	transition: all 0.3s ease 0s;
 	padding-bottom: 12px;
 }
@@ -1477,7 +1477,7 @@ ul {
 /* line 807, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_blog.scss */
 .blog_right_sidebar .popular_post_widget .post_item .media-body a:hover
 	{
-	color: #fff;
+	color: #756595;
 }
 
 /* line 813, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_blog.scss */
@@ -1513,7 +1513,7 @@ ul {
 /* line 842, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_blog.scss */
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
 	background: #508164;
-	color: #fff !important;
+	color: #756595 !important;
 	-webkit-text-fill-color: #fff;
 	text-decoration: none;
 	-webkit-transition: 0.5s;
@@ -4282,7 +4282,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 277, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
 .genric-btn.warning {
-	color: #fff;
+	color: #cebcbadb;
 	background: #f4e700;
 	border: 1px solid transparent;
 }
@@ -4304,8 +4304,8 @@ h1, h2, h3, h4, h5, h6 {
 /* line 291, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
 .genric-btn.warning-border:hover {
 	color: #fff;
-	background: #f4e700;
-	border: 1px solid transparent;
+    background: #cebcbadb;
+    border: 1px solid transparent;
 }
 
 /* line 297, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
@@ -5761,5 +5761,33 @@ element.style {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/* 중고키트 판매 페이지에 사용할 css(이미지 위에 글자넣기) */
+.img{
+position: relative;
+background-image: url(https://cdn.pixabay.com/photo/2019/05/28/00/14/breakfast-4234067_1280.jpg);                                                               
+height: 400px;
+width: 1200px;
+margin-left:200px;
+}
+
+.img-cover{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.3);                                                                 
+   z-index:1;
+}
+
+.img .content{
+ position: absolute;
+ top:50%;
+ left:50%;
+ transform: translate(-50%, -50%);                                                                   
+ font-size:5rem;
+ color: #fff;
+ z-index: 2;
+ text-align: center;
 }
       
