@@ -63,17 +63,6 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                커뮤니티
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">체험형 키트</a>
-                                            </div>
-                                        </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="products.jsp">쇼핑몰</a>
                                         </li>
@@ -109,24 +98,14 @@
         </header>
 <!-- 수정: 상위메뉴 이름 지정 end -->
 <!-- Header part end-->
- 
-    <!-- breadcrumb start-->
-    <section class="breadcrumb breadcrumb_bg" style="height: 324px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb_iner">
-                        <div class="breadcrumb_iner_item text-center">
-                            <h2 style="margin-bottom: 50px;">Used Homekit Sale</h2>
-                            <p style="padding-bottom: 80px;">구매했던 키트를 자유롭게 거래하세요!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <div class="img">
+        <div class="content">
+            <h1 style="color:#fff; font-size:55px; font-weight:500; margin-top:40px;">중고키트 판매</h1>
         </div>
-    </section>
-    <!-- breadcrumb start-->
-<br><br><br>
+        <div class="img-cover"></div>
+    </div>
+    <br><br>
     <!--================Blog Area =================-->
     <!-- 수정: 중고키트 판매하는 칸 begin -->
     <section class="blog_area section_padding">
@@ -144,19 +123,17 @@
                                 </a>
                             </div>
                             
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="SNS.jsp">
-                                    <h2>모던한 분위기가 가득한 인테리어</h2>
-                                </a>
-                                <p>사용기간: 5개월</p>
+                            <div class="blog_details"> 
+                                <h2>모던한 분위기가 가득한 인테리어</h2>
+                                <p style="margin-bottom: 0px;">사용기간: 5개월</p>
                                 <p>가격: ~~원</p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="far fa-user"></i> 판매자명</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                    <li></i> 판매자명</li>
+                                    <li></i> 03 Comments</li>
                                 </ul>
-                                
+                                <hr>
                                 <!-- 홈키트 구성 코드 begin -->
-                                <aside class="single_sidebar_widget instagram_feeds"><br><br><br>
+                                <aside class="single_sidebar_widget instagram_feeds"><br>
                                     <h3 class="widget_title">홈키트 구성</h3><br>
                                     <ul class="instagram_row flex-wrap" >
                                         <li style="float:left; margin-right:5px;">
@@ -184,12 +161,12 @@
                                                 <img class="img-fluid" src="img/post/post_9.png" alt="">
                                             </a>
                                         </li>
-                                        <li style="float:left; margin-right:5px; margin-top:5px;">
+                                        <li style="float:left; margin-right:5px;">
                                             <a href="#">
                                                 <img class="img-fluid" src="img/post/post_10.png" alt="">
                                             </a>
                                         </li>
-                                        <li style="float:left; margin-right:5px; margin-top:5px;">
+                                        <li style="float:left; margin-right:5px;">
                                             <a href="#">
                                                 <img class="img-fluid" src="img/post/post_10.png" alt="">
                                             </a>
@@ -203,7 +180,8 @@
                             <br><div class="result_btn">
                             
                             <!-- 찜하기 페이지를 없애고 그냥 보이기식으로 버튼 글자 바뀌게 함 -->
-                                <button id="btn" class="genric-btn warning-border circle arrow1" style="margin-right: 30px;">찜하기</button>
+                                <button id="btn" class="genric-btn warning-border circle arrow1" 
+                                style="margin-left: 430px;">찜하기</button>
 
 				                <script src="//code.jquery.com/jquery.min.js"></script>
 								<script>
@@ -218,12 +196,10 @@
 								});
 								</script>
 									
-                                <a href="basket.jsp" class="genric-btn warning-border circle arrow" style="margin-right: 30px; float:right;">장바구니<span
-                                    class="lnr lnr-arrow-right"></span></a><br><br>
+                            <button id="btn" class="genric-btn warning-border circle arrow1" 
+                                style="margin-right: 40px; float:right;">장바구니</button><br><br>
                         </article>
-<br>
-<hr>
-<br><br><br><br><br><br><br>
+<br><br><br>
                         <h1>두번째 집들이</h1><hr>
                         <article class="blog_item">
                             <div class="blog_item_img">
@@ -234,19 +210,17 @@
                                 </a>
                             </div>
                             
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="SNS.jsp">
-                                    <h2>모던한 분위기가 가득한 인테리어</h2>
-                                </a>
-                                <p>사용기간: 5개월</p>
+                            <div class="blog_details"> 
+                                <h2>모던한 분위기가 가득한 인테리어</h2>
+                                <p style="margin-bottom: 0px;">사용기간: 5개월</p>
                                 <p>가격: ~~원</p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="far fa-user"></i> 판매자명</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                    <li></i> 판매자명</li>
+                                    <li></i> 03 Comments</li>
                                 </ul>
-                              
+                                <hr>
                                 <!-- 홈키트 구성 코드 begin -->
-                                <aside class="single_sidebar_widget instagram_feeds"><br><br><br>
+                                <aside class="single_sidebar_widget instagram_feeds"><br>
                                     <h3 class="widget_title">홈키트 구성</h3><br>
                                     <ul class="instagram_row flex-wrap" >
                                         <li style="float:left; margin-right:5px;">
@@ -274,12 +248,12 @@
                                                 <img class="img-fluid" src="img/post/post_9.png" alt="">
                                             </a>
                                         </li>
-                                        <li style="float:left; margin-right:5px; margin-top:5px;">
+                                        <li style="float:left; margin-right:5px;">
                                             <a href="#">
                                                 <img class="img-fluid" src="img/post/post_10.png" alt="">
                                             </a>
                                         </li>
-                                        <li style="float:left; margin-right:5px; margin-top:5px;">
+                                        <li style="float:left; margin-right:5px;">
                                             <a href="#">
                                                 <img class="img-fluid" src="img/post/post_10.png" alt="">
                                             </a>
@@ -291,7 +265,8 @@
                                 </div>
                             </div>
                             <br><div class="result_btn">
-                                <button id="btn" class="genric-btn warning-border circle arrow1" style="margin-right: 30px;">찜하기</button>
+                                 <button id="btn" class="genric-btn warning-border circle arrow1" 
+                                style="margin-left: 430px;">찜하기</button>
 
 				                <script src="//code.jquery.com/jquery.min.js"></script>
 								<script>
@@ -306,12 +281,10 @@
 								});
 								</script>
 								
-                                <a href="basket.jsp" class="genric-btn warning-border circle arrow" style="margin-right: 30px; float:right;">장바구니<span
-                                    class="lnr lnr-arrow-right"></span></a><br><br>
+                                <button id="btn" class="genric-btn warning-border circle arrow1" 
+                                style="margin-right: 40px; float:right;">장바구니</button><br><br>
                         </article>
-<br>
-<hr>
-<br><br><br><br><br><br><br>
+<br><br><br><br>
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <h1>세번째 집들이</h1><hr>
@@ -322,19 +295,17 @@
                                 </a>
                             </div>
                             
-                            <div class="blog_details">
-                                <a class="d-inline-block" href="SNS.jsp">
-                                    <h2>모던한 분위기가 가득한 인테리어</h2>
-                                </a>
-                                <p>사용기간: 5개월</p>
+                           <div class="blog_details"> 
+                                <h2>모던한 분위기가 가득한 인테리어</h2>
+                                <p style="margin-bottom: 0px;">사용기간: 5개월</p>
                                 <p>가격: ~~원</p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="far fa-user"></i> 판매자명</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                    <li></i> 판매자명</li>
+                                    <li></i> 03 Comments</li>
                                 </ul>
-                              
+                                <hr>
                                 <!-- 홈키트 구성 코드 begin -->
-                                <aside class="single_sidebar_widget instagram_feeds"><br><br><br>
+                                <aside class="single_sidebar_widget instagram_feeds"><br>
                                     <h3 class="widget_title">홈키트 구성</h3><br>
                                     <ul class="instagram_row flex-wrap" >
                                         <li style="float:left; margin-right:5px;">
@@ -362,12 +333,12 @@
                                                 <img class="img-fluid" src="img/post/post_9.png" alt="">
                                             </a>
                                         </li>
-                                        <li style="float:left; margin-right:5px; margin-top:5px;">
+                                        <li style="float:left; margin-right:5px;">
                                             <a href="#">
                                                 <img class="img-fluid" src="img/post/post_10.png" alt="">
                                             </a>
                                         </li>
-                                        <li style="float:left; margin-right:5px; margin-top:5px;">
+                                        <li style="float:left; margin-right:5px;">
                                             <a href="#">
                                                 <img class="img-fluid" src="img/post/post_10.png" alt="">
                                             </a>
@@ -379,7 +350,8 @@
                                 </div>
                             </div>
                             <br><div class="result_btn">
-                                <button id="btn" class="genric-btn warning-border circle arrow1" style="margin-right: 30px;">찜하기</button>
+                                 <button id="btn" class="genric-btn warning-border circle arrow1" 
+                                style="margin-left: 430px;">찜하기</button>
 
 				                <script src="//code.jquery.com/jquery.min.js"></script>
 								<script>
@@ -394,8 +366,8 @@
 								});
 								</script>
 				
-                                <a href="basket.jsp" class="genric-btn warning-border circle arrow" style="margin-right: 30px; float:right;">장바구니<span
-                                    class="lnr lnr-arrow-right"></span></a><br><br>
+                                <button id="btn" class="genric-btn warning-border circle arrow1" 
+                                style="margin-right: 40px; float:right;">장바구니</button><br><br>
                         </article>
 <br>
 <hr>
@@ -428,44 +400,31 @@
                 <!-- 옆에 카테고리 화면 begin -->
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
+                    	<aside class="single_sidebar_widget tag_cloud_widget">
+                    		<h4 class="widget_title"><input type="button" value="상품 등록하기" 
+                    		style="background-color:#5a4b7657;border-color:#fff;height: 45.98438px;width: 155.98438px;"></h4>
+							<p>위의 버튼을 클릭해서 중고로 판매할 상품을 등록해보세요.</p>   
+		    	   		</aside>
                         <aside class="single_sidebar_widget post_category_widget">
                             <h4 class="widget_title">Category</h4>
                             <ul class="list cat-list">
                                 <li>
-                                    <a href="#" class="d-flex">
-                                        <p>모던</p>
-                                        <p>(개수)</p>
-                                    </a>
+                                	<p>모던</p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex">
-                                        <p>유니크</p>
-                                        <p>(개수)</p>
-                                    </a>
+                                	<p>유니크</p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex">
-                                        <p>북유럽</p>
-                                        <p>(개수)</p>
-                                    </a>
+                                	<p>북유럽</p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex">
-                                        <p>빈티지</p>
-                                        <p>(개수)</p>
-                                    </a>
+                                	<p>빈티지</p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex">
-                                        <p>네추럴</p>
-                                        <p>(개수)</p>
-                                    </a>
+                                	<p>네추럴</p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex">
-                                        <p>엘레강스</p>
-                                        <p>(개수)</p>
-                                    </a>
+                                	<p>엘레강스</p>
                                 </li>
                             </ul>
                         </aside>
