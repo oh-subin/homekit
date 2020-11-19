@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
 <!-- Required meta tags -->
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>방구석 인테리어-추천결과</title>
@@ -63,21 +63,10 @@
                                             <a class="nav-link" href="about.jsp">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">추천</a>
+                                            <a class="nav-link" href="recommendation.jsp">추천</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                커뮤니티
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">체험형 키트</a>
-                                            </div>
                                         </li>
                                         <li class="nav-item">
                                           <a class="nav-link" href="products.jsp">쇼핑몰</a>
@@ -172,7 +161,7 @@
 						</div>
 						<br> <br>
 						<div class="result_btn">
-							<a href="professional_mode.jsp" class="genric-btn info radius"
+							<a href="recommendation2.jsp" class="genric-btn info radius"
 								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">재추천
 								받기</a> <a href="payment.jsp" class="genric-btn info radius"
 								style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>

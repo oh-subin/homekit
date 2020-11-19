@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
     <html lang="en">
     
@@ -7,7 +7,7 @@
             <!-- Required meta tags -->
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>¹æ±¸¼® ÀÎÅ×¸®¾î-»óÇ°µî·Ï</title>
+            <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´-ìƒí’ˆë“±ë¡</title>
             <link rel="icon" href="img/favicon.png">
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -50,56 +50,45 @@
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-    							<!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ begin -->
+    							<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • begin -->
                                 <div class="collapse navbar-collapse main-menu-item justify-content-center"
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">¼Ò°³</a>
+                                            <a class="nav-link" href="about.jsp">ì†Œê°œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">ÃßÃµ</a>
+                                            <a class="nav-link" href="recommendation.jsp">ì¶”ì²œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">Áß°íÅ°Æ® ÆÇ¸Å</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ä¿¹Â´ÏÆ¼
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">Ã¼ÇèÇü Å°Æ®</a>
-                                            </div>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">ì¤‘ê³ í‚¤íŠ¸ íŒë§¤</a>
                                         </li>
                                         <li class="nav-item">
-                                           <a class="nav-link" href="products.jsp">¼îÇÎ¸ô</a>
+                                           <a class="nav-link" href="products.jsp">ì‡¼í•‘ëª°</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">·Î±×ÀÎ</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">È¸¿ø°¡ÀÔ</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">ë¡œê·¸ì¸</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">íšŒì›ê°€ìž…</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //°ü¸®ÀÚ°¡ ·Î±×ÀÎÇÏ¸é %>
-										<a class="dropdown-item" href="product_registration.jsp">»óÇ°µî·Ï</a>
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
+									<%if(email.equals("admin@admin")){ //ê´€ë¦¬ìžê°€ ë¡œê·¸ì¸í•˜ë©´ %>
+										<a class="dropdown-item" href="product_registration.jsp">ìƒí’ˆë“±ë¡</a>
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
 									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">Á¤º¸¼öÁ¤</a> 
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
-										<a class="dropdown-item" href="delete.jsp">È¸¿øÅ»Åð</a>
+										<a class="dropdown-item" href="update.jsp">ì •ë³´ìˆ˜ì •</a> 
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
+										<a class="dropdown-item" href="delete.jsp">íšŒì›íƒˆí‡´</a>
 									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">Àå¹Ù±¸´Ï</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">ìž¥ë°”êµ¬ë‹ˆ</a>
 							<%} %>
                             </nav>
                         </div>
@@ -107,16 +96,16 @@
                 </div>
             </div>
         </header>
-    <!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ end -->
+    <!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • end -->
     <!-- Header part end-->
            
     
             <!-- Sidebar -->
             <div class="w3-sidebar w3-light-grey w3-bar-block"style="width: 250px;">
-                <h3 class="w3-bar-item">»óÇ°°ü¸®</h3>
-                <a href="#" class="w3-bar-item w3-button">»óÇ°ºÐ·ù°ü¸® ¡å</a>
-                <a href="#" class="w3-bar-item w3-button">»óÇ°¿É¼Ç°ü¸® ¡å</a>
-                <!-- ¸Þ´º¹Ù »ý¼º -->
+                <h3 class="w3-bar-item">ìƒí’ˆê´€ë¦¬</h3>
+                <a href="#" class="w3-bar-item w3-button">ìƒí’ˆë¶„ë¥˜ê´€ë¦¬ â–¼</a>
+                <a href="#" class="w3-bar-item w3-button">ìƒí’ˆì˜µì…˜ê´€ë¦¬ â–¼</a>
+                <!-- ë©”ë‰´ë°” ìƒì„± -->
                 <script>
                     function slide(Id, interval, to)
                     {
@@ -189,22 +178,22 @@
                         display:none;
                     }
                     </style>
-                    <div class="menu" onClick="slide('sub1');" style="padding-left: 15px;">»óÇ°µî·Ï ¡å</div>
+                    <div class="menu" onClick="slide('sub1');" style="padding-left: 15px;">ìƒí’ˆë“±ë¡ â–¼</div>
                     <div id="sub1" class="submenu">
-                        <a href="simple_registration.jsp">°£´Ü µî·Ï</a>
-                        <div>»óÇ° µî·Ï</div>
-                        <div>¼¼Æ®»óÇ° µî·Ï</div>
-                        <div>¿¢¼¿ µî·Ï</div>
+                        <a href="simple_registration.jsp">ê°„ë‹¨ ë“±ë¡</a>
+                        <div>ìƒí’ˆ ë“±ë¡</div>
+                        <div>ì„¸íŠ¸ìƒí’ˆ ë“±ë¡</div>
+                        <div>ì—‘ì…€ ë“±ë¡</div>
                     </div>
-                <!-- ¸Þ´º¹Ù »ý¼º -->
-                <a href="#" class="w3-bar-item w3-button">»óÇ°°ü¸® ¡å</a>
-                <a href="#" class="w3-bar-item w3-button">»óÇ°Ç¥½Ã°ü¸® ¡å</a>
-                <a href="#" class="w3-bar-item w3-button">ÆÇ¸ÅºÐ·ù°ü¸® ¡å</a>
-                <a href="#" class="w3-bar-item w3-button">Àç°í°ü¸® ¡å</a>
-                <a href="#" class="w3-bar-item w3-button" style="margin-bottom:30px;">±âÈ¹Àü °ü¸® ¡å</a>
-                <b style="margin-top:30px; margin-left: 18px; ">¸Þ´º¾ó °Ë»ö</b> 
-                <input type="text" placeholder="¸Þ´º¾óÀ» °Ë»öÇÏ¼¼¿ä." style="margin-top:10px; margin-left: 16px; width:220px;">
-                <b style="margin-top:30px; margin-left: 18px;">Áñ°ÜÃ£´Â ¸Þ´º </b><button style="margin-top:30px;">¼³Á¤</button>
+                <!-- ë©”ë‰´ë°” ìƒì„± -->
+                <a href="#" class="w3-bar-item w3-button">ìƒí’ˆê´€ë¦¬ â–¼</a>
+                <a href="#" class="w3-bar-item w3-button">ìƒí’ˆí‘œì‹œê´€ë¦¬ â–¼</a>
+                <a href="#" class="w3-bar-item w3-button">íŒë§¤ë¶„ë¥˜ê´€ë¦¬ â–¼</a>
+                <a href="#" class="w3-bar-item w3-button">ìž¬ê³ ê´€ë¦¬ â–¼</a>
+                <a href="#" class="w3-bar-item w3-button" style="margin-bottom:30px;">ê¸°íšì „ ê´€ë¦¬ â–¼</a>
+                <b style="margin-top:30px; margin-left: 18px; ">ë©”ë‰´ì–¼ ê²€ìƒ‰</b> 
+                <input type="text" placeholder="ë©”ë‰´ì–¼ì„ ê²€ìƒ‰í•˜ì„¸ìš”." style="margin-top:10px; margin-left: 16px; width:220px;">
+                <b style="margin-top:30px; margin-left: 18px;">ì¦ê²¨ì°¾ëŠ” ë©”ë‰´ </b><button style="margin-top:30px;">ì„¤ì •</button>
             </div>
             <!-- Sidebar -->
     
@@ -212,10 +201,10 @@
             <br>
          
             
-            <!-- »óÇ°µî·Ï ¸Þ´º Å×ÀÌºí start -->
+            <!-- ìƒí’ˆë“±ë¡ ë©”ë‰´ í…Œì´ë¸” start -->
             <img src="img/homepage/registration_img.jpg" alt="registration_img" style="margin-left:320px; margin-top:10px">
 
-            <!-- »óÇ°µî·Ï ¸Þ´º Å×ÀÌºí end -->
+            <!-- ìƒí’ˆë“±ë¡ ë©”ë‰´ í…Œì´ë¸” end -->
 
            <!-- footer part start-->
         <footer class="footer-area" style="margin-top:1000px;"> 

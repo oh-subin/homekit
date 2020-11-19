@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
     <!doctype html>
     <html lang="en">
     
     <head>
         <!-- Required meta tags -->
-        <meta charset="EUC-KR">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>¹æ±¸¼® ÀÎÅ×¸®¾î-¸ÞÀÎ</title>
+        <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´-ë©”ì¸</title>
         <link rel="icon" href="img/favicon.png">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -50,56 +50,45 @@
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-    							<!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ begin -->
+    							<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • begin -->
                                 <div class="collapse navbar-collapse main-menu-item justify-content-center"
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">¼Ò°³</a>
+                                            <a class="nav-link" href="about.jsp">ì†Œê°œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">ÃßÃµ</a>
+                                            <a class="nav-link" href="recommendation.jsp">ì¶”ì²œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">Áß°íÅ°Æ® ÆÇ¸Å</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ä¿¹Â´ÏÆ¼
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">Ã¼ÇèÇü Å°Æ®</a>
-                                            </div>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">ì¤‘ê³ í‚¤íŠ¸ íŒë§¤</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.jsp">¼îÇÎ¸ô</a>
+                                            <a class="nav-link" href="products.jsp">ì‡¼í•‘ëª°</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">·Î±×ÀÎ</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">È¸¿ø°¡ÀÔ</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">ë¡œê·¸ì¸</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">íšŒì›ê°€ìž…</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //°ü¸®ÀÚ°¡ ·Î±×ÀÎÇÏ¸é %>
-										<a class="dropdown-item" href="product_registration.jsp">»óÇ°µî·Ï</a>
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
+									<%if(email.equals("admin@admin")){ //ê´€ë¦¬ìžê°€ ë¡œê·¸ì¸í•˜ë©´ %>
+										<a class="dropdown-item" href="product_registration.jsp">ìƒí’ˆë“±ë¡</a>
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
 									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">Á¤º¸¼öÁ¤</a> 
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
-										<a class="dropdown-item" href="delete.jsp">È¸¿øÅ»Åð</a>
+										<a class="dropdown-item" href="update.jsp">ì •ë³´ìˆ˜ì •</a> 
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
+										<a class="dropdown-item" href="delete.jsp">íšŒì›íƒˆí‡´</a>
 									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">Àå¹Ù±¸´Ï</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">ìž¥ë°”êµ¬ë‹ˆ</a>
 							<%} %>
                             </nav>
                         </div>
@@ -107,9 +96,9 @@
                 </div>
             </div>
         </header>
- <!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ end -->
+ <!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • end -->
  <!-- Header part end-->
- <!-- ½½¶óÀÌµå¹Ù start -->
+ <!-- ìŠ¬ë¼ì´ë“œë°” start -->
          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="height: 800px; width: 900px; margin-left: 370px; margin-top: 50px;">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -120,22 +109,22 @@
               <div class="carousel-item active">
                 <img src="img/homepage/picture4.jpg" class="d-block w-100" alt="..." style="height:600px; width:900px;">
                 <div class="carousel-caption d-none d-md-block">
-                  <h2 style="color:white; text-align: left;">Ã¹ ±¸¸Å ÇÒÀÎ</h2>
-                  <p style="color:white; font-size:25px; text-align: left;">ÇÒÀÎ ÄíÆù ¹Þ¾Æ°¡¼¼¿ä~</p>
+                  <h2 style="color:white; text-align: left;">ì²« êµ¬ë§¤ í• ì¸</h2>
+                  <p style="color:white; font-size:25px; text-align: left;">í• ì¸ ì¿ í° ë°›ì•„ê°€ì„¸ìš”~</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="img/homepage/christmas1.jpeg" class="d-block w-100" alt="..." style="height:600px; width:900px;">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 style="color:white; text-align: right; margin-bottom:20px">Å©¸®½º¸¶½º ÇÒÀÎ</h2>
-                    <p style="color:white; font-size:25px; text-align:right; margin-bottom:200px">Å©¸®½º¸¶½º È¨Å°Æ® 50% ÇÒÀÎÀü!</p>
+                    <h2 style="color:white; text-align: right; margin-bottom:20px">í¬ë¦¬ìŠ¤ë§ˆìŠ¤ í• ì¸</h2>
+                    <p style="color:white; font-size:25px; text-align:right; margin-bottom:200px">í¬ë¦¬ìŠ¤ë§ˆìŠ¤ í™ˆí‚¤íŠ¸ 50% í• ì¸ì „!</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="img/homepage/picture2.jpg" class="d-block w-100" alt="..." style="height:600px; width:900px;">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 style="color:white; text-align: left;">ÃÖÀú°¡ Á¦Ç°¸¸ ¸ð¾Ò¾î¿ä</h2>
-                    <p style="color:white; font-size:25px; text-align: left;">ÀÌ¹øÁÖ ÃÖÀú°¡´Â?</p>
+                    <h2 style="color:white; text-align: left;">ìµœì €ê°€ ì œí’ˆë§Œ ëª¨ì•˜ì–´ìš”</h2>
+                    <p style="color:white; font-size:25px; text-align: left;">ì´ë²ˆì£¼ ìµœì €ê°€ëŠ”?</p>
                 </div>
               </div>
             </div>
@@ -148,7 +137,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-         <!-- ½½¶óÀÌµå¹Ù end -->
+         <!-- ìŠ¬ë¼ì´ë“œë°” end -->
  
         <!--top place start-->
          <section class="top_place section_padding">
@@ -156,7 +145,7 @@
                  <div class="row justify-content-center">
                      <div class="col-xl-6">
                          <div class="section_tittle text-center">
-                             <h2>ÀÎ±âÅ×¸¶</h2>
+                             <h2>ì¸ê¸°í…Œë§ˆ</h2>
                          </div>
                      </div>
                  </div>
@@ -168,7 +157,7 @@
                                     <br><br><br>
                                 </div>
                                 <div class="hotel_text_iner">
-                                    <h3>½Ã¹Ù°ß°ú ÇÔ²²ÇÏ´Â ¸ð´ø ÇÏ¿ì½º</h3>
+                                    <h3>ì‹œë°”ê²¬ê³¼ í•¨ê»˜í•˜ëŠ” ëª¨ë˜ í•˜ìš°ìŠ¤</h3>
                                     <div class="place_review">
                                         <a href="#"><i class="fas fa-star"></i></a>
                                         <a href="#"><i class="fas fa-star"></i></a>
@@ -177,8 +166,8 @@
                                         <a href="#"><i class="fas fa-star"></i></a>
                                         <span>(210 review)</span>
                                     </div>
-                                    <p>¸ð´ø, °¡Á·</p><br>
-                                    <h5>È¨Å°Æ® °¡°Ý = <span>20¸¸¿ø</span></h5>
+                                    <p>ëª¨ë˜, ê°€ì¡±</p><br>
+                                    <h5>í™ˆí‚¤íŠ¸ ê°€ê²© = <span>20ë§Œì›</span></h5>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +178,7 @@
                                     <br><br>
                                 </div>
                                 <div class="hotel_text_iner">
-                                    <h3>ºóÆ¼Áö °¡±¸¿Í µ¶Æ¯ÇÑ ±¸Á¶, ¸Æ½Ã¸Ö¸®½ºÆ®ÀÇ ¾ÆÆÄÆ®</h3>
+                                    <h3>ë¹ˆí‹°ì§€ ê°€êµ¬ì™€ ë…íŠ¹í•œ êµ¬ì¡°, ë§¥ì‹œë©€ë¦¬ìŠ¤íŠ¸ì˜ ì•„íŒŒíŠ¸</h3>
                                     <div class="place_review">
                                         <a href="#"><i class="fas fa-star"></i></a>
                                         <a href="#"><i class="fas fa-star"></i></a>
@@ -198,8 +187,8 @@
                                         <a href="#"><i class="fas fa-star"></i></a>
                                         <span>(210 review)</span>
                                     </div>
-                                    <p>ºóÆ¼Áö, ½ÅÈ¥ºÎºÎ</p><br>
-                                    <h5>È¨Å°Æ® °¡°Ý = <span>30¸¸¿ø</span></h5>
+                                    <p>ë¹ˆí‹°ì§€, ì‹ í˜¼ë¶€ë¶€</p><br>
+                                    <h5>í™ˆí‚¤íŠ¸ ê°€ê²© = <span>30ë§Œì›</span></h5>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +199,7 @@
                                     <br><br>
                                 </div>
                                 <div class="hotel_text_iner">
-                                    <h3>²À ÇÊ¿äÇÑ °Íµé·Î¸¸ Ã¤¿î 10Æò´ëÀÇ ³ªÈ¦·Î ¾ÆÆÄÆ® »ýÈ°</h3>
+                                    <h3>ê¼­ í•„ìš”í•œ ê²ƒë“¤ë¡œë§Œ ì±„ìš´ 10í‰ëŒ€ì˜ ë‚˜í™€ë¡œ ì•„íŒŒíŠ¸ ìƒí™œ</h3>
                                     <div class="place_review">
                                         <a href="#"><i class="fas fa-star"></i></a>
                                         <a href="#"><i class="fas fa-star"></i></a>
@@ -219,8 +208,8 @@
                                         <a href="#"><i class="fas fa-star"></i></a>
                                         <span>(210 review)</span>
                                     </div>
-                                    <p>¸ð´ø, ÀÚÃë»ý</p><br>
-                                    <h5>È¨Å°Æ® °¡°Ý = <span>10¸¸¿ø</span></h5>
+                                    <p>ëª¨ë˜, ìžì·¨ìƒ</p><br>
+                                    <h5>í™ˆí‚¤íŠ¸ ê°€ê²© = <span>10ë§Œì›</span></h5>
                                 </div>
                             </div>
                         </div>
@@ -235,7 +224,7 @@
                  <div class="row justify-content-center">
                      <div class="col-xl-6" style="padding-top: 140px;">
                          <div class="section_tittle text-center">
-                             <h2>ÀÎ±â Å°¿öµå</h2>
+                             <h2>ì¸ê¸° í‚¤ì›Œë“œ</h2>
                          </div>
                      </div>
                  </div>
@@ -244,49 +233,49 @@
                         <div class="col-md-4">
                             <a href="#" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/12.jpg); background-size: contain; background-repeat: no-repeat;""></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">ÇÁ·Î¹æ½ºÇÑ ½ºÅ¸ÀÏ</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">í”„ë¡œë°©ìŠ¤í•œ ìŠ¤íƒ€ì¼</strong></span>
                                 </div>
                             </div> 
                         <div class="col-md-4">
                             <a href="img/elements/g2.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/13.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">ÇÖµô Áß°íÅ°Æ®</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">í•«ë”œ ì¤‘ê³ í‚¤íŠ¸</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-4">
                             <a href="img/elements/g3.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/14.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">¹Ì´Ï¸ÖÇÑ ½ºÅ¸ÀÏ</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">ë¯¸ë‹ˆë©€í•œ ìŠ¤íƒ€ì¼</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-6">
                             <a href="img/elements/g4.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/15.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 200px;"><strong style="font-size:20px;">¼Ò¼ÒÇÑ ÀÎÅ×¸®¾î</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 200px;"><strong style="font-size:20px;">ì†Œì†Œí•œ ì¸í…Œë¦¬ì–´</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-6">
                             <a href="img/elements/g5.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/16.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 200px;"><strong style="font-size:20px;">¿ìµåÀÇ Â÷ºÐÇÑ ºÐÀ§±â</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 200px;"><strong style="font-size:20px;">ìš°ë“œì˜ ì°¨ë¶„í•œ ë¶„ìœ„ê¸°</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-4">
                             <a href="img/elements/g6.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/17.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">µû½ºÇÑ ºÐÀ§±â</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">ë”°ìŠ¤í•œ ë¶„ìœ„ê¸°</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-4">
                             <a href="img/elements/g7.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/18.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">½ÅÈ¥Áý</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">ì‹ í˜¼ì§‘</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-4">
                             <a href="img/elements/g8.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/9.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">±ò²ûÇÔ</strong></span></div>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">ê¹”ë”í•¨</strong></span></div>
                             </div>
                         </div>
                     </div>
@@ -301,7 +290,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="section_tittle text-center">
-                            <h2 style="padding-top: 100px;">Áß°íÅ°Æ® ÇÖµô</h2>
+                            <h2 style="padding-top: 100px;">ì¤‘ê³ í‚¤íŠ¸ í•«ë”œ</h2>
                         </div>
                     </div>
                 </div>
@@ -315,17 +304,17 @@
                                 </div>
                             </div>
                             <div class="hotel_text_iner">
-                                <h3>ÀÎÅ×¸®¾î µðÀÚÀÌ³ÊÀÇ ½Ì±Û¶óÀÌÇÁ°¡ ´ã±ä ¼¿ÇÁ ÀÎÅ×¸®¾î</h3>
+                                <h3>ì¸í…Œë¦¬ì–´ ë””ìžì´ë„ˆì˜ ì‹±ê¸€ë¼ì´í”„ê°€ ë‹´ê¸´ ì…€í”„ ì¸í…Œë¦¬ì–´</h3>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(´ñ±Û 5°³)</span>
+                                    <span>(ëŒ“ê¸€ 5ê°œ)</span>
                                 </div>
-                                <p>¸ð´ø, ÀþÀº ³²¼º</p>
-                                <h5>È¨Å°Æ® ºñ¿ë = <span>±âÁØ°¡ 20¸¸¿ø ¡æ ÇÒÀÎ°¡ 10¸¸¿ø</span></h5>
+                                <p>ëª¨ë˜, ì Šì€ ë‚¨ì„±</p>
+                                <h5>í™ˆí‚¤íŠ¸ ë¹„ìš© = <span>ê¸°ì¤€ê°€ 20ë§Œì› â†’ í• ì¸ê°€ 10ë§Œì›</span></h5>
                             </div>
                         </div>
                     </div>
@@ -338,17 +327,17 @@
                                 </div>
                             </div>
                             <div class="hotel_text_iner">
-                                <h3>±º´õ´õ±â ¾ø´Â ±ò²ûÇÑ ÀÎÅ×¸®¾î¿¡ Ç³°æ ÇÑ ½ºÇ¬</h3>
+                                <h3>êµ°ë”ë”ê¸° ì—†ëŠ” ê¹”ë”í•œ ì¸í…Œë¦¬ì–´ì— í’ê²½ í•œ ìŠ¤í‘¼</h3>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(´ñ±Û 9°³)</span>
+                                    <span>(ëŒ“ê¸€ 9ê°œ)</span>
                                 </div>
-                                <p>Å×¸¶¸í, °ÅÁÖÇÏ´Â »ç¶÷</p>
-                                <h5>È¨Å°Æ® ºñ¿ë = <span>±âÁØ°¡ 20¸¸¿ø ¡æ ÇÒÀÎ°¡ 10¸¸¿ø</span></h5>
+                                <p>í…Œë§ˆëª…, ê±°ì£¼í•˜ëŠ” ì‚¬ëžŒ</p>
+                                <h5>í™ˆí‚¤íŠ¸ ë¹„ìš© = <span>ê¸°ì¤€ê°€ 20ë§Œì› â†’ í• ì¸ê°€ 10ë§Œì›</span></h5>
                             </div>
                         </div>
                     </div>
@@ -363,17 +352,17 @@
                                 </div>
                             </div>
                             <div class="hotel_text_iner">
-                                <h3>ºÎ¾Ïµ¿ ÁÖÅÃ»ìÀÌ¦­ÀÏ»ó°ú ºñÀÏ»óÀÇ °æ°è¿¡ ÀÖ´Â Áý</a></h3>
+                                <h3>ë¶€ì•”ë™ ì£¼íƒì‚´ì´â”ƒì¼ìƒê³¼ ë¹„ì¼ìƒì˜ ê²½ê³„ì— ìžˆëŠ” ì§‘</a></h3>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(´ñ±Û 10°³)</span>
+                                    <span>(ëŒ“ê¸€ 10ê°œ)</span>
                                 </div>
-                                <p>Å×¸¶¸í, °ÅÁÖÇÏ´Â »ç¶÷</p>
-                                <h5>È¨Å°Æ® ºñ¿ë = <span>±âÁØ°¡ 20¸¸¿ø ¡æ ÇÒÀÎ°¡ 10¸¸¿ø</span></h5>
+                                <p>í…Œë§ˆëª…, ê±°ì£¼í•˜ëŠ” ì‚¬ëžŒ</p>
+                                <h5>í™ˆí‚¤íŠ¸ ë¹„ìš© = <span>ê¸°ì¤€ê°€ 20ë§Œì› â†’ í• ì¸ê°€ 10ë§Œì›</span></h5>
                             </div>
                         </div>
                     </div>

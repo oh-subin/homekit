@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
     <html lang="en">
     
@@ -7,7 +7,7 @@
             <!-- Required meta tags -->
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>¹æ±¸¼® ÀÎÅ×¸®¾î-°áÁ¦</title>
+            <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´-ê²°ì œ</title>
             <link rel="icon" href="img/favicon.png">
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -49,56 +49,45 @@
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-    							<!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ begin -->
+    							<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • begin -->
                                 <div class="collapse navbar-collapse main-menu-item justify-content-center"
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">¼Ò°³</a>
+                                            <a class="nav-link" href="about.jsp">ì†Œê°œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">ÃßÃµ</a>
+                                            <a class="nav-link" href="recommendation.jsp">ì¶”ì²œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">Áß°íÅ°Æ® ÆÇ¸Å</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ä¿¹Â´ÏÆ¼
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">Ã¼ÇèÇü Å°Æ®</a>
-                                            </div>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">ì¤‘ê³ í‚¤íŠ¸ íŒë§¤</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.jsp">¼îÇÎ¸ô</a>
+                                            <a class="nav-link" href="products.jsp">ì‡¼í•‘ëª°</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">·Î±×ÀÎ</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">È¸¿ø°¡ÀÔ</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">ë¡œê·¸ì¸</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">íšŒì›ê°€ìž…</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //°ü¸®ÀÚ°¡ ·Î±×ÀÎÇÏ¸é %>
-										<a class="dropdown-item" href="product_registration.jsp">»óÇ°µî·Ï</a>
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
+									<%if(email.equals("admin@admin")){ //ê´€ë¦¬ìžê°€ ë¡œê·¸ì¸í•˜ë©´ %>
+										<a class="dropdown-item" href="product_registration.jsp">ìƒí’ˆë“±ë¡</a>
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
 									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">Á¤º¸¼öÁ¤</a> 
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
-										<a class="dropdown-item" href="delete.jsp">È¸¿øÅ»Åð</a>
+										<a class="dropdown-item" href="update.jsp">ì •ë³´ìˆ˜ì •</a> 
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
+										<a class="dropdown-item" href="delete.jsp">íšŒì›íƒˆí‡´</a>
 									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">Àå¹Ù±¸´Ï</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">ìž¥ë°”êµ¬ë‹ˆ</a>
 							<%} %>
                             </nav>
                         </div>
@@ -106,30 +95,30 @@
                 </div>
             </div>
         </header>
-    <!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ end -->
+    <!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • end -->
     <!-- Header part end-->
             <br><br>
-            <p style="margin-left: 250px;">01. Àå¹Ù±¸´Ï > <b style="color:red;">02. ÁÖ¹®/°áÁ¦</b> > 03. °áÁ¦¿Ï·á</p><br><br>
+            <p style="margin-left: 250px;">01. ìž¥ë°”êµ¬ë‹ˆ > <b style="color:red;">02. ì£¼ë¬¸/ê²°ì œ</b> > 03. ê²°ì œì™„ë£Œ</p><br><br>
           <div>
-            <h2 style="margin-left: 250px;">°í°´´Ô ¹è¼ÛÁö</h2>
+            <h2 style="margin-left: 250px;">ê³ ê°ë‹˜ ë°°ì†¡ì§€</h2>
             <br>
-            <!-- °³ÀÎÁ¤º¸ ¹× ¹è¼ÛÁö µî·Ï Å×ÀÌºí -->
+            <!-- ê°œì¸ì •ë³´ ë° ë°°ì†¡ì§€ ë“±ë¡ í…Œì´ë¸” -->
             <table border="2px" style="margin-left: 250px; margin-right:100px; float:left;">
                 <tr>
-                    <th width="300" style="text-align: center;">¹è¼ÛÁö ¼±ÅÃ</th>
+                    <th width="300" style="text-align: center;">ë°°ì†¡ì§€ ì„ íƒ</th>
                     <th width="600" height="70">
                         <select name="" id="" style="width:400px; height:50px; margin-left:10px;">
-                            <option value="" >¹è¼ÛÁö¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä.</option>
+                            <option value="" >ë°°ì†¡ì§€ë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”.</option>
                         </select>
-                        <button>»õ·Î¿î ÁÖ¼Ò Ãß°¡</button>
+                        <button>ìƒˆë¡œìš´ ì£¼ì†Œ ì¶”ê°€</button>
                     </th>
                 </tr>
                 <tr>
-                    <th width="300" style="text-align: center;">¹Þ´Â »ç¶÷</th>
+                    <th width="300" style="text-align: center;">ë°›ëŠ” ì‚¬ëžŒ</th>
                     <th width="600" height="50"><input type="text" style="margin-left:10px;"></th>
                 </tr>
                 <tr>
-                    <th width="300" style="text-align: center;">ÈÞ´ëÆù ¹øÈ£</th>
+                    <th width="300" style="text-align: center;">íœ´ëŒ€í° ë²ˆí˜¸</th>
                     <th width="600" height="50" > 
                         <select name="" id="" style="margin-left:10px;">
                             <option value="" >010</option>
@@ -138,53 +127,53 @@
                 </th>
                 </tr>
                 <tr>
-                    <th width="300" style="text-align: center;">¹è¼ÛÁö ÁÖ¼Ò</th>
+                    <th width="300" style="text-align: center;">ë°°ì†¡ì§€ ì£¼ì†Œ</th>
                     <th width="600" height="300">
-                        <button style="margin-left:10px; margin-bottom: 30px;">¿ìÆí¹øÈ£ °Ë»ö</button><br>
+                        <button style="margin-left:10px; margin-bottom: 30px;">ìš°íŽ¸ë²ˆí˜¸ ê²€ìƒ‰</button><br>
                         <input type="text" style="margin-left:10px; width:400px; height:50px;">
-                        <input type="text" placeholder="»ó¼¼ÁÖ¼Ò¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä" style="width:400px; height:50px; margin-top:30px; margin-left:10px;"><br>
-                        <input type="checkbox" style="margin-left:10px; margin-top: 30px;"> ±âº» ¹è¼ÛÁö·Î ÀúÀå
+                        <input type="text" placeholder="ìƒì„¸ì£¼ì†Œë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”" style="width:400px; height:50px; margin-top:30px; margin-left:10px;"><br>
+                        <input type="checkbox" style="margin-left:10px; margin-top: 30px;"> ê¸°ë³¸ ë°°ì†¡ì§€ë¡œ ì €ìž¥
                     </th>
                 </tr>
                 <tr>
-                    <th width="300" style="text-align: center;">¹è¼Û ¿äÃ»»çÇ×</th>
+                    <th width="300" style="text-align: center;">ë°°ì†¡ ìš”ì²­ì‚¬í•­</th>
                     <th width="600" height="150">
                         <select name="" id="" style="width:500px; height:50px; margin-left:10px;">
-                            <option value="" >¹è¼Û ¿äÃ»»çÇ×À» ¼±ÅÃÇØÁÖ¼¼¿ä.</option>
+                            <option value="" >ë°°ì†¡ ìš”ì²­ì‚¬í•­ì„ ì„ íƒí•´ì£¼ì„¸ìš”.</option>
                         </select>
                     </th>
                 </tr>
             </table>
           </div>
 
-            <!-- °áÁ¦³»¿ª Å×ÀÌºí -->
+            <!-- ê²°ì œë‚´ì—­ í…Œì´ë¸” -->
           	<div>
             <table border="2px" style="margin-top:30px;">
-                <h3 style="margin-top:50px;">°í°´´ÔÀÇ °Å·¡ ³»¿ª</h3>
+                <h3 style="margin-top:50px;">ê³ ê°ë‹˜ì˜ ê±°ëž˜ ë‚´ì—­</h3>
                     <tr width="400" height="80">
-                        <td>ÃÑ »óÇ°±Ý¾×</td>
-                        <td>100,500¿ø</td>
+                        <td>ì´ ìƒí’ˆê¸ˆì•¡</td>
+                        <td>100,500ì›</td>
                     </tr>
                     <tr width="400" height="100">
-                        <td>ÃÑ ÇÒÀÎ±Ý¾× *<br><p>ÄíÆùÇÒÀÎ</p></td>
+                        <td>ì´ í• ì¸ê¸ˆì•¡ *<br><p>ì¿ í°í• ì¸</p></td>
                        
-                        <td>-10,000¿ø<p>5,000¿ø</p></td>
+                        <td>-10,000ì›<p>5,000ì›</p></td>
                     </tr>
                     <tr width="400" height="80">
-                        <td>¹è¼Ûºñ</td>
-                        <td>2,500¿ø</td>
+                        <td>ë°°ì†¡ë¹„</td>
+                        <td>2,500ì›</td>
                     </tr>
                     <tr width="400" height="80">
-                        <td>Àû¸³ ¿¹Á¤ ±Ý¾×</td>
-                        <td>29¿ø Àû¸³</td>
+                        <td>ì ë¦½ ì˜ˆì • ê¸ˆì•¡</td>
+                        <td>29ì› ì ë¦½</td>
                     </tr>
                     <tr width="400" height="80">
-                        <td>°áÁ¦ ¿¹Á¤ ±Ý¾×</td>
-                        <td>42,500¿ø</td>
+                        <td>ê²°ì œ ì˜ˆì • ê¸ˆì•¡</td>
+                        <td>42,500ì›</td>
                     </tr>
                 
             </table>
-            <button style="margin-left:70px; margin-top:10px; height: 50px; width: 100px;"  onclick="location.href='Order_Completed.jsp'";>°áÁ¦ÇÏ±â</button>
+            <button style="margin-left:70px; margin-top:10px; height: 50px; width: 100px;"  onclick="location.href='Order_Completed.jsp'";>ê²°ì œí•˜ê¸°</button>
           	</div>
 
            <!-- footer part start-->

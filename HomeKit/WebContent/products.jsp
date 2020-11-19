@@ -1,13 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@page import="com.DAO.homekitDAO"%>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="com.DTO.homekitDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta charset="EUC-KR">
-	<title>¹æ±¸¼® ÀÎÅ×¸®¾î-È¨Å°Æ® ÀüÃ¼ »óÇ°</title>
+    <meta charset="UTF-8">
+	<title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´-í™ˆí‚¤íŠ¸ ì „ì²´ ìƒí’ˆ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Martine</title>
     <link rel="icon" href="img/favicon.png">
@@ -33,7 +36,7 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
-    <!-- rating jsÄÚµå Add icon library -->
+    <!-- rating jsì½”ë“œ Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -54,56 +57,45 @@
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-    							<!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ begin -->
+    							<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • begin -->
                                 <div class="collapse navbar-collapse main-menu-item justify-content-center"
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">¼Ò°³</a>
+                                            <a class="nav-link" href="about.jsp">ì†Œê°œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">ÃßÃµ</a>
+                                            <a class="nav-link" href="recommendation.jsp">ì¶”ì²œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">Áß°íÅ°Æ® ÆÇ¸Å</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ä¿¹Â´ÏÆ¼
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">Ã¼ÇèÇü Å°Æ®</a>
-                                            </div>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">ì¤‘ê³ í‚¤íŠ¸ íŒë§¤</a>
                                         </li>
                                         <li class="nav-item">
-                                           <a class="nav-link" href="products.jsp">¼îÇÎ¸ô</a>
+                                           <a class="nav-link" href="products.jsp">ì‡¼í•‘ëª°</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">·Î±×ÀÎ</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">È¸¿ø°¡ÀÔ</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">ë¡œê·¸ì¸</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">íšŒì›ê°€ìž…</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //°ü¸®ÀÚ°¡ ·Î±×ÀÎÇÏ¸é %>
-										<a class="dropdown-item" href="product_registration.jsp">»óÇ°µî·Ï</a>
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
+									<%if(email.equals("admin@admin")){ //ê´€ë¦¬ìžê°€ ë¡œê·¸ì¸í•˜ë©´ %>
+										<a class="dropdown-item" href="product_registration.jsp">ìƒí’ˆë“±ë¡</a>
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
 									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">Á¤º¸¼öÁ¤</a> 
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
-										<a class="dropdown-item" href="delete.jsp">È¸¿øÅ»Åð</a>
+										<a class="dropdown-item" href="update.jsp">ì •ë³´ìˆ˜ì •</a> 
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
+										<a class="dropdown-item" href="delete.jsp">íšŒì›íƒˆí‡´</a>
 									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">Àå¹Ù±¸´Ï</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">ìž¥ë°”êµ¬ë‹ˆ</a>
 							<%} %>
                             </nav>
                         </div>
@@ -111,7 +103,7 @@
                 </div>
             </div>
         </header>
- <!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ end -->
+ <!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • end -->
  <!-- Header part end-->
 
 	<!-- banner part start-->
@@ -130,21 +122,27 @@
      </section>
      <!-- banner part end-->
      
- <!-- »óÇ° ³ª¿­ ÆäÀÌÁö begin -->
+ <!-- ìƒí’ˆ ë‚˜ì—´ íŽ˜ì´ì§€ begin -->
     <!--::industries start::-->
     <section class="hotel_list section_padding">
         <div class="container">
             <hr><p style="color:#6c757d; font-size:25px; font-family:'S-CoreDream-2ExtraLight'">BEST OFFER</p><hr>          
                <div class="row gallery-item">
                
-               <!-- È¨Å°Æ® °¡Á®¿À´Â ¹Ýº¹¹® »ç¿ë 12°³ -->
+               <!-- í™ˆí‚¤íŠ¸ ê°€ì ¸ì˜¤ëŠ” ë°˜ë³µë¬¸ ì‚¬ìš© 12ê°œ -->
+               <% 
+               		homekitDAO dao = new homekitDAO();
+               		ArrayList<homekitDTO> imgList = dao.showHomeKit();
+               		
+               		
+               %>
                    <div class="col-md-4">
                           <a href="kit-detail.jsp">
                           <div class="single-gallery-image" style="background: url(img/homepage/310.jpg); background-size: contain; background-repeat: no-repeat;"></div></a>
-                          <div style="padding-top: 20px;"><span style="font-size:20px;">Áý¿¡¼­µµ ÈÞ¾çÁö¿¡ ¿Â °ÍÃ³·³¤Ó¶óÅº&ºóÆ¼ÁöÀÇ ¾Æ¸§´Ù¿î ¹«µå</span>
+                          <div style="padding-top: 20px;"><span style="font-size:20px;">ì§‘ì—ì„œë„ íœ´ì–‘ì§€ì— ì˜¨ ê²ƒì²˜ëŸ¼ã…£ë¼íƒ„&ë¹ˆí‹°ì§€ì˜ ì•„ë¦„ë‹¤ìš´ ë¬´ë“œ</span>
                             <div>
-                                <p>ºóÆ¼Áö&·¹Æ®·Î</p>
-                                <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                                <p>ë¹ˆí‹°ì§€&ë ˆíŠ¸ë¡œ</p>
+                                <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                                 <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -157,10 +155,10 @@
                    <div class="col-md-4">
                        <a href="img/homepage/318.jpg" class="img-pop-up" href="kit-detail.jsp">
                            <div class="single-gallery-image" style="background: url(img/homepage/318.jpg);"></div></a>
-                           <div style="padding-top: 20px;"><span><strong style="font-size:20px;">ÇÁ·Î È¨º£ÀÌÄ¿ÀÇ ¾Æ´ãÇÏ°í ´ÞÄÞÇÑ ÀÚÃë¹æ</strong></span>
+                           <div style="padding-top: 20px;"><span><strong style="font-size:20px;">í”„ë¡œ í™ˆë² ì´ì»¤ì˜ ì•„ë‹´í•˜ê³  ë‹¬ì½¤í•œ ìžì·¨ë°©</strong></span>
                             <div>
-                                <p>³»Ãß·²</p>
-                                <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                                <p>ë‚´ì¶”ëŸ´</p>
+                                <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                                 <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -173,10 +171,10 @@
                    <div class="col-md-4">
                        <a href="img/homepage/514.jpg" class="img-pop-up" href="kit-detail.jsp">
                            <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
-                           <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">¿ÀÈÄÀÇ ºû°ú »ö°¨ÀÌ ¾î¿ì·¯Áø ÀÚ¸ÅÀÇ º¹Ãþ ¿ÀÇÇ½ºÅÚ</strong></span>
+                           <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ì˜¤í›„ì˜ ë¹›ê³¼ ìƒ‰ê°ì´ ì–´ìš°ëŸ¬ì§„ ìžë§¤ì˜ ë³µì¸µ ì˜¤í”¼ìŠ¤í…”</strong></span>
                             <div>
-                                <p>¸ð´ø</p>
-                                <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                                <p>ëª¨ë˜</p>
+                                <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                                 <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -189,10 +187,10 @@
                    <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
-                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ºôµù ½£ °¡¿îµ¥ ¿ì¸®¸¸ÀÇ ¾ÆÁöÆ®, ´º¿å ¸ÇÇØÆ° ½ÅÈ¥Áý</strong></span>
+                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ë¹Œë”© ìˆ² ê°€ìš´ë° ìš°ë¦¬ë§Œì˜ ì•„ì§€íŠ¸, ë‰´ìš• ë§¨í•´íŠ¼ ì‹ í˜¼ì§‘</strong></span>
                             <div>
-                             <p>¹Ì´Ï¸Ö&½ÉÇÃ</p>
-                             <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                             <p>ë¯¸ë‹ˆë©€&ì‹¬í”Œ</p>
+                             <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                              <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
@@ -205,10 +203,10 @@
                    <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
-                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ºôµù ½£ °¡¿îµ¥ ¿ì¸®¸¸ÀÇ ¾ÆÁöÆ®, ´º¿å ¸ÇÇØÆ° ½ÅÈ¥Áý</strong></span>
+                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ë¹Œë”© ìˆ² ê°€ìš´ë° ìš°ë¦¬ë§Œì˜ ì•„ì§€íŠ¸, ë‰´ìš• ë§¨í•´íŠ¼ ì‹ í˜¼ì§‘</strong></span>
                             <div>
-                             <p>¹Ì´Ï¸Ö&½ÉÇÃ</p>
-                             <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                             <p>ë¯¸ë‹ˆë©€&ì‹¬í”Œ</p>
+                             <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                              <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
@@ -221,10 +219,10 @@
                    <div class="col-md-4">
                        <a href="img/homepage/787.jpg" class="img-pop-up" href="kit-detail.jsp">
                            <div class="single-gallery-image" style="background: url(img/homepage/787.jpg);"></div></a>
-                           <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">µû¶æÇÑ ÇÞ»ìÀÌ ½º¸çµç º½³¯ÀÇ Ä«Æä °°Àº Áý</strong></span>
+                           <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ë”°ëœ»í•œ í–‡ì‚´ì´ ìŠ¤ë©°ë“  ë´„ë‚ ì˜ ì¹´íŽ˜ ê°™ì€ ì§‘</strong></span>
                             <div>
-								<p>Å¬·¡½Ä&¾ØÆ½</p>
-                                <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+								<p>í´ëž˜ì‹&ì•¤í‹±</p>
+                                <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                                 <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -237,10 +235,10 @@
                    <div class="col-md-4">
                        <a href="img/homepage/1016.jpg" class="img-pop-up" href="kit-detail.jsp">
                            <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
-                           <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ºôµù ½£ °¡¿îµ¥ ¿ì¸®¸¸ÀÇ ¾ÆÁöÆ®, ´º¿å ¸ÇÇØÆ° ½ÅÈ¥Áý</strong></span>
+                           <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ë¹Œë”© ìˆ² ê°€ìš´ë° ìš°ë¦¬ë§Œì˜ ì•„ì§€íŠ¸, ë‰´ìš• ë§¨í•´íŠ¼ ì‹ í˜¼ì§‘</strong></span>
                             <div>
-                                <p>À¯´ÏÅ©&¹Í½º¸ÅÄ¡</p>
-                                <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                                <p>ìœ ë‹ˆí¬&ë¯¹ìŠ¤ë§¤ì¹˜</p>
+                                <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                                 <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -253,10 +251,10 @@
                    <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
-                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ºôµù ½£ °¡¿îµ¥ ¿ì¸®¸¸ÀÇ ¾ÆÁöÆ®, ´º¿å ¸ÇÇØÆ° ½ÅÈ¥Áý</strong></span>
+                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ë¹Œë”© ìˆ² ê°€ìš´ë° ìš°ë¦¬ë§Œì˜ ì•„ì§€íŠ¸, ë‰´ìš• ë§¨í•´íŠ¼ ì‹ í˜¼ì§‘</strong></span>
                             <div>
-                             <p>¹Ì´Ï¸Ö&½ÉÇÃ</p>
-                             <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                             <p>ë¯¸ë‹ˆë©€&ì‹¬í”Œ</p>
+                             <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                              <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
@@ -269,10 +267,10 @@
                 <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
-                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ºôµù ½£ °¡¿îµ¥ ¿ì¸®¸¸ÀÇ ¾ÆÁöÆ®, ´º¿å ¸ÇÇØÆ° ½ÅÈ¥Áý</strong></span>
+                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ë¹Œë”© ìˆ² ê°€ìš´ë° ìš°ë¦¬ë§Œì˜ ì•„ì§€íŠ¸, ë‰´ìš• ë§¨í•´íŠ¼ ì‹ í˜¼ì§‘</strong></span>
                             <div>
-                             <p>¹Ì´Ï¸Ö&½ÉÇÃ</p>
-                             <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                             <p>ë¯¸ë‹ˆë©€&ì‹¬í”Œ</p>
+                             <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                              <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
@@ -285,10 +283,10 @@
                 <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
-                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ºôµù ½£ °¡¿îµ¥ ¿ì¸®¸¸ÀÇ ¾ÆÁöÆ®, ´º¿å ¸ÇÇØÆ° ½ÅÈ¥Áý</strong></span>
+                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ë¹Œë”© ìˆ² ê°€ìš´ë° ìš°ë¦¬ë§Œì˜ ì•„ì§€íŠ¸, ë‰´ìš• ë§¨í•´íŠ¼ ì‹ í˜¼ì§‘</strong></span>
                             <div>
-                             <p>¹Ì´Ï¸Ö&½ÉÇÃ</p>
-                             <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                             <p>ë¯¸ë‹ˆë©€&ì‹¬í”Œ</p>
+                             <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                              <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
@@ -301,10 +299,10 @@
                 <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
-                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ºôµù ½£ °¡¿îµ¥ ¿ì¸®¸¸ÀÇ ¾ÆÁöÆ®, ´º¿å ¸ÇÇØÆ° ½ÅÈ¥Áý</strong></span>
+                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ë¹Œë”© ìˆ² ê°€ìš´ë° ìš°ë¦¬ë§Œì˜ ì•„ì§€íŠ¸, ë‰´ìš• ë§¨í•´íŠ¼ ì‹ í˜¼ì§‘</strong></span>
                             <div>
-                             <p>¹Ì´Ï¸Ö&½ÉÇÃ</p>
-                             <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                             <p>ë¯¸ë‹ˆë©€&ì‹¬í”Œ</p>
+                             <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                              <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
@@ -317,10 +315,10 @@
                 <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
                         <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
-                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ºôµù ½£ °¡¿îµ¥ ¿ì¸®¸¸ÀÇ ¾ÆÁöÆ®, ´º¿å ¸ÇÇØÆ° ½ÅÈ¥Áý</strong></span>
+                        <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">ë¹Œë”© ìˆ² ê°€ìš´ë° ìš°ë¦¬ë§Œì˜ ì•„ì§€íŠ¸, ë‰´ìš• ë§¨í•´íŠ¼ ì‹ í˜¼ì§‘</strong></span>
                             <div>
-                             <p>¹Ì´Ï¸Ö&½ÉÇÃ</p>
-                             <p>[48H POP UP][12%ÄíÆù][~11/19±îÁö]</p><br>
+                             <p>ë¯¸ë‹ˆë©€&ì‹¬í”Œ</p>
+                             <p>[48H POP UP][12%ì¿ í°][~11/19ê¹Œì§€]</p><br>
                              <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>

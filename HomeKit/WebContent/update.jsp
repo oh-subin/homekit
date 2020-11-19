@@ -1,17 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-  <meta charset="EUC-KR">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
- <title>¹æ±¸¼® ÀÎÅ×¸®¾î - È¸¿øÁ¤º¸¼öÁ¤</title>
+ <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´ - íšŒì›ì •ë³´ìˆ˜ì •</title>
     <link rel="icon" href="img/favicon.png">
 
   <!-- Custom fonts for this template-->
@@ -45,8 +45,8 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-2">È¸¿øÁ¤º¸¼öÁ¤</h1>
-                    <p class="mb-4"><%=email %><br>¼öÁ¤ÇÒ Á¤º¸¸¦ ÀÔ·ÂÇÏ¼¼¿ä.</p>
+                    <h1 class="h4 text-gray-900 mb-2">íšŒì›ì •ë³´ìˆ˜ì •</h1>
+                    <p class="mb-4"><%=email %><br>ìˆ˜ì •í•  ì •ë³´ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.</p>
                   </div>
                   <form class="user" action="UpdateService" method="post">
                     <div class="form-group">
@@ -61,18 +61,18 @@
                     <div class="form-group">
                       <input type="text" name ="tel" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Tel">
                     </div>
-                    <input type="submit" value="¼öÁ¤" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
+                    <input type="submit" value="ìˆ˜ì •" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
                     
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="register.jsp">È¸¿ø°¡ÀÔ</a>
+                    <a class="small" href="register.jsp">íšŒì›ê°€ìž…</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="login.jsp">ÀÌ¹Ì °èÁ¤ÀÌ ÀÖ½À´Ï´Ù. ·Î±×ÀÎ</a>
+                    <a class="small" href="login.jsp">ì´ë¯¸ ê³„ì •ì´ ìžˆìŠµë‹ˆë‹¤. ë¡œê·¸ì¸</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="main.jsp">¸ÞÀÎ ÆäÀÌÁö·Î µ¹¾Æ°¡±â</a>
+                    <a class="small" href="main.jsp">ë©”ì¸ íŽ˜ì´ì§€ë¡œ ëŒì•„ê°€ê¸°</a>
                   </div>
                 </div>
               </div>

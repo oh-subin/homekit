@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
     <!doctype html>
     <html lang="en">
     
         <head>
         <!-- Required meta tags -->
-        <meta charset="EUC-KR">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>¹æ±¸¼® ÀÎÅ×¸®¾î-ÁÖ¹®¿Ï·á</title>
+        <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´-ì£¼ë¬¸ì™„ë£Œ</title>
         <link rel="icon" href="img/favicon.png">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -50,56 +50,45 @@
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-    							<!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ begin -->
+    							<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • begin -->
                                 <div class="collapse navbar-collapse main-menu-item justify-content-center"
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">¼Ò°³</a>
+                                            <a class="nav-link" href="about.jsp">ì†Œê°œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">ÃßÃµ</a>
+                                            <a class="nav-link" href="recommendation.jsp">ì¶”ì²œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">Áß°íÅ°Æ® ÆÇ¸Å</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ä¿¹Â´ÏÆ¼
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">Ã¼ÇèÇü Å°Æ®</a>
-                                            </div>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">ì¤‘ê³ í‚¤íŠ¸ íŒë§¤</a>
                                         </li>
                                         <li class="nav-item">
-                                           <a class="nav-link" href="products.jsp">¼îÇÎ¸ô</a>
+                                           <a class="nav-link" href="products.jsp">ì‡¼í•‘ëª°</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                               <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">·Î±×ÀÎ</a>
-	                               <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">È¸¿ø°¡ÀÔ</a>
+	                               <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">ë¡œê·¸ì¸</a>
+	                               <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">íšŒì›ê°€ìž…</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //°ü¸®ÀÚ°¡ ·Î±×ÀÎÇÏ¸é %>
-										<a class="dropdown-item" href="product_registration.jsp">»óÇ°µî·Ï</a>
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
+									<%if(email.equals("admin@admin")){ //ê´€ë¦¬ìžê°€ ë¡œê·¸ì¸í•˜ë©´ %>
+										<a class="dropdown-item" href="product_registration.jsp">ìƒí’ˆë“±ë¡</a>
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
 									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">Á¤º¸¼öÁ¤</a> 
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
-										<a class="dropdown-item" href="delete.jsp">È¸¿øÅ»Åð</a>
+										<a class="dropdown-item" href="update.jsp">ì •ë³´ìˆ˜ì •</a> 
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
+										<a class="dropdown-item" href="delete.jsp">íšŒì›íƒˆí‡´</a>
 									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">Àå¹Ù±¸´Ï</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">ìž¥ë°”êµ¬ë‹ˆ</a>
 							<%} %>
                             </nav>
                         </div>
@@ -107,10 +96,10 @@
                 </div>
             </div>
         </header>
- <!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ end -->
+ <!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • end -->
  <!-- Header part end-->
     
-        <!-- ¼öÁ¤: Àü¹®°¡ ÃßÃµ¸ðµå¿¡¼­ ÀÌµ¿ÇÒ ÃßÃµ°á°ú ÆäÀÌÁö begin -->
+        <!-- ìˆ˜ì •: ì „ë¬¸ê°€ ì¶”ì²œëª¨ë“œì—ì„œ ì´ë™í•  ì¶”ì²œê²°ê³¼ íŽ˜ì´ì§€ begin -->
         <!-- breadcrumb start-->
         <section class="breadcrumb breadcrumb_bg" style="height: 600px;">
             <div class="container">
@@ -119,8 +108,8 @@
                         <div class="breadcrumb_iner">
                             <div class="breadcrumb_iner_item text-center">
                                 <h2 style="padding-top:80px; margin-bottom:120px" >"Order Completed"</h2>
-                                <p style="padding-bottom: 30px;">°í°´´Ô, ÁÖ¹®ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù. <br><br> ÀúÈñ »óÇ°À» ±¸¸ÅÇØÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù.</p>
-                                <p>ÁÖ¹®ÇÏ½Å »óÇ°ÀÇ ¹è¼ÛÀº 15ÀÏ ÀÌ³» ¿Ï·áµË´Ï´Ù. <br><br> »ó¼¼ ¹è¼ÛÁ¤º¸´Â ¹è¼ÛÁ¶È¸ ÆäÀÌÁö¿¡¼­ È®ÀÎÀÌ °¡´ÉÇÕ´Ï´Ù.</p>
+                                <p style="padding-bottom: 30px;">ê³ ê°ë‹˜, ì£¼ë¬¸ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. <br><br> ì €í¬ ìƒí’ˆì„ êµ¬ë§¤í•´ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤.</p>
+                                <p>ì£¼ë¬¸í•˜ì‹  ìƒí’ˆì˜ ë°°ì†¡ì€ 15ì¼ ì´ë‚´ ì™„ë£Œë©ë‹ˆë‹¤. <br><br> ìƒì„¸ ë°°ì†¡ì •ë³´ëŠ” ë°°ì†¡ì¡°íšŒ íŽ˜ì´ì§€ì—ì„œ í™•ì¸ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.</p>
                             </div>
                         </div>
                     </div>

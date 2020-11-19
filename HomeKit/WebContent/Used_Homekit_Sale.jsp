@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
 
 <head>
         <!-- Required meta tags -->
-        <meta charset="EUC-KR">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>¹æ±¸¼® ÀÎÅ×¸®¾î-Áß°íÅ°Æ®ÆÇ¸Å</title>
+        <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´-ì¤‘ê³ í‚¤íŠ¸íŒë§¤</title>
         <link rel="icon" href="img/favicon.png">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -50,45 +50,45 @@
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-    							<!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ begin -->
+    							<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • begin -->
                                 <div class="collapse navbar-collapse main-menu-item justify-content-center"
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">¼Ò°³</a>
+                                            <a class="nav-link" href="about.jsp">ì†Œê°œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">ÃßÃµ</a>
+                                            <a class="nav-link" href="recommendation.jsp">ì¶”ì²œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">Áß°íÅ°Æ® ÆÇ¸Å</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">ì¤‘ê³ í‚¤íŠ¸ íŒë§¤</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.jsp">¼îÇÎ¸ô</a>
+                                            <a class="nav-link" href="products.jsp">ì‡¼í•‘ëª°</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">·Î±×ÀÎ</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">È¸¿ø°¡ÀÔ</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">ë¡œê·¸ì¸</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">íšŒì›ê°€ìž…</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //°ü¸®ÀÚ°¡ ·Î±×ÀÎÇÏ¸é %>
-										<a class="dropdown-item" href="product_registration.jsp">»óÇ°µî·Ï</a>
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
+									<%if(email.equals("admin@admin")){ //ê´€ë¦¬ìžê°€ ë¡œê·¸ì¸í•˜ë©´ %>
+										<a class="dropdown-item" href="product_registration.jsp">ìƒí’ˆë“±ë¡</a>
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
 									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">Á¤º¸¼öÁ¤</a> 
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
-										<a class="dropdown-item" href="delete.jsp">È¸¿øÅ»Åð</a>
+										<a class="dropdown-item" href="update.jsp">ì •ë³´ìˆ˜ì •</a> 
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
+										<a class="dropdown-item" href="delete.jsp">íšŒì›íƒˆí‡´</a>
 									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">Àå¹Ù±¸´Ï</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">ìž¥ë°”êµ¬ë‹ˆ</a>
 							<%} %>
                             </nav>
                         </div>
@@ -96,18 +96,18 @@
                 </div>
             </div>
         </header>
-<!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ end -->
+<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • end -->
 <!-- Header part end-->
 
     <div class="img">
         <div class="content">
-            <h1 style="color:#fff; font-size:55px; font-weight:500; margin-top:40px;">Áß°íÅ°Æ® ÆÇ¸Å</h1>
+            <h1 style="color:#fff; font-size:55px; font-weight:500; margin-top:40px;">ì¤‘ê³ í‚¤íŠ¸ íŒë§¤</h1>
         </div>
         <div class="img-cover"></div>
     </div>
     <br><br>
     <!--================Blog Area =================-->
-    <!-- ¼öÁ¤: Áß°íÅ°Æ® ÆÇ¸ÅÇÏ´Â Ä­ begin -->
+    <!-- ìˆ˜ì •: ì¤‘ê³ í‚¤íŠ¸ íŒë§¤í•˜ëŠ” ì¹¸ begin -->
     <section class="blog_area section_padding">
         <div class="container">
             <div class="row">
@@ -115,7 +115,7 @@
                     <div class="blog_left_sidebar">
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <h1>Ã¹¹øÂ° ÁýµéÀÌ</h1><hr>
+                                <h1>ì²«ë²ˆì§¸ ì§‘ë“¤ì´</h1><hr>
                                 <img class="card-img rounded-0" src="img/homepage/23.jpg" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
@@ -124,17 +124,17 @@
                             </div>
                             
                             <div class="blog_details"> 
-                                <h2>¸ð´øÇÑ ºÐÀ§±â°¡ °¡µæÇÑ ÀÎÅ×¸®¾î</h2>
-                                <p style="margin-bottom: 0px;">»ç¿ë±â°£: 5°³¿ù</p>
-                                <p>°¡°Ý: ~~¿ø</p>
+                                <h2>ëª¨ë˜í•œ ë¶„ìœ„ê¸°ê°€ ê°€ë“í•œ ì¸í…Œë¦¬ì–´</h2>
+                                <p style="margin-bottom: 0px;">ì‚¬ìš©ê¸°ê°„: 5ê°œì›”</p>
+                                <p>ê°€ê²©: ~~ì›</p>
                                 <ul class="blog-info-link">
-                                    <li></i> ÆÇ¸ÅÀÚ¸í</li>
+                                    <li></i> íŒë§¤ìžëª…</li>
                                     <li></i> 03 Comments</li>
                                 </ul>
                                 <hr>
-                                <!-- È¨Å°Æ® ±¸¼º ÄÚµå begin -->
+                                <!-- í™ˆí‚¤íŠ¸ êµ¬ì„± ì½”ë“œ begin -->
                                 <aside class="single_sidebar_widget instagram_feeds"><br>
-                                    <h3 class="widget_title">È¨Å°Æ® ±¸¼º</h3><br>
+                                    <h3 class="widget_title">í™ˆí‚¤íŠ¸ êµ¬ì„±</h3><br>
                                     <ul class="instagram_row flex-wrap" >
                                         <li style="float:left; margin-right:5px;">
                                             <a href="#">
@@ -173,34 +173,20 @@
                                         </li>
                                     </ul><br>
                                 </aside>
-                                <!-- È¨Å°Æ® ±¸¼º ÄÚµå end -->
+                                <!-- í™ˆí‚¤íŠ¸ êµ¬ì„± ì½”ë“œ end -->
                                 
                                 </div>
                             </div>
                             <br><div class="result_btn">
                             
-                            <!-- ÂòÇÏ±â ÆäÀÌÁö¸¦ ¾ø¾Ö°í ±×³É º¸ÀÌ±â½ÄÀ¸·Î ¹öÆ° ±ÛÀÚ ¹Ù²î°Ô ÇÔ -->
+                            <!-- ì°œí•˜ê¸° íŽ˜ì´ì§€ë¥¼ ì—†ì• ê³  ê·¸ëƒ¥ ë³´ì´ê¸°ì‹ìœ¼ë¡œ ë²„íŠ¼ ê¸€ìž ë°”ë€Œê²Œ í•¨ -->
                                 <button id="btn" class="genric-btn warning-border circle arrow1" 
-                                style="margin-left: 430px;">ÂòÇÏ±â</button>
-
-				                <script src="//code.jquery.com/jquery.min.js"></script>
-								<script>
-								$(function() {
-								  $('#btn').click( function() {
-								    if( $(this).html() == 'ÂòÇÏ±â') {
-								      $(this).html('ÂòÇÑ »óÇ°\nÂòÇÏ±â Ãë¼Ò');
-								    }else {
-								      $(this).html('ÂòÇÏ±â');
-								    }
-								  });
-								});
-								</script>
-									
+                                style="margin-left: 430px;">ì°œí•˜ê¸°</button>
                             <button id="btn" class="genric-btn warning-border circle arrow1" 
-                                style="margin-right: 40px; float:right;">Àå¹Ù±¸´Ï</button><br><br>
+                                style="margin-right: 40px; float:right;">ìž¥ë°”êµ¬ë‹ˆ</button><br><br>
                         </article>
 <br><br><br>
-                        <h1>µÎ¹øÂ° ÁýµéÀÌ</h1><hr>
+                        <h1>ë‘ë²ˆì§¸ ì§‘ë“¤ì´</h1><hr>
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0" src="img/homepage/21.jpg" alt="">
@@ -211,17 +197,17 @@
                             </div>
                             
                             <div class="blog_details"> 
-                                <h2>¸ð´øÇÑ ºÐÀ§±â°¡ °¡µæÇÑ ÀÎÅ×¸®¾î</h2>
-                                <p style="margin-bottom: 0px;">»ç¿ë±â°£: 5°³¿ù</p>
-                                <p>°¡°Ý: ~~¿ø</p>
+                                <h2>ëª¨ë˜í•œ ë¶„ìœ„ê¸°ê°€ ê°€ë“í•œ ì¸í…Œë¦¬ì–´</h2>
+                                <p style="margin-bottom: 0px;">ì‚¬ìš©ê¸°ê°„: 5ê°œì›”</p>
+                                <p>ê°€ê²©: ~~ì›</p>
                                 <ul class="blog-info-link">
-                                    <li></i> ÆÇ¸ÅÀÚ¸í</li>
+                                    <li></i> íŒë§¤ìžëª…</li>
                                     <li></i> 03 Comments</li>
                                 </ul>
                                 <hr>
-                                <!-- È¨Å°Æ® ±¸¼º ÄÚµå begin -->
+                                <!-- í™ˆí‚¤íŠ¸ êµ¬ì„± ì½”ë“œ begin -->
                                 <aside class="single_sidebar_widget instagram_feeds"><br>
-                                    <h3 class="widget_title">È¨Å°Æ® ±¸¼º</h3><br>
+                                    <h3 class="widget_title">í™ˆí‚¤íŠ¸ êµ¬ì„±</h3><br>
                                     <ul class="instagram_row flex-wrap" >
                                         <li style="float:left; margin-right:5px;">
                                             <a href="#">
@@ -260,34 +246,21 @@
                                         </li>
                                     </ul><br>
                                 </aside>
-                                <!-- È¨Å°Æ® ±¸¼º ÄÚµå end -->
+                                <!-- í™ˆí‚¤íŠ¸ êµ¬ì„± ì½”ë“œ end -->
 
                                 </div>
                             </div>
                             <br><div class="result_btn">
                                  <button id="btn" class="genric-btn warning-border circle arrow1" 
-                                style="margin-left: 430px;">ÂòÇÏ±â</button>
+                                style="margin-left: 430px;">ì°œí•˜ê¸°</button>
 
-				                <script src="//code.jquery.com/jquery.min.js"></script>
-								<script>
-								$(function() {
-								  $('#btn').click( function() {
-								    if( $(this).html() == 'ÂòÇÏ±â') {
-								      $(this).html('ÂòÇÑ »óÇ°\nÂòÇÏ±â Ãë¼Ò');
-								    }else {
-								      $(this).html('ÂòÇÏ±â');
-								    }
-								  });
-								});
-								</script>
-								
                                 <button id="btn" class="genric-btn warning-border circle arrow1" 
-                                style="margin-right: 40px; float:right;">Àå¹Ù±¸´Ï</button><br><br>
+                                style="margin-right: 40px; float:right;">ìž¥ë°”êµ¬ë‹ˆ</button><br><br>
                         </article>
 <br><br><br><br>
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <h1>¼¼¹øÂ° ÁýµéÀÌ</h1><hr>
+                                <h1>ì„¸ë²ˆì§¸ ì§‘ë“¤ì´</h1><hr>
                                 <img class="card-img rounded-0" src="img/homepage/23.jpg" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>15</h3>
@@ -296,17 +269,17 @@
                             </div>
                             
                            <div class="blog_details"> 
-                                <h2>¸ð´øÇÑ ºÐÀ§±â°¡ °¡µæÇÑ ÀÎÅ×¸®¾î</h2>
-                                <p style="margin-bottom: 0px;">»ç¿ë±â°£: 5°³¿ù</p>
-                                <p>°¡°Ý: ~~¿ø</p>
+                                <h2>ëª¨ë˜í•œ ë¶„ìœ„ê¸°ê°€ ê°€ë“í•œ ì¸í…Œë¦¬ì–´</h2>
+                                <p style="margin-bottom: 0px;">ì‚¬ìš©ê¸°ê°„: 5ê°œì›”</p>
+                                <p>ê°€ê²©: ~~ì›</p>
                                 <ul class="blog-info-link">
-                                    <li></i> ÆÇ¸ÅÀÚ¸í</li>
+                                    <li></i> íŒë§¤ìžëª…</li>
                                     <li></i> 03 Comments</li>
                                 </ul>
                                 <hr>
-                                <!-- È¨Å°Æ® ±¸¼º ÄÚµå begin -->
+                                <!-- í™ˆí‚¤íŠ¸ êµ¬ì„± ì½”ë“œ begin -->
                                 <aside class="single_sidebar_widget instagram_feeds"><br>
-                                    <h3 class="widget_title">È¨Å°Æ® ±¸¼º</h3><br>
+                                    <h3 class="widget_title">í™ˆí‚¤íŠ¸ êµ¬ì„±</h3><br>
                                     <ul class="instagram_row flex-wrap" >
                                         <li style="float:left; margin-right:5px;">
                                             <a href="#">
@@ -345,34 +318,21 @@
                                         </li>
                                     </ul><br>
                                 </aside>
-                                <!-- È¨Å°Æ® ±¸¼º ÄÚµå end -->
+                                <!-- í™ˆí‚¤íŠ¸ êµ¬ì„± ì½”ë“œ end -->
 
                                 </div>
                             </div>
                             <br><div class="result_btn">
                                  <button id="btn" class="genric-btn warning-border circle arrow1" 
-                                style="margin-left: 430px;">ÂòÇÏ±â</button>
+                                style="margin-left: 430px;">ì°œí•˜ê¸°</button>
 
-				                <script src="//code.jquery.com/jquery.min.js"></script>
-								<script>
-								$(function() {
-								  $('#btn').click( function() {
-								    if( $(this).html() == 'ÂòÇÏ±â') {
-								      $(this).html('ÂòÇÑ »óÇ°\nÂòÇÏ±â Ãë¼Ò');
-								    }else {
-								      $(this).html('ÂòÇÏ±â');
-								    }
-								  });
-								});
-								</script>
-				
                                 <button id="btn" class="genric-btn warning-border circle arrow1" 
-                                style="margin-right: 40px; float:right;">Àå¹Ù±¸´Ï</button><br><br>
+                                style="margin-right: 40px; float:right;">ìž¥ë°”êµ¬ë‹ˆ</button><br><br>
                         </article>
 <br>
 <hr>
 <br><br>
-    <!-- ¼öÁ¤: Áß°íÅ°Æ® ÆÇ¸ÅÇÏ´Â Ä­ end -->
+    <!-- ìˆ˜ì •: ì¤‘ê³ í‚¤íŠ¸ íŒë§¤í•˜ëŠ” ì¹¸ end -->
 
                         <nav class="blog-pagination justify-content-center d-flex">
                             <ul class="pagination">
@@ -397,34 +357,34 @@
                     </div>
                 </div>
                 
-                <!-- ¿·¿¡ Ä«Å×°í¸® È­¸é begin -->
+                <!-- ì˜†ì— ì¹´í…Œê³ ë¦¬ í™”ë©´ begin -->
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
                     	<aside class="single_sidebar_widget tag_cloud_widget">
-                    		<h4 class="widget_title"><input type="button" value="»óÇ° µî·ÏÇÏ±â" 
+                    		<h4 class="widget_title"><input type="button" onClick="location.href='simple_registration.jsp'" value="ìƒí’ˆ ë“±ë¡í•˜ê¸°" 
                     		style="background-color:#5a4b7657;border-color:#fff;height: 45.98438px;width: 155.98438px;"></h4>
-							<p>À§ÀÇ ¹öÆ°À» Å¬¸¯ÇØ¼­ Áß°í·Î ÆÇ¸ÅÇÒ »óÇ°À» µî·ÏÇØº¸¼¼¿ä.</p>   
+							<p>ìœ„ì˜ ë²„íŠ¼ì„ í´ë¦­í•´ì„œ ì¤‘ê³ ë¡œ íŒë§¤í•  ìƒí’ˆì„ ë“±ë¡í•´ë³´ì„¸ìš”.</p>   
 		    	   		</aside>
                         <aside class="single_sidebar_widget post_category_widget">
                             <h4 class="widget_title">Category</h4>
                             <ul class="list cat-list">
                                 <li>
-                                	<p>¸ð´ø</p>
+                                	<p>ëª¨ë˜</p>
                                 </li>
                                 <li>
-                                	<p>À¯´ÏÅ©</p>
+                                	<p>ìœ ë‹ˆí¬</p>
                                 </li>
                                 <li>
-                                	<p>ºÏÀ¯·´</p>
+                                	<p>ë¶ìœ ëŸ½</p>
                                 </li>
                                 <li>
-                                	<p>ºóÆ¼Áö</p>
+                                	<p>ë¹ˆí‹°ì§€</p>
                                 </li>
                                 <li>
-                                	<p>³×Ãß·²</p>
+                                	<p>ë„¤ì¶”ëŸ´</p>
                                 </li>
                                 <li>
-                                	<p>¿¤·¹°­½º</p>
+                                	<p>ì—˜ë ˆê°•ìŠ¤</p>
                                 </li>
                             </ul>
                         </aside>
@@ -433,28 +393,28 @@
                             <h4 class="widget_title">Related tags </h4>
                             <ul class="list">
                                 <li>
-                                    <a href="#">È­ÀÌÆ®</a>
+                                    <a href="#">í™”ì´íŠ¸</a>
                                 </li>
                                 <li>
-                                    <a href="#">¿ìµå</a>
+                                    <a href="#">ìš°ë“œ</a>
                                 </li>
                                 <li>
-                                    <a href="#">±×·¹ÀÌ</a>
+                                    <a href="#">ê·¸ë ˆì´</a>
                                 </li>
                                 <li>
-                                    <a href="#">¸ð´ø</a>
+                                    <a href="#">ëª¨ë˜</a>
                                 </li>
                                 <li>
-                                    <a href="#">ºÏÀ¯·´</a>
+                                    <a href="#">ë¶ìœ ëŸ½</a>
                                 </li>
                                 <li>
-                                    <a href="#">ÁÖ¹æ</a>
+                                    <a href="#">ì£¼ë°©</a>
                                 </li>
                                 <li>
-                                    <a href="#">°Å½Ç</a>
+                                    <a href="#">ê±°ì‹¤</a>
                                 </li>
                                 <li>
-                                    <a href="#">´ó³ÉÀÌ</a>
+                                    <a href="#">ëŒ•ëƒ¥ì´</a>
                                 </li>
                             </ul>
                         </aside>
@@ -463,7 +423,7 @@
             </div>
         </div>
     </section>
-     <!-- ¿·¿¡ Ä«Å×°í¸® È­¸é end -->
+     <!-- ì˜†ì— ì¹´í…Œê³ ë¦¬ í™”ë©´ end -->
     <!--================Blog Area =================-->
 
     <!-- footer part start-->
@@ -506,6 +466,20 @@
     <script src="js/contact.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+		$(function() {
+		  $('#btn').click( function() {
+		    if( $(this).html() == 'ì°œí•˜ê¸°') {
+		      $(this).html('ì°œí•œ ìƒí’ˆ\nì°œí•˜ê¸° ì·¨ì†Œ');
+		    }else {
+		      $(this).html('ì°œí•˜ê¸°');
+		    }
+		  });
+		});
+	</script>
+    
 </body>
 
 </html>

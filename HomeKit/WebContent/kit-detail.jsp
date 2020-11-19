@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
     <!doctype html>
     <html lang="en">
     
     <head>
         <!-- Required meta tags -->
-        <meta charset="EUC-KR">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>¹æ±¸¼® ÀÎÅ×¸®¾î-detail</title>
+        <title>ë°©êµ¬ì„ ì¸í…Œë¦¬ì–´-í‚¤íŠ¸ìƒì„¸</title>
         <link rel="icon" href="img/favicon.png">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -50,56 +50,45 @@
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-    							<!-- ¼öÁ¤: »óÀ§¸Þ´º ÀÌ¸§ ÁöÁ¤ begin -->
+    							<!-- ìˆ˜ì •: ìƒìœ„ë©”ë‰´ ì´ë¦„ ì§€ì • begin -->
                                 <div class="collapse navbar-collapse main-menu-item justify-content-center"
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">¼Ò°³</a>
+                                            <a class="nav-link" href="about.jsp">ì†Œê°œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">ÃßÃµ</a>
+                                            <a class="nav-link" href="recommendation.jsp">ì¶”ì²œ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">Áß°íÅ°Æ® ÆÇ¸Å</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ä¿¹Â´ÏÆ¼
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">Ã¼ÇèÇü Å°Æ®</a>
-                                            </div>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">ì¤‘ê³ í‚¤íŠ¸ íŒë§¤</a>
                                         </li>
                                         <li class="nav-item">
-                                         <a class="nav-link" href="products.jsp">¼îÇÎ¸ô</a>
+                                         <a class="nav-link" href="products.jsp">ì‡¼í•‘ëª°</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">·Î±×ÀÎ</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">È¸¿ø°¡ÀÔ</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">ë¡œê·¸ì¸</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">íšŒì›ê°€ìž…</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //°ü¸®ÀÚ°¡ ·Î±×ÀÎÇÏ¸é %>
-										<a class="dropdown-item" href="product_registration.jsp">»óÇ°µî·Ï</a>
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
+									<%if(email.equals("admin@admin")){ //ê´€ë¦¬ìžê°€ ë¡œê·¸ì¸í•˜ë©´ %>
+										<a class="dropdown-item" href="product_registration.jsp">ìƒí’ˆë“±ë¡</a>
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
 									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">Á¤º¸¼öÁ¤</a> 
-										<a class="dropdown-item" href="LogoutService">·Î±×¾Æ¿ô</a> 
-										<a class="dropdown-item" href="delete.jsp">È¸¿øÅ»Åð</a>
+										<a class="dropdown-item" href="update.jsp">ì •ë³´ìˆ˜ì •</a> 
+										<a class="dropdown-item" href="LogoutService">ë¡œê·¸ì•„ì›ƒ</a> 
+										<a class="dropdown-item" href="delete.jsp">íšŒì›íƒˆí‡´</a>
 									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">Àå¹Ù±¸´Ï</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">ìž¥ë°”êµ¬ë‹ˆ</a>
 							<%} %>
                             </nav>
                         </div>
@@ -115,13 +104,13 @@
                 <div class="col-lg-6">
                 <form>
                         <div class="about_img">
-                        <div><p style="color:rgb(122, 122, 122);">È¨Å°Æ® »óÇ° > È¨Å°Æ® ±¸¼º</p></div><br><br>
+                        <div><p style="color:rgb(122, 122, 122);">í™ˆí‚¤íŠ¸ ìƒí’ˆ > í™ˆí‚¤íŠ¸ êµ¬ì„±</p></div><br><br>
                         <img src="img/homepage/119.jpg" name="pro_img" alt="#" style="height: 400px; width: 500px;"><br>
                     </div>
                 </div>
                 <div class="col-lg-6" style="display:auto;padding-left: 0px;padding-top: 50px;">
                     <div class="about_text" style="width:500px;margin-top: 0px;">
-                        <h3 style="font-size:30px;" name="pro_name">¿ÀÈÄÀÇ ºû°ú »ö°¨ÀÌ ¾î¿ì·¯Áø ÀÚ¸ÅÀÇ º¹Ãþ ¿ÀÇÇ½ºÅÚ</h3>
+                        <h3 style="font-size:30px;" name="pro_name">ì˜¤í›„ì˜ ë¹›ê³¼ ìƒ‰ê°ì´ ì–´ìš°ëŸ¬ì§„ ìžë§¤ì˜ ë³µì¸µ ì˜¤í”¼ìŠ¤í…”</h3>
                         <div class="col-lg-6" style="display:auto;">
                             <div class="about_text" style="padding-top: 10px;width: 600px;">
                                 <div class="rating">
@@ -131,40 +120,40 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(100°³ÀÇ ¸®ºä)</span>
+                                    <span>(100ê°œì˜ ë¦¬ë·°)</span>
                                 </div>
                                 <br><br>
-                                <span style="font-size: 15px;"><h3 style="font-size: 40px;" name="pro_price">100,500 <del>150,000</del><b style="color:red; font-size:25px"> 30% <span style="font-size: 15px;">ÃÖÀú°¡</span></b></h3></span>
-                                <b style="color:red; font-size: 17px">500Æ÷ÀÎÆ®</b><span style="font-size: 17px"> Àû¸³</span><hr>
-                                <p style="font-size: 15px;">Á¶°ÇºÎ ¹«·á¹è¼Û 3000¿ø (5¸¸¿ø ÀÌ»ó ±¸¸Å ½Ã ¹«·á)</p>
+                                <span style="font-size: 15px;"><h3 style="font-size: 40px;" name="pro_price">100,500 <del>150,000</del><b style="color:red; font-size:25px"> 30% <span style="font-size: 15px;">ìµœì €ê°€</span></b></h3></span>
+                                <b style="color:red; font-size: 17px">500í¬ì¸íŠ¸</b><span style="font-size: 17px"> ì ë¦½</span><hr>
+                                <p style="font-size: 15px;">ì¡°ê±´ë¶€ ë¬´ë£Œë°°ì†¡ 3000ì› (5ë§Œì› ì´ìƒ êµ¬ë§¤ ì‹œ ë¬´ë£Œ)</p>
                             </div><br>
-                            <!-- ¼ö·® ÀüÃ¼ Ç¥½Ã begin -->
+                            <!-- ìˆ˜ëŸ‰ ì „ì²´ í‘œì‹œ begin -->
                             <select id="mySelect" onchange="myFunction()" style="width: 500px; height: 50px; font-size: 17px">
-                                <option value="¼±ÅÃÇÏ±â">±¸¸ÅÇÏ½Ç »óÇ°À» ¼±ÅÃÇØÁÖ¼¼¿ä</option>
-                                <option value="È¨Å°Æ® ´ÜÀÏ Á¦Ç° +100,500">È¨Å°Æ® ´ÜÀÏ Á¦Ç° +100,500</option>
-                                <option value="ÀÛÀº ¼ÒÆÄ">ÀÛÀº ¼ÒÆÄ</option>
-                                <option value="Ã¥²ÈÀÌ">Ã¥²ÈÀÌ</option>
-                                <option value="¶óÅº¹Ù±¸´Ï ½Ä¹°">¶óÅº¹Ù±¸´Ï ½Ä¹°</option>
-                                <option value="4ÀÎ¿ë ¼ÒÆÄ">4ÀÎ¿ë ¼ÒÆÄ</option>
-                                <option value="Æ÷½ºÅÍ">Æ÷½ºÅÍ</option>
-                                <option value="ÀÛÀº ½ÄÅ¹&ÀÇÀÚ">ÀÛÀº ½ÄÅ¹&ÀÇÀÚ</option>
-                                <option value="¾ÈÀü¸ÅÆ®">¾ÈÀü¸ÅÆ®</option>
-                                <option value="ÁÖ¹æ Àå³­°¨">ÁÖ¹æ Àå³­°¨</option>
+                                <option value="ì„ íƒí•˜ê¸°">êµ¬ë§¤í•˜ì‹¤ ìƒí’ˆì„ ì„ íƒí•´ì£¼ì„¸ìš”</option>
+                                <option value="í™ˆí‚¤íŠ¸ ë‹¨ì¼ ì œí’ˆ +100,500">í™ˆí‚¤íŠ¸ ë‹¨ì¼ ì œí’ˆ +100,500</option>
+                                <option value="ìž‘ì€ ì†ŒíŒŒ">ìž‘ì€ ì†ŒíŒŒ</option>
+                                <option value="ì±…ê½‚ì´">ì±…ê½‚ì´</option>
+                                <option value="ë¼íƒ„ë°”êµ¬ë‹ˆ ì‹ë¬¼">ë¼íƒ„ë°”êµ¬ë‹ˆ ì‹ë¬¼</option>
+                                <option value="4ì¸ìš© ì†ŒíŒŒ">4ì¸ìš© ì†ŒíŒŒ</option>
+                                <option value="í¬ìŠ¤í„°">í¬ìŠ¤í„°</option>
+                                <option value="ìž‘ì€ ì‹íƒ&ì˜ìž">ìž‘ì€ ì‹íƒ&ì˜ìž</option>
+                                <option value="ì•ˆì „ë§¤íŠ¸">ì•ˆì „ë§¤íŠ¸</option>
+                                <option value="ì£¼ë°© ìž¥ë‚œê°">ì£¼ë°© ìž¥ë‚œê°</option>
                             </select>
 
                             <p id="selected product" style="height: 50px;"></p>
-                            <!-- ¼±ÅÃÇÏ¸é Á¾·ù º¸¿©ÁÖ±â begin -->
+                            <!-- ì„ íƒí•˜ë©´ ì¢…ë¥˜ ë³´ì—¬ì£¼ê¸° begin -->
                             <script>
-                                function myFunction() {// ¼±ÅÃÇÑ »óÇ°³»¿ª°ú °¡°Ý º¸¿©ÁÖ±â
+                                function myFunction() {// ì„ íƒí•œ ìƒí’ˆë‚´ì—­ê³¼ ê°€ê²© ë³´ì—¬ì£¼ê¸°
                                     var x = document.getElementById("mySelect").value;
                                     document.getElementById("selected product").innerHTML = "selected product: " + x; 
                                 }
-                            // ¼±ÅÃÇÏ¸é Á¾·ù º¸¿©ÁÖ±â end
+                            // ì„ íƒí•˜ë©´ ì¢…ë¥˜ ë³´ì—¬ì£¼ê¸° end
                             </script>
                                 <div class="result_btn">
-                                <!-- ¼±ÅÃµÈ »óÇ° º¸³»±â  -->
-                                <a href="basket.jsp" class="genric-btn info radius" style="style=;width: 181.99074000000002px;height: 51.99074px;margin-right: 30px; background-color: rgba(168, 167, 167, 0.5)"><span style="font-size:18px;">Àå¹Ù±¸´Ï</span></a>
-                                <a href="payment.jsp" class="genric-btn info radius" style="width: 181.99074000000002px;height: 51.99074px;padding-left: 30px;background-color: rgba(168, 167, 167, 0.5)"><span style="font-size:18px;">¹Ù·Î ±¸¸Å</span></a>
+                                <!-- ì„ íƒëœ ìƒí’ˆ ë³´ë‚´ê¸°  -->
+                                <a href="basket.jsp" class="genric-btn info radius" style="style=;width: 181.99074000000002px;height: 51.99074px;margin-right: 30px; background-color: rgba(168, 167, 167, 0.5)"><span style="font-size:18px;">ìž¥ë°”êµ¬ë‹ˆ</span></a>
+                                <a href="payment.jsp" class="genric-btn info radius" style="width: 181.99074000000002px;height: 51.99074px;padding-left: 30px;background-color: rgba(168, 167, 167, 0.5)"><span style="font-size:18px;">ë°”ë¡œ êµ¬ë§¤</span></a>
                                 </div>
                                </form>
                             </div>
@@ -174,32 +163,32 @@
             </section>
             <!-- about us css end-->
 
-            <!-- »óÇ°»ó¼¼»çÁø nav¹Ù begin -->
+            <!-- ìƒí’ˆìƒì„¸ì‚¬ì§„ navë°” begin -->
             <div data-sticky-enabled="false" data-sticky-disabled="false" data-sticky-always="false" data-direction="top" data-offset="79.99431610107422" class="sticky-container production-selling-navigation-wrap" style="position: sticky;top: 79.9943px;padding-bottom: 10px;margin-top: 500px;">
                 <div class="nav_product_detail" style="position: relative; background-color: #fdefed49; height: 50px">
                     <nav class="production-selling-navigation__content">
                         <ol class="production-selling-navigation__list" style="padding-top: 10px; margin-left: 100px">
                             <li style="display: inline-block; margin-left:200px">
-                                <a class="class="production-selling-navigation__item production-selling-navigation__item--active"" href="" style="font-size:20px;"><b style="color: rgba(168, 167, 167, 0.753);">»óÇ°Á¤º¸</b></a>
+                                <a class="class="production-selling-navigation__item production-selling-navigation__item--active"" href="" style="font-size:20px;"><b style="color: rgba(168, 167, 167, 0.753);">ìƒí’ˆì •ë³´</b></a>
                             </li>
                             <li style="display: inline-block; margin-left:100px">
-                                <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: rgba(168, 167, 167, 0.753);">¸®ºä</b></a>
+                                <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: rgba(168, 167, 167, 0.753);">ë¦¬ë·°</b></a>
                                 <span class="production-selling-navigation__item__count" style="font-size:15px; color: rgba(168, 167, 167, 0.493);">1,100</span>
                             </li>
                             <li style="display: inline-block; margin-left:100px">
-                                <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: rgba(168, 167, 167, 0.753);"">¹®ÀÇ</b></a>
+                                <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: rgba(168, 167, 167, 0.753);"">ë¬¸ì˜</b></a>
                                 <span class="production-selling-navigation__item__count" style="font-size:15px; color:rgba(168, 167, 167, 0.493);">500</span>
                             </li>
                             <li style="display: inline-block; margin-left:100px">
-                                <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: rgba(168, 167, 167, 0.753);">¹è¼Û/È¯ºÒ</b></a>
+                                <a class="class="production-selling-navigation__item"" href="" style="font-size:20px;"><b style="color: rgba(168, 167, 167, 0.753);">ë°°ì†¡/í™˜ë¶ˆ</b></a>
                             </li>
                         </ol>
                     </nav>
                 </div>
             </div>
-            <!-- »óÇ°»ó¼¼»çÁø nav¹Ù end -->
+            <!-- ìƒí’ˆìƒì„¸ì‚¬ì§„ navë°” end -->
 
-            <!-- »çÀÌµå¹Ù -->
+            <!-- ì‚¬ì´ë“œë°” -->
             <div class="sidenav" style="margin-top: 300px;margin-left: 1500px;">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -207,7 +196,7 @@
                 <a href="#contact">Contact</a>
               </div>
 
-<!-- È¨Å°Æ® »óÇ° ¼³¸í ºÎºÐ -->
+<!-- í™ˆí‚¤íŠ¸ ìƒí’ˆ ì„¤ëª… ë¶€ë¶„ -->
 <br><br><br><br><br>
     <section style="margin-top:50px;padding-left: 250px;width: 1130px;">
         <table>
@@ -227,31 +216,31 @@
         <hr>
     </section>
 
-    <!-- È¨Å°Æ® ±¸¼º º¸¿©ÁÖ´Â begin -->
+    <!-- í™ˆí‚¤íŠ¸ êµ¬ì„± ë³´ì—¬ì£¼ëŠ” begin -->
     <!-- <section class="about_us section_padding" style="margin-bottom: 300px;margin-top: 100px;">
         <div class="container">
             <div class="row align-items-center" style="height: 320px;">
                 <div class="col-lg-6">
-                    <p >Å×¸¶ ÃßÃµ°á°ú > È¨Å°Æ® ¼ÒÇ°±¸¼º</p><br>
+                    <p >í…Œë§ˆ ì¶”ì²œê²°ê³¼ > í™ˆí‚¤íŠ¸ ì†Œí’ˆêµ¬ì„±</p><br>
                     <div class="about_img">
                         <a href="#"><img src="img/homepage/541_9.JPG" alt="#" style="float:left;"></a>
                             <div class="about_text" style="width:1000px;padding-left: 350px; padding-top: 10px;">
-                                <h5>ÈÞÁöÄÉÀÌ½º</h5><hr>
+                                <h5>íœ´ì§€ì¼€ì´ìŠ¤</h5><hr>
                                 
                                 <div class="rating" style="float:left;">
-                                    <span>º°Á¡</span>
+                                    <span>ë³„ì </span>
                                     <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(°³¼ö)</span>
+                                    <span>(ê°œìˆ˜)</span>
                                 </div>
                                     
-                                <p>¼ÒÇ°¼³¸í</p>
+                                <p>ì†Œí’ˆì„¤ëª…</p>
                                 
-                                <p>°¡°Ý</p>
+                                <p>ê°€ê²©</p>
                             </div><br>
                             </div>
                     </div>
@@ -263,22 +252,22 @@
                     <br><div class="about_img">
                         <a href="#"><img src="img/homepage/514_2.JPG" alt="#" style=" float:left;"></a>
                             <div class="about_text" style="width:1000px;padding-left: 350px; padding-top: 10px;">
-                                <h5>Á¶¸í</h5><hr>
+                                <h5>ì¡°ëª…</h5><hr>
                                 
                                 <div class="rating" style="float:left;">
-                                    <span>º°Á¡</span>
+                                    <span>ë³„ì </span>
                                     <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(°³¼ö)</span>
+                                    <span>(ê°œìˆ˜)</span>
                                 </div>
                                     
-                                <p>¼ÒÇ°¼³¸í</p>
+                                <p>ì†Œí’ˆì„¤ëª…</p>
                                 
-                                <p>°¡°Ý</p>
+                                <p>ê°€ê²©</p>
                             </div><br>
                             </div>
                     </div>
@@ -289,22 +278,22 @@
                     <div class="about_img">
                         <a href="#"><img src="img/homepage/514_3.JPG" alt="#" style="float:left;"></a>
                             <div class="about_text" style="width:1000px;padding-left: 350px; padding-top: 10px;">
-                                <h5>Å¹ÀÚ</h5><hr>
+                                <h5>íƒìž</h5><hr>
                                 
                                 <div class="rating" style="float:left;">
-                                    <span>º°Á¡</span>
+                                    <span>ë³„ì </span>
                                     <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(°³¼ö)</span>
+                                    <span>(ê°œìˆ˜)</span>
                                 </div>
                                     
-                                <p>¼ÒÇ°¼³¸í</p>
+                                <p>ì†Œí’ˆì„¤ëª…</p>
                                 
-                                <p>°¡°Ý</p>
+                                <p>ê°€ê²©</p>
                             </div><br>
                             </div>
                     </div>
@@ -315,22 +304,22 @@
                     <div class="about_img">
                         <a href="#"><img src="img/homepage/514_4.JPG" alt="#" style="float:left;"></a>
                             <div class="about_text" style="width:1000px;padding-left: 350px; padding-top: 10px;">
-                                <h5>·¯±×</h5><hr>
+                                <h5>ëŸ¬ê·¸</h5><hr>
                                 
                                 <div class="rating" style="float:left;">
-                                    <span>º°Á¡</span>
+                                    <span>ë³„ì </span>
                                     <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(°³¼ö)</span>
+                                    <span>(ê°œìˆ˜)</span>
                                 </div>
                                     
-                                <p>¼ÒÇ°¼³¸í</p>
+                                <p>ì†Œí’ˆì„¤ëª…</p>
                                 
-                                <p>°¡°Ý</p>
+                                <p>ê°€ê²©</p>
                             </div><br>
                             </div>
                     </div>
@@ -341,22 +330,22 @@
                     <div class="about_img">
                         <a href="#"><img src="img/homepage/514_5.JPG" alt="#" style="float:left;"></a>
                             <div class="about_text" style="width:1000px;padding-left: 350px; padding-top: 10px;">
-                                <h5>1ÀÎ ¼ÒÆÄ</h5><hr>
+                                <h5>1ì¸ ì†ŒíŒŒ</h5><hr>
                                 
                                 <div class="rating" style="float:left;">
-                                    <span>º°Á¡</span>
+                                    <span>ë³„ì </span>
                                     <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(°³¼ö)</span>
+                                    <span>(ê°œìˆ˜)</span>
                                 </div>
                                     
-                                <p>¼ÒÇ°¼³¸í</p>
+                                <p>ì†Œí’ˆì„¤ëª…</p>
                                 
-                                <p>°¡°Ý</p>
+                                <p>ê°€ê²©</p>
                             </div><br>
                             </div>
                     </div>
@@ -367,22 +356,22 @@
                     <div class="about_img">
                         <a href="#"><img src="img/homepage/514_6.JPG" alt="#" style="float:left;">
                             <div class="about_text" style="width:1000px;padding-left: 350px; padding-top: 10px;" >
-                                <h5>¿øÇü Å¹»ó°Å¿ï</h5><hr>
+                                <h5>ì›í˜• íƒìƒê±°ìš¸</h5><hr>
                                 
                                 <div class="rating" style="float:left;">
-                                    <span>º°Á¡</span>
+                                    <span>ë³„ì </span>
                                     <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(°³¼ö)</span>
+                                    <span>(ê°œìˆ˜)</span>
                                 </div>
                                     
-                                <p>¼ÒÇ°¼³¸í</p>
+                                <p>ì†Œí’ˆì„¤ëª…</p>
                                 
-                                <p>°¡°Ý</p>
+                                <p>ê°€ê²©</p>
                             </div><br>
                             </div>
                     </div>
@@ -392,54 +381,54 @@
     </div>
         </div>
     </section> -->
-     <!-- È¨Å°Æ® ±¸¼º º¸¿©ÁÖ´Â end -->
+     <!-- í™ˆí‚¤íŠ¸ êµ¬ì„± ë³´ì—¬ì£¼ëŠ” end -->
 <br><br><br><br><br><br><br><br><br><br><br>
-    <!-- ¿¬°üÅ×¸¶ ºÎºÐ begin -->
+    <!-- ì—°ê´€í…Œë§ˆ ë¶€ë¶„ begin -->
     <!--::industries start::-->
     <section class="best_services section_padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
                     <div class="section_tittle text-center">
-                        <h2 style="color: rgb(136, 136, 136)">¿¬°üÅ×¸¶</h2>
+                        <h2 style="color: rgb(136, 136, 136)">ì—°ê´€í…Œë§ˆ</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
-                        <a href="#"><img src="img/homepage/50 ¿µÈ­ ¼Ó ´Ù¶ô¹æÃ³·³ »ç¶û½º·¯¿öÁø Ã¢°í¹æÀÇ ´ëº¯½Å.jpg" alt="" style="height: 200px; width: 300px;"></a>
-                        <h3>  ¿µÈ­ ¼Ó ´Ù¶ô¹æÃ³·³ »ç¶û½º·¯¿öÁø Ã¢°í¹æÀÇ ´ëº¯½Å</a></h3>
-                        <p>°¡°Ý</p>
+                        <a href="#"><img src="img/homepage/50 ì˜í™” ì† ë‹¤ë½ë°©ì²˜ëŸ¼ ì‚¬ëž‘ìŠ¤ëŸ¬ì›Œì§„ ì°½ê³ ë°©ì˜ ëŒ€ë³€ì‹ .jpg" alt="" style="height: 200px; width: 300px;"></a>
+                        <h3>  ì˜í™” ì† ë‹¤ë½ë°©ì²˜ëŸ¼ ì‚¬ëž‘ìŠ¤ëŸ¬ì›Œì§„ ì°½ê³ ë°©ì˜ ëŒ€ë³€ì‹ </a></h3>
+                        <p>ê°€ê²©</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
-                        <a href="#"><img src="img/homepage/49 22³â µÈ ¾ÆÆÄÆ®¿¡ Ã¤¿ö³ÖÀº ¿ì¸®¸¸ÀÇ »ö.jpg" alt="" style="height: 200px; width: 300px;"></a>
-                        <h3>  22³â µÈ ¾ÆÆÄÆ®¿¡ Ã¤¿ö³ÖÀº ¿ì¸®¸¸ÀÇ »ö</a></h3>
-                        <p>°¡°Ý</p>
+                        <a href="#"><img src="img/homepage/49 22ë…„ ëœ ì•„íŒŒíŠ¸ì— ì±„ì›Œë„£ì€ ìš°ë¦¬ë§Œì˜ ìƒ‰.jpg" alt="" style="height: 200px; width: 300px;"></a>
+                        <h3>  22ë…„ ëœ ì•„íŒŒíŠ¸ì— ì±„ì›Œë„£ì€ ìš°ë¦¬ë§Œì˜ ìƒ‰</a></h3>
+                        <p>ê°€ê²©</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
-                        <a href="#"><img src="img/homepage/47 »çºÎÀÛ»çºÎÀÛ ´ÜÁ¡À» ÀåÁ¡À¸·Î ±Øº¹ÇØ°¡´Â ¿ì¸®Áý.jpg" alt="" style="height: 200px; width: 300px;"></a>
-                        <h3> »çºÎÀÛ»çºÎÀÛ ´ÜÁ¡À» ÀåÁ¡À¸·Î ±Øº¹ÇØ°¡´Â ¿ì¸®Áý</a></h3>
-                        <p>°¡°Ý</p>
+                        <a href="#"><img src="img/homepage/47 ì‚¬ë¶€ìž‘ì‚¬ë¶€ìž‘ ë‹¨ì ì„ ìž¥ì ìœ¼ë¡œ ê·¹ë³µí•´ê°€ëŠ” ìš°ë¦¬ì§‘.jpg" alt="" style="height: 200px; width: 300px;"></a>
+                        <h3> ì‚¬ë¶€ìž‘ì‚¬ë¶€ìž‘ ë‹¨ì ì„ ìž¥ì ìœ¼ë¡œ ê·¹ë³µí•´ê°€ëŠ” ìš°ë¦¬ì§‘</a></h3>
+                        <p>ê°€ê²©</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
-                        <a href="#"> <img src="img/homepage/46 ÇÑ³²µ¿ Àç°³¹ßÀÌ ¿¹Á¤µÈ ´Üµ¶ÁÖÅÃÀÇ Last Dance.jpg" alt="" style="height: 200px; width: 300px;"></a>
-                        <h3> ÇÑ³²µ¿ Àç°³¹ßÀÌ ¿¹Á¤µÈ ´Üµ¶ÁÖÅÃÀÇ Last Dance</h3>
-                        <p>°¡°Ý</p>
+                        <a href="#"> <img src="img/homepage/46 í•œë‚¨ë™ ìž¬ê°œë°œì´ ì˜ˆì •ëœ ë‹¨ë…ì£¼íƒì˜ Last Dance.jpg" alt="" style="height: 200px; width: 300px;"></a>
+                        <h3> í•œë‚¨ë™ ìž¬ê°œë°œì´ ì˜ˆì •ëœ ë‹¨ë…ì£¼íƒì˜ Last Dance</h3>
+                        <p>ê°€ê²©</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--::industries end::-->
-    <!-- ¿¬°üÅ×¸¶ ºÎºÐ end -->
-    <!-- ¼öÁ¤: Àü¹®°¡ ÃßÃµ¸ðµå¿¡¼­ ÀÌµ¿ÇÒ ÃßÃµ°á°ú ÆäÀÌÁö end -->
+    <!-- ì—°ê´€í…Œë§ˆ ë¶€ë¶„ end -->
+    <!-- ìˆ˜ì •: ì „ë¬¸ê°€ ì¶”ì²œëª¨ë“œì—ì„œ ì´ë™í•  ì¶”ì²œê²°ê³¼ íŽ˜ì´ì§€ end -->
 
     <br><br><br><br><br>
   

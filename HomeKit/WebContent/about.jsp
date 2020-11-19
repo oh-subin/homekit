@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
 
 <head>
         <!-- Required meta tags -->
-        <meta charset="EUC-KR">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>�汸�� ���׸���-�Ұ�</title>
+        <title>방구석 인테리어-소개</title>
         <link rel="icon" href="img/favicon.png">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -50,56 +50,45 @@
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-    							<!-- ����: �����޴� �̸� ���� begin -->
+    							<!-- 수정: 상위메뉴 이름 지정 begin -->
                                 <div class="collapse navbar-collapse main-menu-item justify-content-center"
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">�Ұ�</a>
+                                            <a class="nav-link" href="about.jsp">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">��õ</a>
+                                            <a class="nav-link" href="recommendation.jsp">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">�߰�ŰƮ �Ǹ�</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ŀ�´�Ƽ
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">ü���� ŰƮ</a>
-                                            </div>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.jsp">���θ�</a>
+                                            <a class="nav-link" href="products.jsp">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">�α���</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">ȸ������</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //�����ڰ� �α����ϸ� %>
-										<a class="dropdown-item" href="product_registration.jsp">��ǰ���</a>
-										<a class="dropdown-item" href="LogoutService">�α׾ƿ�</a> 
+									<%if(email.equals("admin@admin")){ //관리자가 로그인하면 %>
+										<a class="dropdown-item" href="product_registration.jsp">상품등록</a>
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
 									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">��������</a> 
-										<a class="dropdown-item" href="LogoutService">�α׾ƿ�</a> 
-										<a class="dropdown-item" href="delete.jsp">ȸ��Ż��</a>
+										<a class="dropdown-item" href="update.jsp">정보수정</a> 
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+										<a class="dropdown-item" href="delete.jsp">회원탈퇴</a>
 									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">��ٱ���</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
 							<%} %>
                             </nav>
                         </div>
@@ -107,7 +96,7 @@
                 </div>
             </div>
         </header>
- <!-- ����: �����޴� �̸� ���� end -->
+ <!-- 수정: 상위메뉴 이름 지정 end -->
  <!-- Header part end-->
                         
 <br><br>
@@ -122,11 +111,11 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about_text">
-                        <h5>ȨŰƮ��?</h5>
-                        <h2>���� ���׸�� ������ϴ� ����� ���� ŰƮ</h2>
-                        <p>�ڷγ�19, ��ȸ�� �Ÿ��α� �������� ���� �ӹ��� �ð��� �����ϴ� �ô�, ���׸����� ������ ���� �� �����ϰ� �ֽ��ϴ�.</p>
-                        <p>������ ���õ� ����� ���׸��� �÷������� ��ٱ��Ͽ� ���Ǹ� �����̳���? ���׸��� ��ǰ�� �̻۵� ���� ���׸�� �ϴ� �� ��������?</p>
-                        <p>�׷� ����� ���� �غ��߽��ϴ�. �츮 ����Ʈ���� �����ϴ� ȨŰƮ�� ����� ���� ���� ������ �ٸ纸����. ���ú��� ��ŵ� ���׸��� �������� �� �� �ֽ��ϴ�!</p>
+                        <h5>홈키트란?</h5>
+                        <h2>셀프 인테리어를 어려워하는 당신을 위한 키트</h2>
+                        <p>코로나19, 사회적 거리두기 시행으로 집에 머무는 시간이 증가하는 시대, 인테리어의 관심은 점점 더 증가하고 있습니다.</p>
+                        <p>하지만 오늘도 당신은 인테리어 플랫폼에서 장바구니에 물건만 담으셨나요? 인테리어 소품은 이쁜데 막상 인테리어를 하는 건 어려우셨죠?</p>
+                        <p>그런 당신을 위해 준비했습니다. 우리 사이트에서 제공하는 홈키트로 당신의 방을 쉽고 빠르게 꾸며보세요. 오늘부터 당신도 인테리어 전문가가 될 수 있습니다!</p>
                     </div>
                 </div>
             </div>
@@ -138,7 +127,7 @@
 	style="margin-top: 400px;margin-left: 700px;">
 
     <!--top place start-->
-    <div><h1 style="margin-top: 40px;margin-left: 740px;">�޴� ����</h1></div>
+    <div><h1 style="margin-top: 40px;margin-left: 740px;">메뉴 구성</h1></div>
     <section class="event_part section_padding" style="margin-top: 50px;height: 570px;padding-top: 10px;">
         <div class="container">
             <div class="row">
@@ -148,11 +137,11 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content">
-                                        <h2>��õ</h2>
-                                        <h5>��õ�޴� ����</h5>
-                                        <p><strong>1. �±� �����ϱ�:</strong> ���׸�� �ʿ��� ������ �±׷� �Է��մϴ�.<br></p>
-                                        <p><strong>2. ���� ����ϱ�:</strong> ���׸��� ��Ÿ���� ���� ��ȣ�ϴ� ���׸��� ������ ������ ����մϴ�</p>
-                                        <a href="professional_mode.jsp" class="btn_1">��õ������ �̵��ϱ�</a> 
+                                        <h2>추천</h2>
+                                        <h5>추천받는 과정</h5>
+                                        <p><strong>1. 태그 선택하기:</strong> 인테리어에 필요한 사항을 태그로 입력합니다.<br></p>
+                                        <p><strong>2. 평점 등록하기:</strong> 인테리어 스타일을 보고 선호하는 인테리어 순으로 평점을 등록합니다</p>
+                                        <a href="recommendation.jsp" class="btn_1">추천받으러 이동하기</a> 
                                     </div>
                                 </div>
                             </div>
@@ -161,11 +150,11 @@
                             <div class="row justify-content-end">
                                 <div class="ol-lg-6 col-md-6">
                                     <div class="event_slider_content">
-                                        <h2>�߰�ŰƮ �Ǹ�</h2>
-                                        <p>���ο� ȨŰƮ�� ���׸�� �ٲٰ� ���� ����ڸ� ���� �������Դϴ�. ������� �ʴ� ȨŰƮ�� ���Ȱ� ���ο� ȨŰƮ�� ������ �� �ֽ��ϴ�.
-                                        	<br>�����ڴ� ȨŰƮ�� ���� ���ݿ� ������ �� �־� ���׸��� ����� �δ��� ����帳�ϴ�.</p>
-                                        <!-- "javascript:void(0)" : Ŭ�� �� �ǰ�  -> ������ �̵��� �� ���� ������ -->
-                                        <a href="Used_Homekit_Sale.jsp" class="btn_1">�߰�ŰƮ �Ǹ��Ϸ� �̵��ϱ�</a>
+                                        <h2>중고키트 판매</h2>
+                                        <p>새로운 홈키트로 인테리어를 바꾸고 싶은 사용자를 위한 페이지입니다. 사용하지 않는 홈키트를 되팔고 새로운 홈키트를 구매할 수 있습니다.
+                                        	<br>구매자는 홈키트를 값싼 가격에 구매할 수 있어 인테리어 비용의 부담을 덜어드립니다.</p>
+                                        <!-- "javascript:void(0)" : 클릭 안 되게  -> 페이지 이동할 게 없기 때문에 -->
+                                        <a href="Used_Homekit_Sale.jsp" class="btn_1">중고키트 판매하러 이동하기</a>
                                     </div>
                                 </div>
                             </div>
@@ -174,10 +163,10 @@
                             <div class="row justify-content-end">
                                 <div class="ol-lg-6 col-md-6">
                                     <div class="event_slider_content">
-                                        <h2>���θ�</h2>
-                                        <p>�پ��� ȨŰƮ�� �ѹ��� ������ �� �ִ� ȨŰƮ ���θ��Դϴ�. 
-                                        <br>���� ��ǰ�� ���غ��� ���ϴ� ȨŰƮ�� ��󺸼���!</p>
-                                        <a href="products.jsp" class="btn_1">���θ� �����Ϸ� �̵��ϱ�</a>
+                                        <h2>쇼핑몰</h2>
+                                        <p>다양한 홈키트를 한번에 만나볼 수 있는 홈키트 쇼핑몰입니다. 
+                                        <br>여러 상품을 비교해보며 원하는 홈키트를 골라보세요!</p>
+                                        <a href="products.jsp" class="btn_1">쇼핑몰 구경하러 이동하기</a>
                                     </div>
                                         
                                 </div>
@@ -188,7 +177,7 @@
              </div>
          </div>
  </section>
-    <!-- ����: ����Ʈ �Ұ� end -->
+    <!-- 수정: 사이트 소개 end -->
     <!--top place end-->
 
     <br><br><br><br><br><br><br><br><br>

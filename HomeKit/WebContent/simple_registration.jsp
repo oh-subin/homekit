@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
     <html lang="en">
     
@@ -7,7 +7,7 @@
             <!-- Required meta tags -->
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>�汸�� ���׸���-���ܵ��</title>
+            <title>방구석 인테리어-간단등록</title>
             <link rel="icon" href="img/favicon.png">
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -50,56 +50,45 @@
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-    							<!-- ����: �����޴� �̸� ���� begin -->
+    							<!-- 수정: 상위메뉴 이름 지정 begin -->
                                 <div class="collapse navbar-collapse main-menu-item justify-content-center"
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">�Ұ�</a>
+                                            <a class="nav-link" href="about.jsp">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="professional_mode.jsp">��õ</a>
+                                            <a class="nav-link" href="recommendation.jsp">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">�߰�ŰƮ �Ǹ�</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Ŀ�´�Ƽ
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="SNS.jsp">SNS</a>
-                                                <a class="dropdown-item" href="#">ü���� ŰƮ</a>
-                                            </div>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item">
-                                           <a class="nav-link" href="products.jsp">���θ�</a>
+                                           <a class="nav-link" href="products.jsp">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">�α���</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">ȸ������</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
 									id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false"><%=email %></a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<%if(email.equals("admin@admin")){ //�����ڰ� �α����ϸ� %>
-										<a class="dropdown-item" href="product_registration.jsp">��ǰ���</a>
-										<a class="dropdown-item" href="LogoutService">�α׾ƿ�</a> 
+									<%if(email.equals("admin@admin")){ //관리자가 로그인하면 %>
+										<a class="dropdown-item" href="product_registration.jsp">상품등록</a>
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
 									<%}else{ %>
-										<a class="dropdown-item" href="update.jsp">��������</a> 
-										<a class="dropdown-item" href="LogoutService">�α׾ƿ�</a> 
-										<a class="dropdown-item" href="delete.jsp">ȸ��Ż��</a>
+										<a class="dropdown-item" href="update.jsp">정보수정</a> 
+										<a class="dropdown-item" href="LogoutService">로그아웃</a> 
+										<a class="dropdown-item" href="delete.jsp">회원탈퇴</a>
 									<%} %>
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">��ٱ���</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
 							<%} %>
                             </nav>
                         </div>
@@ -107,16 +96,16 @@
                 </div>
             </div>
         </header>
-    <!-- ����: �����޴� �̸� ���� end -->
+    <!-- 수정: 상위메뉴 이름 지정 end -->
     <!-- Header part end-->
            
     
             <!-- Sidebar -->
             <div class="w3-sidebar w3-light-grey w3-bar-block"style="width: 250px;">
-                <h3 class="w3-bar-item">��ǰ����</h3>
-                <a href="#" class="w3-bar-item w3-button">��ǰ�з����� ��</a>
-                <a href="#" class="w3-bar-item w3-button">��ǰ�ɼǰ��� ��</a>
-                <!-- �޴��� ���� -->
+                <h3 class="w3-bar-item">상품관리</h3>
+                <a href="#" class="w3-bar-item w3-button">상품분류관리 ▼</a>
+                <a href="#" class="w3-bar-item w3-button">상품옵션관리 ▼</a>
+                <!-- 메뉴바 생성 -->
                 <script>
                     function slide(Id, interval, to)
                     {
@@ -189,77 +178,77 @@
                         display:none;
                     }
                     </style>
-                    <a href="#" class="w3-bar-item w3-button" onClick="slide('sub1');" style="padding-left: 15px;">��ǰ��� ��</a>
+                    <a href="#" class="w3-bar-item w3-button" onClick="slide('sub1');" style="padding-left: 15px;">상품등록 ▼</a>
                     <div id="sub1" class="submenu">
-                        <a href="#" style="padding-left:30px;">���� ���</a>
-                        <div style="padding-left:30px;">��ǰ ���</div>
-                        <div style="padding-left:30px;">��Ʈ��ǰ ���</div>
-                        <div style="padding-left:30px;">���� ���</div>
+                        <a href="#" style="padding-left:30px;">간단 등록</a>
+                        <div style="padding-left:30px;">상품 등록</div>
+                        <div style="padding-left:30px;">세트상품 등록</div>
+                        <div style="padding-left:30px;">엑셀 등록</div>
                     </div>
-                <!-- �޴��� ���� -->
-                <a href="#" class="w3-bar-item w3-button">��ǰ���� ��</a>
-                <a href="#" class="w3-bar-item w3-button">��ǰǥ�ð��� ��</a>
-                <a href="#" class="w3-bar-item w3-button">�Ǹźз����� ��</a>
-                <a href="#" class="w3-bar-item w3-button">������� ��</a>
-                <a href="#" class="w3-bar-item w3-button" style="margin-bottom:30px;">��ȹ�� ���� ��</a>
-                <b style="margin-top:30px; margin-left: 18px; ">�޴��� �˻�</b> 
-                <input type="text" placeholder="�޴����� �˻��ϼ���." style="margin-top:10px; margin-left: 16px; width:220px;">
-                <b style="margin-top:30px; margin-left: 18px;">���ã�� �޴� </b><button style="margin-top:30px;">����</button>
+                <!-- 메뉴바 생성 -->
+                <a href="#" class="w3-bar-item w3-button">상품관리 ▼</a>
+                <a href="#" class="w3-bar-item w3-button">상품표시관리 ▼</a>
+                <a href="#" class="w3-bar-item w3-button">판매분류관리 ▼</a>
+                <a href="#" class="w3-bar-item w3-button">재고관리 ▼</a>
+                <a href="#" class="w3-bar-item w3-button" style="margin-bottom:30px;">기획전 관리 ▼</a>
+                <b style="margin-top:30px; margin-left: 18px; ">메뉴얼 검색</b> 
+                <input type="text" placeholder="메뉴얼을 검색하세요." style="margin-top:10px; margin-left: 16px; width:220px;">
+                <b style="margin-top:30px; margin-left: 18px;">즐겨찾는 메뉴 </b><button style="margin-top:30px;">설정</button>
             </div>
             <!-- Sidebar -->
     
     
             <br>
-            <p style="text-align: right; margin-right:150px;">Ȩ > ��ǰ���� > ��ǰ��� > ���ܵ��</p>
-            <h2 style="margin-left: 350px;">���ܵ��</h2><hr>
-            <p style="margin-left: 350px;">���θ��� ��ǰ�� �����ϴµ� �ʿ��� �⺻������ �Է��մϴ�.</p>
-            <p style="margin-left: 350px;">���� ��ǰ���� ������ �ʿ��Ͻø�, ��ǰ������� �̵��ϼ���.</p>
-            <button onclick="registration()" style="margin-left:1300px; margin-bottom: 10px;">��ǰ ����ϱ�</button>
+            <p style="text-align: right; margin-right:150px;">홈 > 상품관리 > 상품등록 > 간단등록</p>
+            <h2 style="margin-left: 350px;">간단등록</h2><hr>
+            <p style="margin-left: 350px;">쇼핑몰에 상품을 진열하는데 필요한 기본정보를 입력합니다.</p>
+            <p style="margin-left: 350px;">상세한 상품정보 관리가 필요하시면, 상품등록으로 이동하세요.</p>
+            <button onclick="registration()" style="margin-left:1300px; margin-bottom: 10px;">상품 등록하기</button>
             <script>
             function registration() {
-            	alert("��ǰ ����� �Ϸ�Ǿ����ϴ�.");
+            	alert("상품 등록이 완료되었습니다.");
             }
             </script>
             
-            <!-- ��ǰ��� �޴� ���̺� -->
+            <!-- 상품등록 메뉴 테이블 -->
             <table border="2px" style="margin-left: 350px; float:left;">
                 <tr>
-                    <th width="300" style="text-align: center;">��ǰ��</th>
+                    <th width="300" style="text-align: center;">상품명</th>
                     <th width="800" height="70">
-                        <input type="text" placeholder="����) ȨŰƮ��" style="margin-left:10px;">
+                        <input type="text" placeholder="예시) 홈키트명" style="margin-left:10px;">
                     </th>
                 </tr>
                 <tr>
-                    <th width="300" style="text-align: center;">�ǸŰ�</th>
-                    <th width="800" height="50" ><input type="text" style="margin-left:10px;">��</th>
+                    <th width="300" style="text-align: center;">판매가</th>
+                    <th width="800" height="50" ><input type="text" style="margin-left:10px;">원</th>
                 </tr>
                 <tr>
-                    <th width="300" style="text-align: center;">��ǰ�ɼǼ���</th>
+                    <th width="300" style="text-align: center;">상품옵션설정</th>
                     <th width="800" height="70" > 
-                       <input type="radio" name="chk_info" value="�ɼǻ��" style="margin-left:10px;">�ɼǻ��
-                       <input type="radio" name="chk_info" value="�ɼǹ̻��">�ɼǹ̻��
-                       <p style="margin-left:10px; margin-top:10px;">��ǰ�ɼ��̶�, ��ǰ�� ����, ������ �� ���ð��� ���մϴ�.</p>
+                       <input type="radio" name="chk_info" value="옵션사용" style="margin-left:10px;">옵션사용
+                       <input type="radio" name="chk_info" value="옵션미사용">옵션미사용
+                       <p style="margin-left:10px; margin-top:10px;">상품옵션이란, 상품의 색상, 사이즈 등 선택값을 뜻합니다.</p>
                 </th>
                 </tr>
                 <tr>
-                    <th width="300" style="text-align: center;">��ǰ�̹������</th>
+                    <th width="300" style="text-align: center;">상품이미지등록</th>
                     <th width="800" height="300">
                         <img src="https://e7.pngegg.com/pngimages/982/97/png-clipart-computer-icons-camera-iphone-graphy-camera-photography-camera-icon.png" alt="" style="height: 200px;width: 200px; margin-left:10px;">
-                        <button style="margin-left:10px; margin-bottom: 30px; margin-top:30px;">���� ���</button><br>
+                        <button style="margin-left:10px; margin-bottom: 30px; margin-top:30px;">사진 등록</button><br>
                     </th>
                 </tr>
                 <tr>
-                    <th width="300" style="text-align: center;">��ǰ��༳��</th>
+                    <th width="300" style="text-align: center;">상품요약설명</th>
                     <th width="800" height="150">
                         <input type="text" style="margin-left:10px; width: 600px;">
-                        <p style="margin-left:10px; margin-top:30px;">����ϴ� ��ǰ�� ���� ������ ª�� ����Ͽ� ����մϴ�.</p>
+                        <p style="margin-left:10px; margin-top:30px;">등록하는 상품에 대한 설명을 짧게 요약하여 등록합니다.</p>
                     </th>
                 </tr>
                 <tr>
-                    <th width="300" style="text-align: center;">��ǰ�󼼼���</th>
+                    <th width="300" style="text-align: center;">상품상세설명</th>
                     <th width="800" height="150">
                         <textarea type="text" style="height: 300px; width: 600px; margin-left:10px;" 
-                        placeholder="��ǰ�� ���� ���� ������ �����ּ���."> </textarea>
+                        placeholder="상품에 대한 상세한 설명을 적어주세요."> </textarea>
                     </th>
                 </tr>
             </table>

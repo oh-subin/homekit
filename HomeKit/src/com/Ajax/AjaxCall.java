@@ -15,11 +15,11 @@ import com.DAO.MemberDAO;
 public class AjaxCall extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		System.out.println("서버페이지호출");
+		//System.out.println("서버페이지호출");
 		
 		String email = request.getParameter("email");
 		
-		System.out.println("사용자가 입력한 이메일 :"+email);
+		//System.out.println("사용자가 입력한 이메일 :"+email);
 		
 		MemberDAO dao = new MemberDAO();
 		boolean check = dao.idCheck(email);
