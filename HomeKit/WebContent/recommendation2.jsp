@@ -121,7 +121,7 @@
                </div>
             </div>
          </div>
-         <div class="row gallery-item">
+         <div class="row gallery-item" style="margin-left: 350.; margin-left: 250px; width: 1200px;">
 
             <!-- 반복문 시작 지점 -->
             <%

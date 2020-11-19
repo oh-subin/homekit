@@ -40,7 +40,15 @@
 
 <body>
 	<%
-      String email = (String)session.getAttribute("email");   
+     String email = (String)session.getAttribute("email");  
+	 String rec_space = (String) request.getAttribute("rec_space");
+     String rec_size = (String) request.getAttribute("rec_size");
+     String rec_familyShape = (String) request.getAttribute("rec_familyShape");
+     
+     //System.out.println(rec_space);
+     //System.out.println(rec_size);
+     //System.out.println(rec_familyShape);
+     
    %>
 	<!--::header part start::-->
         <header class="main_menu">
@@ -161,10 +169,15 @@
 						</div>
 						<br> <br>
 						<div class="result_btn">
-							<a href="recommendation2.jsp" class="genric-btn info radius"
-								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">재추천
-								받기</a> <a href="payment.jsp" class="genric-btn info radius"
-								style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
+						<form action="FirstRecommendation2" method="post">
+							<input type="hidden"  value=<%= rec_space %> name="space"/>
+							<input type="hidden" value=<%= rec_size%> name="size"/>
+							<input type="hidden" value=<%= rec_familyShape%> name="familyShape"/>
+							<input type="submit" class="genric-btn info radius" value="재추천	받기"
+								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">
+						</form> 
+							<a href="payment.jsp" class="genric-btn info radius"
+							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
 
 						</div>
 					</div>
@@ -341,6 +354,7 @@
 		  $('[data-toggle="popover"]').popover({trigger: "hover"})
 		})
 	</script>
+	
 </body>
 
 </html>

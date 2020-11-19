@@ -45,13 +45,8 @@ public class FirstRecommendation extends HttpServlet {
 		request.setAttribute("rec_size", rec_size);
 		request.setAttribute("rec_familyShape", rec_familyShape);
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("recommendation2.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("result.jsp");
 		dispatcher.forward(request, response);
-		
-		response.sendRedirect("result.jsp");
-		
-		
-		
 		
 		
 	}
