@@ -110,7 +110,7 @@
  <!-- 수정: 상위메뉴 이름 지정 end -->
  <!-- Header part end-->
  <!-- 슬라이드바 start -->
-         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="height: 800px; width: 900px; margin-left: 200px; margin-top: 50px;">
+         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="height: 800px; width: 900px; margin-left: 370px; margin-top: 50px;">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
