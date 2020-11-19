@@ -1,11 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+
 <!DOCTYPE html>
-<% request.setCharacterEncoding("EUC-KR"); %>
+<% request.setCharacterEncoding("utf-8"); %>
 <html lang="en">
 <head>
 
-  <meta charset="EUC-KR">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -41,7 +42,7 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">회占쏙옙탈占쏙옙</h1>
+                    <h1 class="h4 text-gray-900 mb-4">회원탈퇴</h1>
                   </div>
                   <form class="user" action ="DeleteService" method="post">
                     <div class="form-group">
@@ -50,11 +51,11 @@
                     <div class="form-group">
                       <input type="password" name = "pw" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     </div>
-                    <input type= "submit" value ="����" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
+                    <input type= "submit" value ="탈퇴하기" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="main.jsp">占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙占쏙옙 占쏙옙占싣곤옙占쏙옙</a>
+                    <a class="small" href="main.jsp">메인페이지로 돌아가기</a>
               	</div>
                 </div>
               </div>

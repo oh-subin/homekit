@@ -79,7 +79,7 @@
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="QA.jsp">Q&A</a>
+                                            <a class="nav-link" href="products.jsp">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
