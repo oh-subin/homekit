@@ -15,13 +15,13 @@ public class FirstRecommendation extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("euc-kr");
 		
 //		--- 플라스크에서 값 받아오기(1차추천)
-//		String results = request.getParameter("results");
+		String results = request.getParameter("results");
 //		
 //		
-//		  System.out.println("result");
+		System.out.println("results");
 //		
 //		  String select_space1= results.substring(0, 6);
 //		  String select_size1= results.substring(7, 13);

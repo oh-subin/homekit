@@ -43,7 +43,7 @@
    <%
       String email = (String)session.getAttribute("email");   
    %>
-
+<% request.setCharacterEncoding("euc-kr"); %>
    <!--::header part start::-->
         <header class="main_menu">
             <div class="main_menu_iner">
@@ -129,18 +129,42 @@
                     <div class="tab-pane fade show active" id="hotel" role="tabpanel"
                         aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
                         <div class="booking_form">
-                           <form action="#" name ="rec1"  method="post">
+                           <form action="http://192.168.219.129:5000/firstrec" name ="rec1" id="recommend1" method="post">
                            
-                            <!-- action 두번 보내기  1:플라스크(1차추천용) / 2:서블릿에(2차추천용) -->
-                            <script>
-						    function twosend(){
-						 	   document.rec1.action="http://192.168.50.26:5000/firstrec";
-						 	   document.rec1.submit(); 
-						
-						 	   document.rec1.action="FirstRecommendation";
-						 	   document.rec1.submit();
-						 	   }
-						    </script>
+                       <script type="text/javascript">
+
+	$(document).ready(function() 
+
+	{
+
+		$("#rec_btn").click(function()
+
+		{
+
+			var formData = $("#recommend1").serialize();
+
+			$.ajax({
+	 					type : "POST",
+	 					url : "http://192.168.219.129:5000/firstrec",
+	 					cache : false,
+	 					data : formData,
+	 					success : onSuccess,
+	 					error : onError
+			});
+			$.ajax({
+	 					type : "POST",
+	 					url : "FirstRecommendation",
+	 					cache : false,
+	 					data : formData,
+	 					success : onSuccess,
+	 					error : onError
+			});
+		});
+	});
+	function onSuccess(json, status){alert($.trim(json));}
+	function onError(data, status){alert("error");}
+
+</script>
                                                       
                               <div class="form-row">
                                  <div class="form_colum">
@@ -177,7 +201,7 @@
                                  </div>
 
                                  <div class="form_btn">
-                                    <a href="result.jsp"><input type="submit" value="추천" onClick='twosend()' sclass="btn_1"></a>
+                                   <input type="submit" value="추천" id = "rec_btn" onClick='twosend()' sclass="btn_1">
                                  </div>
                               </div>
                            </form>

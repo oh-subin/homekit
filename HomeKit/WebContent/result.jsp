@@ -39,18 +39,34 @@
 </head>
 
 <body>
+	<% request.setCharacterEncoding("euc-kr"); %>
 	<%
+	 String results = request.getParameter("results");
+	// String TITLE = request.getParameter("TITLE");
+	// String SPACE = request.getParameter("SPACE");
+	// String SIZE = request.getParameter("SIZE");
+	// String FAMILYSHAPE = request.getParameter("FAMILYSHAPE");
+	// String STYLE = request.getParameter("STYLE");
+	// String URL = request.getParameter("URL");
+	
+	
      String email = (String)session.getAttribute("email");  
 	 String rec_space = (String) request.getAttribute("rec_space");
      String rec_size = (String) request.getAttribute("rec_size");
      String rec_familyShape = (String) request.getAttribute("rec_familyShape");
+   
      
-     //System.out.println(rec_space);
-     //System.out.println(rec_size);
-     //System.out.println(rec_familyShape);
+	  
+     if(results != null){
+    	 System.out.println(results);
+	  }
+	
      
+     
+     
+
    %>
-	<!--::header part start::-->
+   	<!--::header part start::-->
         <header class="main_menu">
             <div class="main_menu_iner">
                 <div class="container">
@@ -141,7 +157,8 @@
 				<div class="col-lg-6">
 				<h4>테마 추천 결과</h4><br>
 					<div class="about_img">
-						<img src="img/homepage/514.jpg" alt="#"
+																	<!-- 이미지 src안에 rec_imgurl넣기 -->
+						<img src="img/homepage/15.jpg" alt="#"
 							style="height: 400px; width: 500px;"><br>
 						<hr>
 					</div>
@@ -150,7 +167,7 @@
 				<div class="col-lg-6" style="display: auto; padding-left: 0px;">
 					<div class="about_text" style="width: 500px; margin-top: 50px;">
 						
-						<h3 style="font-size: 30px;">오후의 빛과 색감이 어우러진 자매의 복층 오피스텔</h3>
+						<h3 style="font-size: 30px;"><%= results %></h3>		<!-- rec_title넣기 -->
 						<br>
 						<div class="rating">
 							<span>별점</span>
@@ -161,20 +178,19 @@
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
 
-							<p style="color: black;">추천 사용자: 모던한 스타일, 1~2인 가구</p>
+							<p style="color: black;">추천 사용자: 모던한 스타일, 1~2인 가구</p>	<!-- rec_style -->
 
 							<p style="color: black;">
-								가격 <b style="color: red;">30만원</b>
+								가격 <b style="color: red;">30만원</b>				
 							</p>
 						</div>
 						<br> <br>
 						<div class="result_btn">
-						<form action="FirstRecommendation2" method="post">
+						<form action="http://192.168.219.129:5000/firstrec" method="post">
 							<input type="hidden"  value=<%= rec_space %> name="space"/>
 							<input type="hidden" value=<%= rec_size%> name="size"/>
 							<input type="hidden" value=<%= rec_familyShape%> name="familyShape"/>
-							<input type="submit" class="genric-btn info radius" value="재추천	받기"
-								style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">
+							<input type="submit" class="genric-btn info radius" value="재추천	받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">
 						</form> 
 							<a href="payment.jsp" class="genric-btn info radius"
 							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
