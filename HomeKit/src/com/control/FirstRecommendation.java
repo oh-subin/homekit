@@ -17,6 +17,21 @@ public class FirstRecommendation extends HttpServlet {
 		
 		request.setCharacterEncoding("UTF-8");
 		
+		String results = request.getParameter("results");
+		
+		
+		  System.out.println("result");
+		
+		  String select_space1= results.substring(0, 6);
+		  String select_size1= results.substring(7, 13);
+		  String select_familyShape1= results.substring(14, 19);
+		 
+		  
+		  if(results != null){
+			  System.out.println(results);
+		  }
+		
+		
 		String rec_space = request.getParameter("select_space");
 		String rec_size = request.getParameter("select_size");
 		String rec_familyShape = request.getParameter("select_familyShape");
