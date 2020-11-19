@@ -123,46 +123,47 @@
                   
                </div>
             </div>
-            <div class="col-lg-12">
+           <div class="col-lg-12">
                 <div class="booking_content" style="height: 180px;margin-top: 20px;">
                   <div class="tab-content" id="myTabContent">
-                     <div class="tab-pane fade show active" id="hotel" role="tabpanel"
+                    <div class="tab-pane fade show active" id="hotel" role="tabpanel"
                         aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
                         <div class="booking_form">
-                           <form action="FirstRecommendation" method="post">
+                           <form action="http://192.168.50.26:5000/firstrec" method="post">
                               <div class="form-row">
                                  <div class="form_colum">
                                     <select class="nc_select" name="select_space">
                                        <option selected>공간</option>
-                                       <option value="원룸&오피스텔">원룸&오피스텔</option>
-                                       <option value="아파트">아파트</option>
-                                       <option value="빌라&연립">빌라&연립</option>
-                                       <option value="단독주택">단독주택</option>
+                                       <option value="oneroom">원룸&오피스텔</option>
+                                       <option value="apartment">아파트</option>
+                                       <option value="villa">빌라&연립</option>
+                                       <option value="detachedhouse">단독주택</option>
                                     </select>
                                  </div>
                                  <div class="form_colum">
                                     <select class="nc_select" name="select_size">
                                        <option selected>평수</option>
-                                       <option value="10평 미만">10평미만</option>
-                                       <option value="10평대">10평대</option>
-                                       <option value="20평대">20평대</option>
-                                       <option value="30평대">30평대</option>
-                                       <option value="40평대">40평대</option>
-                                       <option value="50평대 이상">50평대 이상</option>
+                                       <option value="10under">10평미만</option>
+                                       <option value="10pyeong">10평대</option>
+                                       <option value="20pyeong">20평대</option>
+                                       <option value="30pyeong">30평대</option>
+                                       <option value="40pyeong">40평대</option>
+                                       <option value="50over">50평대 이상</option>
                                     </select>
                                  </div>
                                  <div class="form_colum"  style="margin-right: 290px" >
                                     <select class="nc_select" name="select_familyShape">
                                        <option selected>가족형태</option>
-                                       <option value="싱글라이프">싱글라이프</option>
-                                       <option value="신혼부부">신혼부부</option>
-                                       <option value="신혼부부, 아기가 있는 집">신혼부부, 아기가 있는 집</option>
-                                       <option value="아기가 있는 집">아기가 있는 집</option>
-                                       <option value="부모님과 함께 사는 집">부모님과 함께 사는 집</option>
-                                       <option value="아기가 있는 집, 취약 자녀가 있는 집">아기가 있는 집, 취약 자녀가 있는 집</option>
-                                       <option value="취약 자녀가 있는 집">취약 자녀가 있는 집</option>
+                                       <option value="single">싱글라이프</option>
+                                       <option value="parent">부모님과 함께 사는 집</option>
+                                       <option value="couple">신혼부부</option>
+                                       <option value="baby">아기가 있는 집</option>
+                                       <option value="child">취학 자녀가 있는 집</option>
+                                       <option value="baby,child">아기가 있는 집, 취학 자녀가 있는 집</option>
+                                                                                                     
                                     </select>
                                  </div>
+
                                  <div class="form_btn">
                                     <a href="professional_mode2.jsp"><input type="submit" value="1차추천" class="btn_1" onclick="progress()"></a>
                                  </div>
