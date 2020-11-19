@@ -11,7 +11,7 @@
 <head>
 
 <!-- Required meta tags -->
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <meta name="viewport"
    content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>방구석 인테리어-추전</title>
