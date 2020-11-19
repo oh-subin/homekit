@@ -129,20 +129,19 @@
                     <div class="tab-pane fade show active" id="hotel" role="tabpanel"
                         aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
                         <div class="booking_form">
-                           <form action="#" name ="rec1" onClick='twosend()' method="post">
+                           <form action="#" name ="rec1"  method="post">
                            
-                           <!-- action 두번 보내기  1:플라스크(1차추천용) / 2:서블릿에(2차추천용) -->
-                           <script>
-                           function twosend(){
-                        	   document.rec1.action='http://192.168.50.26:5000/firstrec';
-                        	   document.rec1.submit(); 
-
-                        	   document.rec1.action='FirstRecommendation';
-                        	   document.rec1.submit();
-                        	   }
-                           </script>
-                           
-                           
+                            <!-- action 두번 보내기  1:플라스크(1차추천용) / 2:서블릿에(2차추천용) -->
+                            <script>
+						    function twosend(){
+						 	   document.rec1.action="http://192.168.50.26:5000/firstrec";
+						 	   document.rec1.submit(); 
+						
+						 	   document.rec1.action="FirstRecommendation";
+						 	   document.rec1.submit();
+						 	   }
+						    </script>
+                                                      
                               <div class="form-row">
                                  <div class="form_colum">
                                     <select class="nc_select" name="select_space">
@@ -178,7 +177,7 @@
                                  </div>
 
                                  <div class="form_btn">
-                                    <a href="result.jsp"><input type="submit" value="추천" class="btn_1"></a>
+                                    <a href="result.jsp"><input type="submit" value="추천" onClick='twosend()' sclass="btn_1"></a>
                                  </div>
                               </div>
                            </form>

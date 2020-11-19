@@ -19,6 +19,8 @@ public class SecondRecommendation extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		request.setCharacterEncoding("UTF-8");
+		
 		HttpSession session = request.getSession();
 	    String email = (String)session.getAttribute("email");
 
