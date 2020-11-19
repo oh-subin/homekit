@@ -33,7 +33,7 @@
             <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         </head>
-        <body style="height: 1300px;">
+        <body>
              <%
 		String email = (String)session.getAttribute("email");	
 		%>
@@ -210,59 +210,12 @@
     
     
             <br>
-            <p style="text-align: right; margin-right:150px;">홈 > 상품관리 > 상품등록 > 간단등록</p>
-            <h2 style="margin-left: 350px;">간단등록</h2><hr>
-            <p style="margin-left: 350px;">쇼핑몰에 상품을 진열하는데 필요한 기본정보를 입력합니다.</p>
-            <p style="margin-left: 350px;">상세한 상품정보 관리가 필요하시면, 상품등록으로 이동하세요.</p>
-            <button onclick="registration()" style="margin-left:1300px; margin-bottom: 10px;">상품 등록하기</button>
-            <script>
-            function registration() {
-            	alert("상품 등록이 완료되었습니다.");
-            }
-            </script>
+         
             
-            <!-- 상품등록 메뉴 테이블 -->
-            <table border="2px" style="margin-left: 350px; float:left;">
-                <tr>
-                    <th width="300" style="text-align: center;">상품명</th>
-                    <th width="800" height="70">
-                        <input type="text" placeholder="예시) 홈키트명" style="margin-left:10px;">
-                    </th>
-                </tr>
-                <tr>
-                    <th width="300" style="text-align: center;">판매가</th>
-                    <th width="800" height="50" ><input type="text" style="margin-left:10px;">원</th>
-                </tr>
-                <tr>
-                    <th width="300" style="text-align: center;">상품옵션설정</th>
-                    <th width="800" height="70" > 
-                       <input type="radio" name="chk_info" value="옵션사용" style="margin-left:10px;">옵션사용
-                       <input type="radio" name="chk_info" value="옵션미사용">옵션미사용
-                       <p style="margin-left:10px; margin-top:10px;">상품옵션이란, 상품의 색상, 사이즈 등 선택값을 뜻합니다.</p>
-                </th>
-                </tr>
-                <tr>
-                    <th width="300" style="text-align: center;">상품이미지등록</th>
-                    <th width="800" height="300">
-                        <img src="https://e7.pngegg.com/pngimages/982/97/png-clipart-computer-icons-camera-iphone-graphy-camera-photography-camera-icon.png" alt="" style="height: 200px;width: 200px; margin-left:10px;">
-                        <button style="margin-left:10px; margin-bottom: 30px; margin-top:30px;">사진 등록</button><br>
-                    </th>
-                </tr>
-                <tr>
-                    <th width="300" style="text-align: center;">상품요약설명</th>
-                    <th width="800" height="150">
-                        <input type="text" style="margin-left:10px; width: 600px;">
-                        <p style="margin-left:10px; margin-top:30px;">등록하는 상품에 대한 설명을 짧게 요약하여 등록합니다.</p>
-                    </th>
-                </tr>
-                <tr>
-                    <th width="300" style="text-align: center;">상품상세설명</th>
-                    <th width="800" height="150">
-                        <input type="text" style="height: 300px; width: 600px; margin-left:10px; " 
-                        placeholder="상품에 대한 상세한 설명을 적어주세요.">
-                    </th>
-                </tr>
-            </table>
+            <!-- 상품등록 메뉴 테이블 start -->
+            <img src="img/homepage/registration_img.jpg" alt="registration_img" style="margin-left:320px; margin-top:10px">
+
+            <!-- 상품등록 메뉴 테이블 end -->
 
            <!-- footer part start-->
         <footer class="footer-area" style="margin-top:1000px;"> 
