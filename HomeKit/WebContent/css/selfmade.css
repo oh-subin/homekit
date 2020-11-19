@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* #productDetail1 {
+	opacity: 1;
+}
+
+#productDetail1:hover{
+	opacity: 0.5;
+} */
+
+/* 11/14(토) 수정부분 마우스 올리면 테두리가 보이게 */
+
+.products {
+	background: white;
+	border-radius:15px;
+	cursor: pointer;
+}
+
+.products:hover {
+	background: lightgray;
+}
