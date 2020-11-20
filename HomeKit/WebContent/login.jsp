@@ -57,7 +57,7 @@
                         <label class="custom-control-label" for="customCheck">기억하기</label>
                       </div>
                     </div>
-                    <input type= "submit" value ="로그인" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
+                    <input type= "submit" value ="로그인" class="btn btn-primary btn-user btn-block" style="background-color: #B2A59F; border-color: #B2A59F">
                   </form>
                   <hr>
                   <div class="text-center">

@@ -51,7 +51,7 @@
                     <div class="form-group">
                       <input type="password" name = "pw" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     </div>
-                    <input type= "submit" value ="탈퇴하기" class="btn btn-primary btn-user btn-block" style="background-color: rgb(199, 199, 199); border-color: rgb(199, 199, 199)">
+                    <input type= "submit" value ="탈퇴하기" class="btn btn-primary btn-user btn-block" style="background-color: #B2A59F; border-color: #B2A59F">
                   </form>
                   <hr>
                   <div class="text-center">
@@ -72,7 +72,7 @@
 	<footer class="footer-area">
 		<div class="row justify-content-center">
 			<div class="col-lg-12">
-				<div class="copyright_part_text text-center">
+				<div class="copyright_part_text text-center" style="margin-top: 180px;">
 					<p class="footer-text m-0">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;

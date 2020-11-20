@@ -55,22 +55,22 @@
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">소개</a>
+                                            <a class="nav-link" href="about.jsp" style="font-size:20px; font-family: 'S-CoreDream-2ExtraLight'">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="recommendation.jsp">추천</a>
+                                            <a class="nav-link" href="recommendation.jsp" style="font-size:20px; font-family: 'S-CoreDream-2ExtraLight'">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp" style="font-size:20px; font-family: 'S-CoreDream-2ExtraLight'">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item">
-                                           <a class="nav-link" href="products.jsp">쇼핑몰</a>
+                                           <a class="nav-link" href="products.jsp" style="font-size:20px; font-family: 'S-CoreDream-2ExtraLight'">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
+	                                <a href="login.jsp" style="color:#756595; font-size: 15px; font-family: 'S-CoreDream-2ExtraLight'">로그인</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:#756595; font-size: 15px; font-family: 'S-CoreDream-2ExtraLight'">회원가입</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
@@ -88,7 +88,7 @@
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
+								style="margin-left: 5px; color:#756595; font-size: 15px; font-family: 'S-CoreDream-2ExtraLight'">장바구니</a>
 							<%} %>
                             </nav>
                         </div>

@@ -1283,7 +1283,7 @@ ul {
 	left: 10px;
 	display: block;
 	color: #fff;
-	background-color: #546A61;
+	background-color: #5a4b7657;
 	padding: 8px 15px;
 	border-radius: 5px;
 }
@@ -2277,37 +2277,16 @@ ul {
 
 /* line 33, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link {
-	color: #46555C;
-	font-size: 16px;
+	color: #756595;
+	font-size: 20px;
 	padding: 38px 22px;
-	<<<<<<<
-	HEAD
-	=======
-	font-family
-	:
-	'S-CoreDream-2ExtraLight';
-	>>>>>>>
-	branch
-	'master'
-	of
-	https
-	:
-	/
-	/
-	github.com
-	/
-	oh-subin
-	/
-	interior.git
-	text-transform
-	:
-	 
-	capitalize;
+	font-family:'S-CoreDream-2ExtraLight';
+	text-transform:capitalize;
 }
 
 /* line 39, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link:hover {
-	color: #508164;
+	color: #bfacc8;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2745,7 +2724,7 @@ ul {
 /* line 18, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_about.scss */
 .about_us .about_text h5 {
 	margin-bottom: 12px;
-	color: #508164;
+	color:  #756595;
 	font-size: 16px;
 	font-weight: 300;
 }
@@ -3765,7 +3744,7 @@ ul {
 .breadcrumb {
 	position: relative;
 	z-index: 1;
-	background-color: #fdefed49;
+	background-color: #f2f0f594;
 }
 
 /* line 9, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_breadcrumb.scss */
@@ -3837,7 +3816,7 @@ ul {
 
 /* line 220, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_footer.scss */
 .footer-area .copyright_part_text {
-	background-color: #fdefed49;
+	background-color: #f2f0f594;
 	padding: 32px 15px;
 	margin-top: 95px;
 }
@@ -4061,6 +4040,7 @@ h4 {
 /* line 109, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
 h5 {
 	font-size: 16px;
+	color: #7a08cf;
 }
 
 /* line 113, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
@@ -4071,6 +4051,7 @@ h6 {
 /* line 117, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2em;
+	color: #756595;
 }
 
 /* line 127, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
@@ -4255,7 +4236,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 257, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
 .genric-btn.info {
 	color: #rgba(168, 167, 167, 0.5);
-	background: rgb(168, 167, 167);
+	background: #B2A59F;
 	border: 1px solid transparent;
 }
 
@@ -5732,7 +5713,7 @@ element.style {
 .sidenav {
   width: 130px;
   position: fixed;
-  z-index: 1;
+  z-index: 9999 !important;
   top: 20px;
   left: 10px;
   background: #eee;
