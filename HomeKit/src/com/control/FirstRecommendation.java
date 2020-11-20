@@ -15,7 +15,7 @@ public class FirstRecommendation extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.setCharacterEncoding("euc-kr");
+		request.setCharacterEncoding("UTF-8");
 		
 //		--- 플라스크에서 값 받아오기(1차추천)
 		String results = request.getParameter("results");
@@ -37,9 +37,9 @@ public class FirstRecommendation extends HttpServlet {
 		String rec_size = request.getParameter("select_size");
 		String rec_familyShape = request.getParameter("select_familyShape");
 		
-//		System.out.println(rec_space);
-//		System.out.println(rec_size);
-//		System.out.println(rec_familyShape);
+		System.out.println(rec_space);
+		System.out.println(rec_size);
+		System.out.println(rec_familyShape);
 		
 		request.setAttribute("rec_space", rec_space);
 		request.setAttribute("rec_size", rec_size);

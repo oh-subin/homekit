@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-   pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+   pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="com.DAO.RecommendationDAO"%>
 <%@ page import="com.DTO.RecommendationDTO"%>
@@ -11,7 +11,7 @@
 <head>
 
 <!-- Required meta tags -->
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <meta name="viewport"
    content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>방구석 인테리어-재추전</title>
@@ -64,24 +64,24 @@
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                        <li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">소개</a>
+                                            <a class="nav-link" href="about.jsp" style="font-size:20px">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="recommendation.jsp">추천</a>
+                                            <a class="nav-link" href="recommendation.jsp" style="font-size:20px">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp" style="font-size:20px">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.jsp">쇼핑몰</a>
+                                            <a class="nav-link" href="products.jsp" style="font-size:20px">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
                      <%if(email == null){ %>
                      <a href="login.jsp"
-                        style="color: rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
+                        style="color: #756595; font-size: 15px;">로그인</a>
                      <a href="register.jsp"
-                        style="margin-left: 15px; color: rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
+                        style="margin-left: 15px; color: #756595; font-size: 15px;">회원가입</a>
                      <%}else{ %>
                      <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"
@@ -99,7 +99,7 @@
                         </div>
                      </div>
                      <a href="basket.jsp" 
-                        style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
+                        style="margin-left: 5px; color:#756595; font-size: 15px;">장바구니</a>
                      <%} %>
                   </nav>
                   </div>

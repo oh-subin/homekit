@@ -55,22 +55,22 @@
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">소개</a>
+                                            <a class="nav-link" href="about.jsp" style="font-size:20px">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="recommendation.jsp">추천</a>
+                                            <a class="nav-link" href="recommendation.jsp" style="font-size:20px">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp" style="font-size:20px">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item">
-                                         <a class="nav-link" href="products.jsp">쇼핑몰</a>
+                                         <a class="nav-link" href="products.jsp" style="font-size:20px">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
+	                                <a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 15px;">로그인</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 15px;">회원가입</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
@@ -88,7 +88,7 @@
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
+								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 15px;">장바구니</a>
 							<%} %>
                             </nav>
                         </div>
@@ -167,8 +167,8 @@
             <div data-sticky-enabled="false" data-sticky-disabled="false" data-sticky-always="false" data-direction="top" data-offset="79.99431610107422" class="sticky-container production-selling-navigation-wrap" style="position: sticky;top: 79.9943px;padding-bottom: 10px;margin-top: 500px;">
                 <div class="nav_product_detail" style="position: relative; background-color: #fdefed49; height: 50px">
                     <nav class="production-selling-navigation__content">
-                        <ol class="production-selling-navigation__list" style="padding-top: 10px; margin-left: 100px">
-                            <li style="display: inline-block; margin-left:200px">
+                        <ol class="production-selling-navigation__list" style="padding-top: 15px; margin-left: 100px; width:1040px;">
+                            <li style="display: inline-block; margin-left:-100px">
                                 <a class="class="production-selling-navigation__item production-selling-navigation__item--active"" href="" style="font-size:20px;"><b style="color: rgba(168, 167, 167, 0.753);">상품정보</b></a>
                             </li>
                             <li style="display: inline-block; margin-left:100px">
@@ -189,7 +189,7 @@
             <!-- 상품상세사진 nav바 end -->
 
             <!-- 사이드바 -->
-            <div class="sidenav" style="margin-top: 300px;margin-left: 1500px;">
+            <div class="sidenav" style="margin-top: 300px;margin-left: 1400px;">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#clients">Clients</a>
@@ -198,7 +198,7 @@
 
 <!-- 홈키트 상품 설명 부분 -->
 <br><br><br><br><br>
-    <section style="margin-top:50px;padding-left: 250px;width: 1130px;">
+    <section style="margin-top:50px;padding-left: 400px;width: 1130px;">
         <table>
             <tr> 
                 <td><img src="img/homepage/homekit.JPG" alt="" style="height: 100px; width: 800px;"></td>

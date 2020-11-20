@@ -43,7 +43,7 @@
    <%
       String email = (String)session.getAttribute("email");   
    %>
-<% request.setCharacterEncoding("euc-kr"); %>
+<% request.setCharacterEncoding("utf-8"); %>
    <!--::header part start::-->
         <header class="main_menu">
             <div class="main_menu_iner">
@@ -62,24 +62,24 @@
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                        <li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">소개</a>
+                                            <a class="nav-link" href="about.jsp" style="font-size:20px">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="recommendation.jsp">추천</a>
+                                            <a class="nav-link" href="recommendation.jsp" style="font-size:20px">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp" style="font-size:20px">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.jsp">쇼핑몰</a>
+                                            <a class="nav-link" href="products.jsp" style="font-size:20px">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
                      <%if(email == null){ %>
                      <a href="login.jsp"
-                        style="color: rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
+                        style="color: #756595; font-size: 15px;">로그인</a>
                      <a href="register.jsp"
-                        style="margin-left: 15px; color: rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
+                        style="margin-left: 15px; color: #756595; font-size: 15px;">회원가입</a>
                      <%}else{ %>
                      <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"
@@ -97,7 +97,7 @@
                         </div>
                      </div>
                      <a href="basket.jsp" 
-                        style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
+                        style="margin-left: 5px; color:#756595; font-size: 15px;">장바구니</a>
                      <%} %>
                   </nav>
                   </div>
@@ -129,7 +129,7 @@
                     <div class="tab-pane fade show active" id="hotel" role="tabpanel"
                         aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
                         <div class="booking_form">
-                           <form action="http://192.168.219.129:5000/firstrec" name ="rec1" id="recommend1" method="post">
+                           <form action="http://192.168.50.26:5000/firstrec" name ="rec1" id="recommend1" method="post">
                            
                        <script type="text/javascript">
 
@@ -137,7 +137,7 @@
 
 	{
 
-		$("#rec_btn").click(function()
+		$("#select").click(function()
 
 		{
 
@@ -145,7 +145,7 @@
 
 			$.ajax({
 	 					type : "POST",
-	 					url : "http://192.168.219.129:5000/firstrec",
+	 					url : "http://192.168.50.26:5000/firstrec",
 	 					cache : false,
 	 					data : formData,
 	 					success : onSuccess,
@@ -201,7 +201,8 @@
                                  </div>
 
                                  <div class="form_btn">
-                                   <input type="submit" value="추천" id = "rec_btn" onClick='twosend()' sclass="btn_1">
+                                   <input type="submit" value="1차 추천" id = "select" onClick='twosend()' class="btn_1"
+                                   			style="height: 55px;">
                                  </div>
                               </div>
                            </form>
@@ -220,7 +221,7 @@
    <footer class="footer-area">
       <div class="row justify-content-center">
          <div class="col-lg-12">
-            <div class="copyright_part_text text-center" style="margin-top: 0px;">
+            <div class="copyright_part_text text-center" style="margin-top: 300px;">
                <p class="footer-text m-0">
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                   Copyright &copy;

@@ -59,24 +59,24 @@
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">소개</a>
+                                            <a class="nav-link" href="about.jsp" style="font-size:20px">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="recommendation.jsp">추천</a>
+                                            <a class="nav-link" href="recommendation.jsp" style="font-size:20px">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp" style="font-size:20px">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.jsp">쇼핑몰</a>
+                                            <a class="nav-link" href="products.jsp" style="font-size:20px">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
 							<%
 								if (email == null) {
 							%>
-							<a href="login.jsp" style="color:rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
-	                        <a href="register.jsp" style="margin-left: 15px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
+							<a href="login.jsp" style="color: #756595; font-size: 15px;">로그인</a>
+	                        <a href="register.jsp" style="margin-left: 15px; color: #756595; font-size: 15px;">회원가입</a>
 							<%
 								} else {
 							%>
@@ -91,7 +91,7 @@
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
+								style="margin-left: 5px; color:#756595; font-size: 15px;">장바구니</a>
 							<%} %>
 								
 						</nav>
@@ -168,7 +168,7 @@
 	<!-- 구매하기 버튼 begin -->
 	<div class="purchase_btn">
 		<a href="#" class="btn_1 d-none d-lg-block"
-			style="width: 150px; height: 56px; float: left; margin-left: 550px; margin-top: 100px;">집들이
+			style="width: 150px; height: 56px; float: left; margin-left: 650px; margin-top: 100px;">집들이
 			가기</a>
 		<a href="payment.jsp" class="btn_1 d-none d-lg-block"
 			style="margin-left: 50px; width: 150px; height: 56px; float: left; padding-left: 40px; margin-top: 100px;">구매하기</a>

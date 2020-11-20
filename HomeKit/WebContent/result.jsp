@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="com.DAO.productDAO"%>
 <%@ page import="com.DTO.productDTO"%>
@@ -39,15 +39,13 @@
 </head>
 
 <body>
-	<% request.setCharacterEncoding("euc-kr"); %>
+	<% request.setCharacterEncoding("UTF-8"); %>
 	<%
 	 String results = request.getParameter("results");
-	// String TITLE = request.getParameter("TITLE");
-	// String SPACE = request.getParameter("SPACE");
-	// String SIZE = request.getParameter("SIZE");
-	// String FAMILYSHAPE = request.getParameter("FAMILYSHAPE");
-	// String STYLE = request.getParameter("STYLE");
-	// String URL = request.getParameter("URL");
+	 String rec_title1 = results.substring(0, 24);
+	 String rec_style1 = results.substring(24, 34);
+	 String rec_imgurl1 = results.substring(55,90);
+	 
 	
 	
      String email = (String)session.getAttribute("email");  
@@ -69,8 +67,8 @@
    	<!--::header part start::-->
         <header class="main_menu">
             <div class="main_menu_iner">
-                <div class="container">
-                    <div class="row align-items-center ">
+                <div class="container" >
+                    <div class="row align-items-center">
                         <div class="col-lg-12">
                             <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
                                 <a class="navbar-brand" href="main.jsp"> <img src="img/homepage/Logo3.JPG" alt="logo" style="width: 205px;"> </a>
@@ -84,24 +82,24 @@
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp">소개</a>
+                                            <a class="nav-link" href="about.jsp" style="font-size:20px">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="recommendation.jsp">추천</a>
+                                            <a class="nav-link" href="recommendation.jsp" style="font-size:20px">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp">중고키트 판매</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp" style="font-size:20px">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" href="products.jsp">쇼핑몰</a>
+                                          <a class="nav-link" href="products.jsp" style="font-size:20px">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
 							<%if(email == null){ %>
 							<a href="login.jsp"
-								style="color: rgba(75, 75, 75, 0.89); font-size: 14px;">로그인</a>
+								style="color: #756595; font-size: 15px;">로그인</a>
 							<a href="register.jsp"
-								style="margin-left: 15px; color: rgba(75, 75, 75, 0.89); font-size: 14px;">회원가입</a>
+								style="margin-left: 15px; color: #756595; font-size: 15px;">회원가입</a>
 							<%}else{ %>
 							<div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
@@ -119,7 +117,7 @@
 								</div>
 							</div>
 							<a href="basket.jsp" 
-								style="margin-left: 5px; color:rgba(75, 75, 75, 0.89); font-size: 14px;">장바구니</a>
+								style="margin-left: 5px; color:#756595; font-size: 15px;">장바구니</a>
 							<%} %>
 						</nav>
 					</div>
@@ -136,7 +134,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="breadcrumb_iner">
+					<div class="breadcrumb_iner" style="margin-left:40px">
 						<div class="breadcrumb_iner_item text-center">
 							<h2 style="margin-bottom: 50px;">Recommanded Result</h2>
 							<p style="padding-bottom: 80px;">추천된 인테리어 결과를 확인하세요</p>
@@ -150,7 +148,7 @@
 
 	<!-- about us css start-->
 	<section class="about_us section_padding"
-		style="margin-bottom: 100px; margin-top: 0px;">
+		style="margin-bottom: 100px; margin-top: 0px; margin-left:200px">
 		
 		<div class="container">
 			<div class="row align-items-center" style="height: 200px;">
@@ -160,14 +158,14 @@
 																	<!-- 이미지 src안에 rec_imgurl넣기 -->
 						<img src="img/homepage/15.jpg" alt="#"
 							style="height: 400px; width: 500px;"><br>
-						<hr>
+						
 					</div>
 				</div>
 
 				<div class="col-lg-6" style="display: auto; padding-left: 0px;">
-					<div class="about_text" style="width: 500px; margin-top: 50px;">
+					<div class="about_text" style="width: 500px; margin-top: 50px; margin-left: 20px">
 						
-						<h3 style="font-size: 30px;"><%= results %></h3>		<!-- rec_title넣기 -->
+						<h3 style="font-size: 30px;"><%= rec_title1 %></h3>		<!-- rec_title넣기 -->
 						<br>
 						<div class="rating">
 							<span>별점</span>
@@ -178,19 +176,23 @@
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
 
-							<p style="color: black;">추천 사용자: 모던한 스타일, 1~2인 가구</p>	<!-- rec_style -->
+							<p style="color: black;">추천 사용자: <%= rec_style1 %>, 1~2인 가구</p>	<!-- rec_style -->
 
 							<p style="color: black;">
 								가격 <b style="color: red;">30만원</b>				
 							</p>
 						</div>
 						<br> <br>
-						<div class="result_btn">
-						<form action="http://192.168.219.129:5000/firstrec" method="post">
-							<input type="hidden"  value=<%= rec_space %> name="space"/>
+						<div class="result_btn" style="margin-top:110px;">
+						<form action="http://192.168.50.26:5000/secondrec" method="post">
+							<input type="hidden" value=<%= rec_space %> name="space"/>
+							<%= rec_space%>
+							<%= rec_size%>
+							<%= rec_familyShape%>
 							<input type="hidden" value=<%= rec_size%> name="size"/>
 							<input type="hidden" value=<%= rec_familyShape%> name="familyShape"/>
-							<input type="submit" class="genric-btn info radius" value="재추천	받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">
+							<input type="hidden" value= <%= email%> name="email"/>
+							<input type="submit" class="genric-btn info radius" value="재추천 받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left">
 						</form> 
 							<a href="payment.jsp" class="genric-btn info radius"
 							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
@@ -208,9 +210,9 @@
 		<div class="container">
 
 			<section
-				style="margin-top: 200px; padding-top: 50px; padding-left: 130px; width: 1130px;">
+				style="margin-top: 200px; padding-top: 50px; padding-left: 100px; width: 1130px;">
 				<p style="width: 300px; color: black;">홈키트 구성소품</p>
-				<hr>
+				<hr style="width: 1000px;margin-right: 0px;margin-left: 0px;">
 				<br>
 				<table>
 					<tr>
