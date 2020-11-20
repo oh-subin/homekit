@@ -159,7 +159,7 @@
          		
                <div class="col-md-6" style="float: right;">
                <img src="<%= rec_imgurl %>"></img>								<!-- 이미지 url넣기 --> 
-                  <a href="img/homepage/10.jpg" class="img-pop-up">
+                  <a href=<%=imgList.get(i).getRec_img() %> class="img-pop-up">
                      <div class="single-gallery-image"
                         style="background: url(img/homepage/10.jpg); width: 400px; height: 300px;"></div>
                   </a>

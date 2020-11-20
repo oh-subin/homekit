@@ -14,6 +14,10 @@ INSERT INTO MEMBER values('2주0', 'ken0000@naver.com', '1234567', '집2', '010-41
 테이블 조회(멤버)
 SELECT * FROM MEMBER
 
+SELECT * FROM interior_user;
+
+INSERT INTO interior_user (style15,style24,style54,style55)values('5', '3', '4', '3')
+
 행 삭제(멤버)
 DELETE FROM MEMBER WHERE TEL='123'
 ----------------------------------------------------------------

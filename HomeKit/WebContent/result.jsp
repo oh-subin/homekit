@@ -48,7 +48,8 @@
 	 
 	
 	
-     String email = (String)session.getAttribute("email");  
+     String email = (String)session.getAttribute("email");
+     String email2= email.substring(0);
 	 String rec_space = (String) request.getAttribute("rec_space");
      String rec_size = (String) request.getAttribute("rec_size");
      String rec_familyShape = (String) request.getAttribute("rec_familyShape");
@@ -56,7 +57,7 @@
      
 	  
      if(results != null){
-    	 System.out.println(results);
+    	 
 	  }
 	
      
@@ -186,12 +187,10 @@
 						<div class="result_btn" style="margin-top:110px;">
 						<form action="http://192.168.50.26:5000/secondrec" method="post">
 							<input type="hidden" value=<%= rec_space %> name="space"/>
-							<%= rec_space%>
-							<%= rec_size%>
-							<%= rec_familyShape%>
 							<input type="hidden" value=<%= rec_size%> name="size"/>
 							<input type="hidden" value=<%= rec_familyShape%> name="familyShape"/>
-							<input type="hidden" value= <%= email%> name="email"/>
+							<input type="hidden" value= <%= email2 %> name="email2"/>
+							<%System.out.print(email2); %>
 							<input type="submit" class="genric-btn info radius" value="재추천 받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left">
 						</form> 
 							<a href="payment.jsp" class="genric-btn info radius"
