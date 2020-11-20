@@ -201,7 +201,7 @@
                                  </div>
 
                                  <div class="form_btn">
-                                   <input type="submit" value="1차 추천" id = "select" onClick='twosend()' class="btn_1"
+                                   <input type="submit" value="추천 받기" id = "select" class="btn_1"
                                    			style="height: 55px;">
                                  </div>
                               </div>

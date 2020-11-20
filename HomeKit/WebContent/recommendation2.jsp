@@ -41,10 +41,17 @@
 
 <body>
    <%
-      String email = (String)session.getAttribute("email");
-      
-   	  String rec_imgurl = request.getParameter("rec_imgurl");
+	String get_email = (String)session.getAttribute("email");
+   
+   String email ="";
+   
+   if(get_email != null){
+	   email=  get_email.substring(0,get_email.lastIndexOf("@"));
+   }else{} 
+   
+   String rec_imgurl = request.getParameter("rec_imgurl");
    %>
+  
 
    <!--::header part start::-->
         <header class="main_menu">
@@ -86,7 +93,7 @@
                      <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"
                            id="navbarDropdown" role="button" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false"><%=email %></a>
+                           aria-haspopup="true" aria-expanded="false"><%=get_email %></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                            <%if(email.equals("admin@admin")){ //관리자가 로그인하면 %>
                               <a class="dropdown-item" href="product_registration.jsp">상품등록</a>
@@ -158,6 +165,7 @@
                   </a>
                   <div class="switch-wrap d-flex justify-content-between">
                      <div class="ratingVal<%=i+1%>">
+                     	<input type="hidden" name=<%=email %> value=<%=email %>>
                         <label><input type="radio" name="rating<%=i+1%>" value="1">1</label>
                         <label><input type="radio" name="rating<%=i+1%>" value="2">2</label>
                         <label><input type="radio" name="rating<%=i+1%>" value="3">3</label>

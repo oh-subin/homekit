@@ -138,9 +138,9 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content">
                                         <h2>추천</h2>
-                                        <h5>추천받는 과정</h5>
-                                        <p><strong>1. 태그 선택하기:</strong> 인테리어에 필요한 사항을 태그로 입력합니다.<br></p>
-                                        <p><strong>2. 평점 등록하기:</strong> 인테리어 스타일을 보고 선호하는 인테리어 순으로 평점을 등록합니다</p>
+                                        <h5>머신러닝이 당신에게 맞는 홈키트를 추천해드립니다!</h5>
+                                        <p><strong>태그 선택</strong> 인테리어에 필요한 사항을 태그로 입력해주세요.<br></p>
+                                        <p><strong>혹시 마음에 들지 않으시나요?</strong> 재추천 받기 버튼을 눌러 인테리어 스타일을 보고 선호하는 인테리어 순으로 평점을 등록해주세요.</p>
                                         <a href="recommendation.jsp" class="btn_1">추천받으러 이동하기</a> 
                                     </div>
                                 </div>
