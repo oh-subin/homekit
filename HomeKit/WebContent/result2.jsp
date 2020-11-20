@@ -10,7 +10,7 @@
 <meta charset="UTF-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>방구석 인테리어-추천결과</title>
+<title>방구석 인테리어-재추천결과</title>
 <link rel="icon" href="img/favicon.png">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -41,21 +41,15 @@
 <body>
 	<% request.setCharacterEncoding("UTF-8"); %>
 	<%
-	 String results = request.getParameter("results");
-	 String rec_title1 = results.substring(0, 24);
-	 String rec_style1 = results.substring(24, 34);
-	 String rec_imgurl1 = results.substring(55,90);
-
-	 
+	 String results2 = request.getParameter("results2");
+	 String rec_title2 = results2.substring(0, 24);
+	 String rec_style2 = results2.substring(24, 34);
+	 String rec_imgurl2 = results2.substring(55,90);
+	
+	
      String email = (String)session.getAttribute("email");
-     
-     String rec_space = (String) request.getAttribute("rec_space");
-     String rec_size = (String) request.getAttribute("rec_size");
-     String rec_familyShape = (String) request.getAttribute("rec_familyShape");
-   
-     
 	  
-     if(results != null){
+     if(results2 != null){
     	 
 	  }
 	
@@ -153,10 +147,10 @@
 		<div class="container">
 			<div class="row align-items-center" style="height: 200px;">
 				<div class="col-lg-6">
-				<h4>테마 추천 결과</h4><br>
+				<h4>테마 추천 완료!</h4><br>
 					<div class="about_img">
 																	<!-- 이미지 src안에 rec_imgurl넣기 -->
-						<img src=<%=rec_imgurl1 %> alt="#"
+						<img src=<%=rec_imgurl2 %> alt="#"
 							style="height: 400px; width: 500px;"><br>
 						
 					</div>
@@ -165,7 +159,7 @@
 				<div class="col-lg-6" style="display: auto; padding-left: 0px;">
 					<div class="about_text" style="width: 500px; margin-top: 50px; margin-left: 20px">
 						
-						<h3 style="font-size: 30px;"><%= rec_title1 %></h3>		<!-- rec_title넣기 -->
+						<h3 style="font-size: 30px;"><%= rec_title2 %></h3>		<!-- rec_title넣기 -->
 						<br>
 						<div class="rating">
 							<span>별점</span>
@@ -176,7 +170,7 @@
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
 
-							<p style="color: black;">추천 사용자: <%= rec_style1 %>, 1~2인 가구</p>	<!-- rec_style -->
+							<p style="color: black;">추천 사용자: <%= rec_style2 %>, 1~2인 가구</p>	<!-- rec_style -->
 
 							<p style="color: black;">
 								가격 <b style="color: red;">30만원</b>				
@@ -184,13 +178,9 @@
 						</div>
 						<br> <br>
 						<div class="result_btn" style="margin-top:110px;">
-						<form action="http://192.168.50.26:5000/secondrec" method="post">
-							<input type="hidden" value=<%= rec_space %> name="space"/>
-							<input type="hidden" value=<%= rec_size%> name="size"/>
-							<input type="hidden" value=<%= rec_familyShape%> name="familyShape"/>
-						    <input type="submit" class="genric-btn info radius" value="재추천 받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left">
-						</form> 
-							<a href="payment.jsp" class="genric-btn info radius"
+						<a href="basket.jsp" class="genric-btn info radius"
+							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">장바구니</a>
+						<a href="payment.jsp" class="genric-btn info radius"
 							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
 
 						</div>
@@ -213,7 +203,7 @@
 				<table>
 					<tr>
 						<%
-						String pro_style= rec_style1;
+						String pro_style="모던";
 						productDAO dao = new productDAO();
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
 						
@@ -230,6 +220,23 @@
 						</td>
 						<% } %>
 
+
+						<!-- <td><img src="img/homepage/514_1.JPG" alt=""
+							style="height: 120px; width: 130px;"></td>
+						<td><img src="img/homepage/514_2.JPG" alt=""
+							style="height: 120px; width: 130px;"></td>
+						<td><img src="img/homepage/514_3.JPG" alt=""
+							style="height: 120px; width: 130px;"></td>
+						<td><img src="img/homepage/514_4.JPG" alt=""
+							style="height: 120px; width: 130px;"></td>
+						<td><img src="img/homepage/514_5.JPG" alt=""
+							style="height: 120px; width: 130px;"></td>
+						<td><img src="img/homepage/514_6.JPG" alt=""
+							style="height: 120px; width: 130px;"></td>
+						<td><img src="img/homepage/514_7.JPG" alt=""
+							style="height: 120px; width: 130px;"></td>
+						<td><img src="img/homepage/514_8.JPG" alt=""
+							style="height: 120px; width: 130px;"></td> -->
 					</tr>
 				</table>
 			</section>

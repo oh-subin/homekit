@@ -84,7 +84,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                     <%if(email == null){ %>
+                     <%if(get_email == null){ %>
                      <a href="login.jsp"
                         style="color: #756595; font-size: 15px;">로그인</a>
                      <a href="register.jsp"
@@ -95,7 +95,7 @@
                            id="navbarDropdown" role="button" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false"><%=get_email %></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                           <%if(email.equals("admin@admin")){ //관리자가 로그인하면 %>
+                           <%if(get_email.equals("admin@admin")){ //관리자가 로그인하면 %>
                               <a class="dropdown-item" href="product_registration.jsp">상품등록</a>
                               <a class="dropdown-item" href="LogoutService">로그아웃</a> 
                            <%}else{ %>
@@ -119,7 +119,7 @@
 
    <!--::industries start::-->
    <section class="hotel_list section_padding" style="margin-top:100px">
-   <form action="SecondRecommendation" method="post">
+   <form action="http://192.168.50.26:5000/secondrec" method="post">
       <div class="container" style="margin-left: 0px; margin-right: 0px;">
          <div class="row justify-content-center" style="margin-right: 340px;">
             <div class="col-xl-6">
@@ -137,9 +137,7 @@
                String rec_space = (String) request.getAttribute("rec_space");
                String rec_size = (String) request.getAttribute("rec_size");
                String rec_familyShape = (String) request.getAttribute("rec_familyShape");
-               System.out.println(rec_space);
-               System.out.println(rec_size);
-               System.out.println(rec_familyShape);
+               
 
                RecommendationDAO dao = new RecommendationDAO();
                ArrayList<RecommendationDTO> imgList = dao.showIMG(rec_space, rec_size, rec_familyShape);
@@ -158,10 +156,10 @@
                %>
          		
                <div class="col-md-6" style="float: right;">
-               <img src="<%= rec_imgurl %>"></img>								<!-- 이미지 url넣기 --> 
+               <%-- <img src="<%= rec_imgurl %>"></img>	 --%>			
                   <a href=<%=imgList.get(i).getRec_img() %> class="img-pop-up">
                      <div class="single-gallery-image"
-                        style="background: url(img/homepage/10.jpg); width: 400px; height: 300px;"></div>
+                        style="background: url(<%=imgList.get(i).getRec_img() %>); width: 400px; height: 300px;"></div>
                   </a>
                   <div class="switch-wrap d-flex justify-content-between">
                      <div class="ratingVal<%=i+1%>">
@@ -172,8 +170,8 @@
                         <label><input type="radio" name="rating<%=i+1%>" value="4">4</label>
                         <label><input type="radio" name="rating<%=i+1%>" value="5">5</label>
                         <input type="hidden" value=<%=imgList.get(i).getRec_style()%> name="style<%=i+1%>"/>
-                        <p><%=imgList.get(i).getRec_title()%></p>
-                        <p><%=imgList.get(i).getRec_style()%></p>
+                        <%-- <p><%=imgList.get(i).getRec_title()%></p>--%>
+                        <p><%=imgList.get(i).getRec_style()%></p> 
                      </div>
                   </div>
                </div>
@@ -196,6 +194,47 @@
    margin-left:200px; background-repeat:no-repeat;"></div>
    <br>
    <br>
+   
+   <script type="text/javascript">
+		
+			$(document).ready(function() 
+		
+			{
+		
+				$("#select").click(function()
+		
+				{
+		
+					var formData = $("#recommend1").serialize();
+		
+					$.ajax({
+			 					type : "POST",
+			 					url : "http://192.168.50.26:5000/secondrec",
+			 					cache : false,
+			 					data : formData,
+			 					success : onSuccess,
+			 					error : onError
+					});
+					$.ajax({
+			 					type : "POST",
+			 					url : "SecondRecommendation",
+			 					cache : false,
+			 					data : formData,
+			 					success : onSuccess,
+			 					error : onError
+					});
+				});
+			});
+			function onSuccess(json, status){alert($.trim(json));}
+			function onError(data, status){alert("error");}
+		
+		</script>
+   
+   
+   
+   
+   
+   
    <!-- footer part start-->
    <footer class="footer-area">
 
