@@ -154,21 +154,21 @@
                             <div class="single_ihotel_list">
                                 <a href="#"><img src="img/homepage/1.jpg" alt=""></a>
                                 <div class="hover_text">
-                                    <br><br><br>
+                                    <br>
                                 </div>
-                                <div class="hotel_text_iner">
-                                    <h3>시바견과 함께하는 모던 하우스</h3>
-                                    <div class="place_review">
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <span>(210 review)</span>
-                                    </div>
-                                    <p>모던, 가족</p><br>
-                                    <h5>홈키트 가격 = <span>20만원</span></h5>
-                                </div>
+                                <div class="hotel_text_iner"><br>
+                                    <h3>시바견과 함께하는 모던 하우스</h3><br><hr>
+                                    <div>
+		                                <p>모던, 가족</p>
+		                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star"></span>
+		                                <span class="fa fa-star"></span>
+									</div>
+								</div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
@@ -178,18 +178,18 @@
                                     <br><br>
                                 </div>
                                 <div class="hotel_text_iner">
-                                    <h3>빈티지 가구와 독특한 구조, 맥시멀리스트의 아파트</h3>
-                                    <div class="place_review">
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <span>(210 review)</span>
-                                    </div>
-                                    <p>빈티지, 신혼부부</p><br>
-                                    <h5>홈키트 가격 = <span>30만원</span></h5>
-                                </div>
+                                    <h3>빈티지 가구와 독특한 구조, 맥시멀리스트의 아파트</h3><hr>
+                                    <div>
+		                                <p>빈티지, 신혼부부</p>
+		                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star"></span>
+		                                <span class="fa fa-star"></span>
+									</div>
+								</div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
@@ -199,18 +199,17 @@
                                     <br><br>
                                 </div>
                                 <div class="hotel_text_iner">
-                                    <h3>꼭 필요한 것들로만 채운 10평대의 나홀로 아파트 생활</h3>
-                                    <div class="place_review">
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <span>(210 review)</span>
-                                    </div>
-                                    <p>모던, 자취생</p><br>
-                                    <h5>홈키트 가격 = <span>10만원</span></h5>
-                                </div>
+                                    <h3>꼭 필요한 것들로만 채운 10평대의 나홀로 아파트 생활</h3><hr>
+                                    <div>
+		                                <p>모던, 자취생</p>
+		                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star"></span>
+		                                <span class="fa fa-star"></span>
+									</div>
                             </div>
                         </div>
                     </div>
@@ -298,11 +297,6 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="single_ihotel_list">
                             <a href="#"><img src="img/homepage/4.jpg" alt=""></a>
-                            <div class="hover_text">
-                                <div class="share_icon">
-                                    <i class="ti-share"></i>
-                                </div>
-                            </div>
                             <div class="hotel_text_iner">
                                 <h3>인테리어 디자이너의 싱글라이프가 담긴 셀프 인테리어</h3>
                                 <div class="place_review">
@@ -311,7 +305,7 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(댓글 5개)</span>
+                                    <span>(210 review)</span>
                                 </div>
                                 <p>모던, 젊은 남성</p>
                                 <h5>홈키트 비용 = <span style="color:#5e02ab">기준가 20만원 → 할인가 10만원</span></h5>
@@ -321,11 +315,6 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="single_ihotel_list">
                             <a href="#"><img src="img/homepage/9.jpg" alt=""></a>
-                            <div class="hover_text">
-                                <div class="share_icon">
-                                    <i class="ti-share"></i>
-                                </div>
-                            </div>
                             <div class="hotel_text_iner">
                                 <h3>군더더기 없는 깔끔한 인테리어에 풍경 한 스푼</h3>
                                 <div class="place_review">
@@ -334,7 +323,7 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(댓글 9개)</span>
+                                    <span>(210 review)</span>
                                 </div>
                                 <p>테마명, 거주하는 사람</p>
                                 <h5>홈키트 비용 = <span style="color:#5e02ab">기준가 20만원 → 할인가 10만원</span></h5>
@@ -344,13 +333,6 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="single_ihotel_list">
                             <a href="#"><img src="img/homepage/10.jpg" alt=""></a>
-                            <div class="hover_text">
-                                <div class="hover_text">
-                                    <div class="share_icon">
-                                        <i class="ti-share"></i>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="hotel_text_iner">
                                 <h3>부암동 주택살이┃일상과 비일상의 경계에 있는 집</a></h3>
                                 <div class="place_review">
@@ -359,7 +341,7 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(댓글 10개)</span>
+                                    <span>(210 review)</span>
                                 </div>
                                 <p>테마명, 거주하는 사람</p>
                                 <h5>홈키트 비용 = <span style="color:#5e02ab">기준가 20만원 → 할인가 10만원</span></h5>
