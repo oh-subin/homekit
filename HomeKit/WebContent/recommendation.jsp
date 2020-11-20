@@ -43,7 +43,7 @@
    <%
       String email = (String)session.getAttribute("email");   
    %>
-<% request.setCharacterEncoding("euc-kr"); %>
+<% request.setCharacterEncoding("utf-8"); %>
    <!--::header part start::-->
         <header class="main_menu">
             <div class="main_menu_iner">

@@ -15,7 +15,7 @@ public class FirstRecommendation extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.setCharacterEncoding("euc-kr");
+		request.setCharacterEncoding("UTF-8");
 		
 //		--- 플라스크에서 값 받아오기(1차추천)
 		String results = request.getParameter("results");
