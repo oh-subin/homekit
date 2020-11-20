@@ -129,7 +129,7 @@
                     <div class="tab-pane fade show active" id="hotel" role="tabpanel"
                         aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
                         <div class="booking_form">
-                           <form action="http://192.168.219.129:5000/firstrec" name ="rec1" id="recommend1" method="post">
+                           <form action="http://192.168.50.26:5000/firstrec" name ="rec1" id="recommend1" method="post">
                            
                        <script type="text/javascript">
 
@@ -137,7 +137,7 @@
 
 	{
 
-		$("#rec_btn").click(function()
+		$("#select").click(function()
 
 		{
 
@@ -145,7 +145,7 @@
 
 			$.ajax({
 	 					type : "POST",
-	 					url : "http://192.168.219.129:5000/firstrec",
+	 					url : "http://192.168.50.26:5000/firstrec",
 	 					cache : false,
 	 					data : formData,
 	 					success : onSuccess,

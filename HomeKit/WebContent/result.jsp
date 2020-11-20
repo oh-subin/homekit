@@ -42,12 +42,10 @@
 	<% request.setCharacterEncoding("UTF-8"); %>
 	<%
 	 String results = request.getParameter("results");
-	// String TITLE = request.getParameter("TITLE");
-	// String SPACE = request.getParameter("SPACE");
-	// String SIZE = request.getParameter("SIZE");
-	// String FAMILYSHAPE = request.getParameter("FAMILYSHAPE");
-	// String STYLE = request.getParameter("STYLE");
-	// String URL = request.getParameter("URL");
+	 String rec_title1 = results.substring(0, 24);
+	 String rec_style1 = results.substring(24, 34);
+	 String rec_imgurl1 = results.substring(55,90);
+	 
 	
 	
      String email = (String)session.getAttribute("email");  
@@ -167,7 +165,7 @@
 				<div class="col-lg-6" style="display: auto; padding-left: 0px;">
 					<div class="about_text" style="width: 500px; margin-top: 50px; margin-left: 20px">
 						
-						<h3 style="font-size: 30px;"><%= results %></h3>		<!-- rec_title넣기 -->
+						<h3 style="font-size: 30px;"><%= rec_title1 %></h3>		<!-- rec_title넣기 -->
 						<br>
 						<div class="rating">
 							<span>별점</span>
@@ -178,7 +176,7 @@
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
 
-							<p style="color: black;">추천 사용자: 모던한 스타일, 1~2인 가구</p>	<!-- rec_style -->
+							<p style="color: black;">추천 사용자: <%= rec_style1 %>, 1~2인 가구</p>	<!-- rec_style -->
 
 							<p style="color: black;">
 								가격 <b style="color: red;">30만원</b>				
@@ -186,10 +184,14 @@
 						</div>
 						<br> <br>
 						<div class="result_btn" style="margin-top:110px;">
-						<form action="http://192.168.219.129:5000/firstrec" method="post">
-							<input type="hidden"  value=<%= rec_space %> name="space"/>
+						<form action="http://192.168.50.26:5000/secondrec" method="post">
+							<input type="hidden" value=<%= rec_space %> name="space"/>
+							<%= rec_space%>
+							<%= rec_size%>
+							<%= rec_familyShape%>
 							<input type="hidden" value=<%= rec_size%> name="size"/>
 							<input type="hidden" value=<%= rec_familyShape%> name="familyShape"/>
+							<input type="hidden" value= <%= email%> name="email"/>
 							<input type="submit" class="genric-btn info radius" value="재추천 받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left">
 						</form> 
 							<a href="payment.jsp" class="genric-btn info radius"
