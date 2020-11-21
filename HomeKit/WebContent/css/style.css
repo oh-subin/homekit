@@ -149,7 +149,7 @@ a {
 
 /* line 66, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_common.scss */
 a:hover {
-	color: #508164;
+	color: #756595;
 	text-decoration: none;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
@@ -2277,7 +2277,7 @@ ul {
 
 /* line 33, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_menu.scss */
 .main_menu .main-menu-item ul li .nav-link {
-	color: #756595;
+	color: #060606;
 	font-size: 20px;
 	padding: 38px 22px;
 	font-family:'S-CoreDream-2ExtraLight';
