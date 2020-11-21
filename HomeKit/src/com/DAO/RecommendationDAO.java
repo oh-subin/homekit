@@ -91,15 +91,15 @@ public class RecommendationDAO {
 		return imgList;
 	}
 
-	// 첫번째 추천 시 사용자가 입력한 평점 값을 INTERIOR_USER 테이블에 담는 기능
-	public int rating_insert(String email, int rating1, int rating2, int rating3, int rating4) {
+	// 2차 추천 시 사용자가 입력한 평점 값을 INTERIOR_USER 테이블에 담는 기능
+	public int rating_insert(String email, int rating1, int rating2, int rating3, int rating4, String style1, String style2, String style3, String style4) {
 		int cnt = 0;
 
 		try {
 
 			getConn();
 
-			String sql = "insert into INTERIOR_USER(USERID,style15,style24,style54,style55) values (?,?,?,?,?) ";
+			String sql = "insert into INTERIOR_USER(USERID,style1,style2,style3,style4) values (?,?,?,?,?) ";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, email);
 			psmt.setInt(2, rating1);
@@ -107,7 +107,7 @@ public class RecommendationDAO {
 			psmt.setInt(4, rating3);
 			psmt.setInt(5, rating4);
 
-			System.out.println("스타일1의 평점은?: " + rating1);
+			System.out.println(style1 +"의 평점은?: " + rating1);
 
 			cnt = psmt.executeUpdate();
 
