@@ -131,40 +131,40 @@
                         <div class="booking_form">
                            <form action="http://192.168.50.26:5000/firstrec" name ="rec1" id="recommend1" method="post">
                            
-                       <script type="text/javascript">
-
-	$(document).ready(function() 
-
-	{
-
-		$("#select").click(function()
-
-		{
-
-			var formData = $("#recommend1").serialize();
-
-			$.ajax({
-	 					type : "POST",
-	 					url : "http://192.168.50.26:5000/firstrec",
-	 					cache : false,
-	 					data : formData,
-	 					success : onSuccess,
-	 					error : onError
+		<script type="text/javascript">
+		
+			$(document).ready(function() 
+		
+			{
+		
+				$("#select").click(function()
+		
+				{
+		
+					var formData = $("#recommend1").serialize();
+		
+					$.ajax({
+			 					type : "POST",
+			 					url : "http://192.168.50.26:5000/firstrec",
+			 					cache : false,
+			 					data : formData,
+			 					success : onSuccess,
+			 					error : onError
+					});
+					$.ajax({
+			 					type : "POST",
+			 					url : "FirstRecommendation2",
+			 					cache : false,
+			 					data : formData,
+			 					success : onSuccess,
+			 					error : onError
+					});
+				});
 			});
-			$.ajax({
-	 					type : "POST",
-	 					url : "FirstRecommendation",
-	 					cache : false,
-	 					data : formData,
-	 					success : onSuccess,
-	 					error : onError
-			});
-		});
-	});
-	function onSuccess(json, status){alert($.trim(json));}
-	function onError(data, status){alert("error");}
-
-</script>
+			function onSuccess(json, status){alert($.trim(json));}
+			function onError(data, status){alert("error");}
+		
+		</script>
                                                       
                               <div class="form-row">
                                  <div class="form_colum">
@@ -201,7 +201,7 @@
                                  </div>
 
                                  <div class="form_btn">
-                                   <input type="submit" value="1차 추천" id = "select" onClick='twosend()' class="btn_1"
+                                   <input type="submit" value="추천 받기" id = "select" class="btn_1"
                                    			style="height: 55px;">
                                  </div>
                               </div>

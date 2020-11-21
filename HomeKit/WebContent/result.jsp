@@ -45,12 +45,11 @@
 	 String rec_title1 = results.substring(0, 24);
 	 String rec_style1 = results.substring(24, 34);
 	 String rec_imgurl1 = results.substring(55,90);
+
 	 
-	
-	
      String email = (String)session.getAttribute("email");
-     String email2= email.substring(0);
-	 String rec_space = (String) request.getAttribute("rec_space");
+     
+     String rec_space = (String) request.getAttribute("rec_space");
      String rec_size = (String) request.getAttribute("rec_size");
      String rec_familyShape = (String) request.getAttribute("rec_familyShape");
    
@@ -157,7 +156,7 @@
 				<h4>테마 추천 결과</h4><br>
 					<div class="about_img">
 																	<!-- 이미지 src안에 rec_imgurl넣기 -->
-						<img src="img/homepage/15.jpg" alt="#"
+						<img src=<%=rec_imgurl1 %> alt="#"
 							style="height: 400px; width: 500px;"><br>
 						
 					</div>
@@ -189,9 +188,7 @@
 							<input type="hidden" value=<%= rec_space %> name="space"/>
 							<input type="hidden" value=<%= rec_size%> name="size"/>
 							<input type="hidden" value=<%= rec_familyShape%> name="familyShape"/>
-							<input type="hidden" value= <%= email2 %> name="email2"/>
-							<%System.out.print(email2); %>
-							<input type="submit" class="genric-btn info radius" value="재추천 받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left">
+						    <input type="submit" class="genric-btn info radius" value="재추천 받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left">
 						</form> 
 							<a href="payment.jsp" class="genric-btn info radius"
 							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
@@ -216,10 +213,10 @@
 				<table>
 					<tr>
 						<%
-						String pro_style="모던";
+						String pro_style= rec_style1;
 						productDAO dao = new productDAO();
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
-						
+							for (int i=0; i < productsLists.size(); i++) {%>
 						for (int i=0; i < productsLists.size(); i++) {%>
 						<td class="products">
 							<button type="button" class="btn"
@@ -233,23 +230,6 @@
 						</td>
 						<% } %>
 
-
-						<!-- <td><img src="img/homepage/514_1.JPG" alt=""
-							style="height: 120px; width: 130px;"></td>
-						<td><img src="img/homepage/514_2.JPG" alt=""
-							style="height: 120px; width: 130px;"></td>
-						<td><img src="img/homepage/514_3.JPG" alt=""
-							style="height: 120px; width: 130px;"></td>
-						<td><img src="img/homepage/514_4.JPG" alt=""
-							style="height: 120px; width: 130px;"></td>
-						<td><img src="img/homepage/514_5.JPG" alt=""
-							style="height: 120px; width: 130px;"></td>
-						<td><img src="img/homepage/514_6.JPG" alt=""
-							style="height: 120px; width: 130px;"></td>
-						<td><img src="img/homepage/514_7.JPG" alt=""
-							style="height: 120px; width: 130px;"></td>
-						<td><img src="img/homepage/514_8.JPG" alt=""
-							style="height: 120px; width: 130px;"></td> -->
 					</tr>
 				</table>
 			</section>
