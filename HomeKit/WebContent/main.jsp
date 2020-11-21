@@ -55,22 +55,22 @@
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                     	<li class="nav-item">
-                                            <a class="nav-link" href="about.jsp" style="font-size:20px">소개</a>
+                                            <a class="nav-link" href="about.jsp" style="font-size:20px;color:black;">소개</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="recommendation.jsp" style="font-size:20px">추천</a>
+                                            <a class="nav-link" href="recommendation.jsp" style="font-size:20px;color:black;">추천</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="Used_Homekit_Sale.jsp" style="font-size:20px">중고키트 판매</a>
+                                            <a class="nav-link" href="Used_Homekit_Sale.jsp" style="font-size:20px;color:black;">중고키트 판매</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.jsp" style="font-size:20px">쇼핑몰</a>
+                                            <a class="nav-link" href="products.jsp" style="font-size:20px;color:black;">쇼핑몰</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <%if(email == null){ %>
-	                                <a href="login.jsp" style="color:#756595; font-size: 15px;">로그인</a>
-	                                <a href="register.jsp" style="margin-left: 15px; color:#756595; font-size: 15px;">회원가입</a>
+	                                <a href="login.jsp" style="color:#756595; font-size: 15px;color:black;">로그인</a>
+	                                <a href="register.jsp" style="margin-left: 15px; color:#756595; font-size: 15px;color:black;">회원가입</a>
                                 <%}else{ %>
 	                                <div class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle"
@@ -98,55 +98,68 @@
         </header>
  <!-- 수정: 상위메뉴 이름 지정 end -->
  <!-- Header part end-->
+ 
+ <!-- 메인 배경 -->
+ <!-- <div>
+ 	<img src="img/homepage/main.JPG"  alt="메인 화면 배경" style="width: 1600px;" >
+ </div> -->
+ 
+ 
+ 
  <!-- 슬라이드바 start -->
-         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="height: 800px; width: 900px; margin-left: 370px; margin-top: 50px;">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
+         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="height: 800px; width: 1200px; margin-left: 200px;">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/homepage/picture4.jpg" class="d-block w-100" alt="..." style="height:600px; width:900px;">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2 style="color:white; text-align: left;">첫 구매 할인</h2>
-                  <p style="color:white; font-size:25px; text-align: left;">할인 쿠폰 받아가세요~</p>
+                <div class="carousel-caption d-none d-md-block" style="margin-bottom: 150px;">
+                  <p style="color:white;font-size:100px;text-align: left;width: 1400px;"><b style="color:white;">"Create Your World"<b></p><br><br><br>
+                  <h2 style="color:white;  text-align: left; margin-left: 50px; margin-bottom: 20px;">당신을 위한 인테리어, '홈키트' 추천 서비스</h2>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="img/homepage/christmas1.jpeg" class="d-block w-100" alt="..." style="height:600px; width:900px;">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 style="color:white; text-align: right; margin-bottom:20px">크리스마스 할인</h2>
-                    <p style="color:white; font-size:25px; text-align:right; margin-bottom:200px">크리스마스 홈키트 50% 할인전!</p>
+                    <h2 style="color:black; font-size:40px; text-align: right; margin-bottom:30px">크리스마스 할인</h2>
+                    <p style="color:black; font-size:25px; text-align:right; margin-bottom:200px">크리스마스 홈키트 50% 할인전!</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="img/homepage/picture2.jpg" class="d-block w-100" alt="..." style="height:600px; width:900px;">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 style="color:white; text-align: left;">최저가 제품만 모았어요</h2>
+                <div class="carousel-caption d-none d-md-block" style="margin-bottom: 50px;">
+                    <h2 style="color:white; text-align: left; font-size:40px;">최저가 제품만 모았어요</h2>
                     <p style="color:white; font-size:25px; text-align: left;">이번주 최저가는?</p>
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev" style="height: 650px;">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" style="height: 650px;">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
          <!-- 슬라이드바 end -->
  
+ 		<div class="img" style="height:150px;width:1600px;margin-left: 0px; background-image: url(img/homepage/color.JPG);">
+	        <div class="content">
+	            <h2 style="color:white;">신규가입 시 30% 즉시할인 쿠폰 증정!(~12/25)</h2>
+	        </div>
+    	</div>
+ 	 
+ 
+ <br><br><br>
         <!--top place start-->
          <section class="top_place section_padding">
              <div class="container">
                  <div class="row justify-content-center">
                      <div class="col-xl-6">
                          <div class="section_tittle text-center">
-                             <h2>인기테마</h2>
+                             <h2>인테리어 인기테마</h2>
+ 		 					 <p style="font-size:25px;color:#B2A59F;">당신의 일상이 아름다워지는 순간</p>
                          </div>
+                         <div style="text-align:right;width: 850px;"><a href=""> 더보기 > </a></div><br>
                      </div>
                  </div>
                     <div class="row">
@@ -157,11 +170,11 @@
                                     <br>
                                 </div>
                                 <div class="hotel_text_iner"><br>
-                                    <h3>시바견과 함께하는 모던 하우스</h3><br><hr>
+                                    <h3 style="color:black;">시바견과 함께하는 모던 하우스</h3><hr>
                                     <div>
-		                                <p>모던, 가족</p>
-		                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+		                                <p style="color:#B2A59F;">모던, 가족</p>
+		                                <p style="color:#B2A59F;">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:#756595; text-align: right; font-size:30px;">12%</b></p>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
@@ -178,11 +191,11 @@
                                     <br><br>
                                 </div>
                                 <div class="hotel_text_iner">
-                                    <h3>빈티지 가구와 독특한 구조, 맥시멀리스트의 아파트</h3><hr>
+                                    <h3 style="color:black;">빈티지 가구와 독특한 구조, 맥시멀리스트의 아파트</h3><hr>
                                     <div>
-		                                <p>빈티지, 신혼부부</p>
-		                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+		                                <p style="color:#B2A59F;">빈티지, 신혼부부</p>
+		                                <p style="color:#B2A59F;">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:#756595; text-align: right; font-size:30px;">12%</b></p>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
@@ -199,11 +212,11 @@
                                     <br><br>
                                 </div>
                                 <div class="hotel_text_iner">
-                                    <h3>꼭 필요한 것들로만 채운 10평대의 나홀로 아파트 생활</h3><hr>
+                                    <h3 style="color:black;">꼭 필요한 것들로만 채운 10평대의 나홀로 아파트 생활</h3><hr>
                                     <div>
-		                                <p>모던, 자취생</p>
-		                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+		                                <p style="color:#B2A59F;">모던, 자취생</p>
+		                                <p style="color:#B2A59F;">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:#756595; text-align: right; font-size:30px;">12%</b></p>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
@@ -214,9 +227,16 @@
                         </div>
                     </div>
              </div>
-         </section>
+         </section><br><br><br>
          <!--top place end-->
-         <hr>
+         
+         <div class="img" style="height:150px;width:1600px;margin-left: 0px; background-image: url(img/homepage/color2.JPG);">
+	        <div class="content">
+	            <h2 style="color:black;">장바구니 가기</h2>
+	            <h3 style="color:black;">"뭐? 아직도 구매를 안했다고? 구매는 타이밍이다..."</h3> 
+	        </div>
+     	 </div>
+     	 
          <!--::industries start::-->
          <section class="hotel_list section_padding">
              <div class="container">
@@ -224,7 +244,9 @@
                      <div class="col-xl-6" style="padding-top: 140px;">
                          <div class="section_tittle text-center">
                              <h2>인기 키워드</h2>
+                             <p style="font-size:25px;color:#B2A59F;">대체 뭣이 중헌디!</p>
                          </div>
+                         <div style="text-align:right;width: 850px;"><a href=""> 더보기 > </a></div>
                      </div>
                  </div>
                  <div class="section-top-border" style="padding-top: 0px;">
@@ -232,65 +254,73 @@
                         <div class="col-md-4">
                             <a href="#" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/12.jpg); background-size: contain; background-repeat: no-repeat;""></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">프로방스한 스타일</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">#프로방스한 스타일</strong></span>
                                 </div>
                             </div> 
                         <div class="col-md-4">
                             <a href="img/elements/g2.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/13.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">핫딜 중고키트</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">#핫딜 중고키트</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-4">
                             <a href="img/elements/g3.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/14.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">미니멀한 스타일</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">#미니멀한 스타일</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-6">
                             <a href="img/elements/g4.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/15.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 200px;"><strong style="font-size:20px;">소소한 인테리어</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 200px;"><strong style="font-size:20px;">#소소한 인테리어</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-6">
                             <a href="img/elements/g5.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/16.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 200px;"><strong style="font-size:20px;">우드의 차분한 분위기</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 200px;"><strong style="font-size:20px;">#우드의 차분한 분위기</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-4">
                             <a href="img/elements/g6.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/17.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">따스한 분위기</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">#따스한 분위기</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-4">
                             <a href="img/elements/g7.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/18.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">신혼집</strong></span>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">#신혼집</strong></span>
                                 </div>
                         </div>
                         <div class="col-md-4">
                             <a href="img/elements/g8.jpg" class="img-pop-up">
                                 <div class="single-gallery-image" style="background: url(img/homepage/9.jpg);"></div></a>
-                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">깔끔함</strong></span></div>
+                                <div style="padding-top: 20px;"><span style="padding-left: 120px;"><strong style="font-size:20px;">#깔끔함</strong></span></div>
                             </div>
                         </div>
                     </div>
                 </div>
              </div>
-         </section>
+         </section><br><br><br>
          <!--::industries end::-->
-         <hr>
-     
+       
+		<div class="img" style="height:150px;width:1600px;margin-left: 0px; background-image: url(img/homepage/color.JPG);">
+	        <div class="content">
+	            <h2 style="color:white;">배송 조회하기</h2>
+	            <h3 style="color:white;">"내 홈키트는 잘 오고 있는걸까?"</h3> 
+	        </div>
+     	</div>
+
          <section class="hotel_list section_padding">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="section_tittle text-center">
                             <h2 style="padding-top: 100px;">중고키트 핫딜</h2>
+                             <p style="font-size:25px;color:#B2A59F;">인생은 타이밍</p>
                         </div>
+                        <div style="text-align:right;width: 850px;"><a href=""> 더보기 > </a></div><br>
                     </div>
                 </div>
                 <div class="row">
@@ -298,7 +328,7 @@
                         <div class="single_ihotel_list">
                             <a href="#"><img src="img/homepage/4.jpg" alt=""></a>
                             <div class="hotel_text_iner">
-                                <h3>인테리어 디자이너의 싱글라이프가 담긴 셀프 인테리어</h3>
+                                <h3 style="color:black;">인테리어 디자이너의 싱글라이프가 담긴 셀프 인테리어</h3><hr>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
@@ -307,8 +337,8 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
-                                <p>모던, 젊은 남성</p>
-                                <h5>홈키트 비용 = <span style="color:#5e02ab">기준가 20만원 → 할인가 10만원</span></h5>
+                                <p style="color:#B2A59F">모던, 젊은 남성</p>
+                                <h5><span style="color:#B2A59F">구매가격 201,000원 → 판매가격 65,000원</span></h5>
                             </div>
                         </div>
                     </div>
@@ -316,7 +346,7 @@
                         <div class="single_ihotel_list">
                             <a href="#"><img src="img/homepage/9.jpg" alt=""></a>
                             <div class="hotel_text_iner">
-                                <h3>군더더기 없는 깔끔한 인테리어에 풍경 한 스푼</h3>
+                                <h3 style="color:black;">군더더기 없는 깔끔한 인테리어에 풍경 한 스푼</h3><hr>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
@@ -325,8 +355,8 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
-                                <p>테마명, 거주하는 사람</p>
-                                <h5>홈키트 비용 = <span style="color:#5e02ab">기준가 20만원 → 할인가 10만원</span></h5>
+                                <p style="color:#B2A59F">북유럽, 가족</p>
+                                <h5><span style="color:#B2A59F">구매가격 175,000원 → 판매가격 100,000원</span></h5>
                             </div>
                         </div>
                     </div>
@@ -334,7 +364,7 @@
                         <div class="single_ihotel_list">
                             <a href="#"><img src="img/homepage/10.jpg" alt=""></a>
                             <div class="hotel_text_iner">
-                                <h3>부암동 주택살이┃일상과 비일상의 경계에 있는 집</a></h3>
+                                <h3 style="color:black;">부암동 주택살이┃일상과 비일상의 경계에 있는 집</a></h3><hr>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
@@ -343,8 +373,8 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
-                                <p>테마명, 거주하는 사람</p>
-                                <h5>홈키트 비용 = <span style="color:#5e02ab">기준가 20만원 → 할인가 10만원</span></h5>
+                                <p style="color:#B2A59F">빈티지, 중년부부</p>
+                                <h5><span style="color:#B2A59F">구매가격 150,000원 → 판매가격 120,000원</span></h5>
                             </div>
                         </div>
                     </div>
