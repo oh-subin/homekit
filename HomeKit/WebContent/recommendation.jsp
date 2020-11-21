@@ -130,46 +130,10 @@
                         aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
                         <div class="booking_form">
                            <form action="http://192.168.219.129:5000/firstrec" name ="rec1" id="recommend1" method="post">
-                           
-		<script type="text/javascript">
-		
-			$(document).ready(function() 
-		
-			{
-		
-				$("#select").click(function()
-		
-				{
-		
-					var formData = $("#recommend1").serialize();
-		
-					$.ajax({
-			 					type : "POST",
-			 				//	url : "http://192.168.50.26:5000/firstrec",//호남
-			 					url : "http://192.168.219.129:5000/firstrec",//집
-			 					cache : false,
-			 					data : formData,
-			 					success : onSuccess,
-			 					error : onError
-					});
-					$.ajax({
-			 					type : "POST",
-			 					url : "FirstRecommendation2",
-			 					cache : false,
-			 					data : formData,
-			 					success : onSuccess,
-			 					error : onError
-					});
-				});
-			});
-			function onSuccess(json, status){alert($.trim(json));}
-			function onError(data, status){alert("error");}
-		
-		</script>
-                                                      
+                                                                             
                               <div class="form-row">
                                  <div class="form_colum">
-                                    <select class="nc_select" name="select_space">
+                                    <select class="nc_select" name="select_space" value="select_space">
                                        <option selected>공간</option>
                                        <option value="oneroom">원룸&오피스텔</option>
                                        <option value="apartment">아파트</option>
@@ -178,7 +142,7 @@
                                     </select>
                                  </div>
                                  <div class="form_colum">
-                                    <select class="nc_select" name="select_size">
+                                    <select class="nc_select" name="select_size" value="select_size">
                                        <option selected>평수</option>
                                        <option value="10under">10평미만</option>
                                        <option value="10pyeong">10평대</option>
@@ -207,6 +171,55 @@
                                  </div>
                               </div>
                            </form>
+                           <script>
+                           const form = document.querySelector("#recommend1")
+                           const inputSpace = form.getElementsByName('select_space')
+                           const inputSize = form.getElementsByName('select_size')
+                           const inputFamily = form.getElementsByName('select_familyShape')
+                           
+                           function savetag(){
+                            	   localStorage.setItem("select_space", inputSpace.value);
+                            	   localStorage.setItem("select_size", inputSize.value);
+                            	   localStorage.setItem("select_familyShape", inputFamily.value);
+                               }
+                                                  
+                           </script>
+                           
+                           <script type="text/javascript">
+		
+			$(document).ready(function() 
+		
+			{
+		
+				$("#select").click(function()
+		
+				{
+					savetag();  
+					var formData = $("#recommend1").serialize();
+		
+					$.ajax({
+			 					type : "POST",
+			 				//	url : "http://192.168.50.26:5000/firstrec",//호남
+			 					url : "http://192.168.219.129:5000/firstrec",//집
+			 					cache : false,
+			 					data : formData,
+			 					success : onSuccess,
+			 					error : onError
+					});
+					$.ajax({
+			 					type : "POST",
+			 					url : "FirstRecommendation",
+			 					cache : false,
+			 					data : formData,
+			 					success : onSuccess,
+			 					error : onError
+					});
+				});
+			});
+			function onSuccess(json, status){alert($.trim(json));}
+			function onError(data, status){alert("error");}
+		
+		</script>
                         </div>
                      </div>
                   </div>

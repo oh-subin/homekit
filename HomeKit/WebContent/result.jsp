@@ -38,17 +38,18 @@
 
 </head>
 
+                           
 <body>
 	<% request.setCharacterEncoding("UTF-8"); %>
 	<%
 	 String results = request.getParameter("results");
-	 String rec_title1 = results.substring(0, 24);
-	 String rec_style1 = results.substring(24, 34);
-	 String rec_imgurl1 = results.substring(35,55);
+	 String rec_title1 = results.substring(0, 18);
+	 String rec_imgurl1 = "https://image.ohou.se/i/bucketplace-v2-development/uploads/"+results.substring(77, 128)+"&w=960";
+	 String rec_style1 = results.substring(126,127);
 
 	 
      String email = (String)session.getAttribute("email");
-     
+     String email2 = email.substring(0,1);
      String rec_space = (String) request.getAttribute("rec_space");
      String rec_size = (String) request.getAttribute("rec_size");
      String rec_familyShape = (String) request.getAttribute("rec_familyShape");
@@ -56,8 +57,12 @@
      
 	  
      if(results != null){
-    	 System.out.print(results);
-	  }
+    	 System.out.println(email2);
+    	 System.out.println("-------");
+    	 System.out.println(rec_title1);
+  	 	 System.out.println(rec_imgurl1);
+    	 System.out.println("-------"); 
+     }
 	
      
      
@@ -156,7 +161,7 @@
 				<h4>테마 추천 결과</h4><br>
 					<div class="about_img">
 																	<!-- 이미지 src안에 rec_imgurl넣기 -->
-						<img src=<%=rec_imgurl1 %> alt="#"
+						<img src=<%="'"+rec_imgurl1+"'" %> alt="#"
 							style="height: 400px; width: 500px;"><br>
 						
 					</div>
@@ -176,7 +181,7 @@
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
 
-							<p style="color: black;">추천 사용자: <%= rec_style1 %>, 1~2인 가구</p>	<!-- rec_style -->
+							<p style="color: black;">추천 사용자:1~2인 가구</p>	<!-- rec_style -->
 
 							<p style="color: black;">
 								가격 <b style="color: red;">30만원</b>				
@@ -184,10 +189,8 @@
 						</div>
 						<br> <br>
 						<div class="result_btn" style="margin-top:110px;">
-						<form action="http://192.168.219.129:5000/secondrec" method="post">
-							<input type="hidden" value=<%= rec_space %> name="space"/>
-							<input type="hidden" value=<%= rec_size%> name="size"/>
-							<input type="hidden" value=<%= rec_familyShape%> name="familyShape"/>
+						<form action="http://192.168.219.129:5000/secondrec" method="GET">
+							<input type="hidden" value=<%= email2%> name="email2"/>
 						    <input type="submit" class="genric-btn info radius" value="재추천 받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left">
 						</form> 
 							<a href="payment.jsp" class="genric-btn info radius"
