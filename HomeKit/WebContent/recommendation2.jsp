@@ -119,7 +119,7 @@
 
    <!--::industries start::-->
    <section class="hotel_list section_padding" style="margin-top:100px">
-   <form action="http://192.168.50.26:5000/secondrec" method="post">
+   <form action="http://192.168.219.129:5000/secondrec" method="post">
       <div class="container" style="margin-left: 0px; margin-right: 0px;">
          <div class="row justify-content-center" style="margin-right: 340px;">
             <div class="col-xl-6">
@@ -209,7 +209,8 @@
 		
 					$.ajax({
 			 					type : "POST",
-			 					url : "http://192.168.50.26:5000/secondrec",
+			 				  //url : "http://192.168.219.129:5000/secondrec",//호남
+			 					url : "http://192.168.219.129:5000/secondrec",//집
 			 					cache : false,
 			 					data : formData,
 			 					success : onSuccess,

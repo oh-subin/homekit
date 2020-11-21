@@ -44,7 +44,7 @@
 	 String results = request.getParameter("results");
 	 String rec_title1 = results.substring(0, 24);
 	 String rec_style1 = results.substring(24, 34);
-	 String rec_imgurl1 = results.substring(55,90);
+	 String rec_imgurl1 = results.substring(35,55);
 
 	 
      String email = (String)session.getAttribute("email");
@@ -56,7 +56,7 @@
      
 	  
      if(results != null){
-    	 
+    	 System.out.print(results);
 	  }
 	
      
@@ -184,7 +184,7 @@
 						</div>
 						<br> <br>
 						<div class="result_btn" style="margin-top:110px;">
-						<form action="http://192.168.50.26:5000/secondrec" method="post">
+						<form action="http://192.168.219.129:5000/secondrec" method="post">
 							<input type="hidden" value=<%= rec_space %> name="space"/>
 							<input type="hidden" value=<%= rec_size%> name="size"/>
 							<input type="hidden" value=<%= rec_familyShape%> name="familyShape"/>
