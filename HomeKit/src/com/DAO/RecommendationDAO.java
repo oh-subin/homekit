@@ -63,7 +63,7 @@ public class RecommendationDAO {
 			getConn();
 
 			// ------------------- DB에 SQL 명령문 준비
-			String sql = "select rec_style, rec_title, rec_imgurl from INTERIOR_CONTENTS where rec_space=? and rec_size=? and rec_familyshape=?";
+			String sql = "select rec_style, rec_title, rec_imgurl from INTERIOR_CONTENTS where rec_space=? and rec_size=? and rec_familyshape=? and rownum <= 4";
 			psmt = conn.prepareStatement(sql); // rec_style, rec_title, rec_imgurl
 			psmt.setString(1, rec_space);
 			psmt.setString(2, rec_size);

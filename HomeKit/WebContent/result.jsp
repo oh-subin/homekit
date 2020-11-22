@@ -189,7 +189,7 @@
 						</div>
 						<br> <br>
 						<div class="result_btn" style="margin-top:110px;">
-						<a href="recommendation2.jsp" class="genric-btn info radius" value="재추천 받기" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left;">재추천받기</a>
+						<a href="recommendation2.jsp" class="genric-btn info radius" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left;">재추천받기</a>
 							<a href="payment.jsp" class="genric-btn info radius"
 							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
 

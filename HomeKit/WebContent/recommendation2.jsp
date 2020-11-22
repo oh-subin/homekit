@@ -191,56 +191,72 @@
 						</div>
 					</div>
 				</div>
-				<div class="row gallery-item"
-					style="margin-left: 350.; margin-left: 250px; width: 1200px;">
+				<div class="row gallery-item" style="margin-left: 350.; margin-left: 250px; width: 1200px;">
+		
 
-					<!-- 반복문 시작 지점 -->
-					               <% 
-					               String rec_space="oneroom";
-					               String rec_size="10under";
-					               String rec_familyShape="single";
-					               %>
-              
-   
-               
                <script>
               
                $(document).ready(function(){
-                  function loadtag() {
-                	  
-                     rec_space = sessionStorage.getItem("select_space");
-                     rec_size = sessionStorage.getItem("select_size");
-                     rec_familyShape = sessionStorage.getItem("select_familyShape");
+                             
+                  let rec_space = sessionStorage.getItem("select_space");
+                  let rec_size = sessionStorage.getItem("select_size");
+                  let rec_familyShape = sessionStorage.getItem("select_familyShape");
+                 
+                  let rec_obj = {
+                	space: rec_space,
+                	size: rec_size,
+                	familyShape: rec_familyShape
                   }
-               	loadtag();
-               	console.log(rec_space);
-               	console.log(rec_size);
-               	console.log(rec_familyShape);
+                  
+                  $.ajax({
+                	  url:'FirstRecommendation2',
+                	  data:rec_obj,
+                	  dataType:'json',
+                	  success:function(result){
+                		  console.log(result);
+                		  
+                		  let html = '';
+                		  
+                		  for(let i=0; i<result.length; i++){
+                			let title = result[i].rec_title;
+                			let img_path = result[i].rec_img;
+                			let style= result[i].rec_style;
+                			html += rec_productList(i+1, title, img_path, style);
+                		  }
+
+                		  $('div.row.gallery-item').html(html);
+                	  }
+                  })
+                  
+                  //재추천 상품 리스트
+                  function rec_productList(index, title, img_path, style){
+                	  console.log(index, img_path, style);
+                	  let html='<div class="col-md-6" style="float: right;">';
+                	  html += '<a href='+img_path+' class="img-pop-up">';
+                	  html += '<div class="single-gallery-image" style="background: url('+img_path+'); width: 400px; height: 300px;"></div>';
+                	  html += '</a>';
+                	  html += '<div class="switch-wrap d-flex justify-content-between">';
+                	  html += '<div class="ratingVal'+index+'">';
+                	  html += '<input type="hidden" name="email" value="<%=email%>">';
+                	  html += '<label><input type="radio" name="rating'+index+'" value="1">1</label>';
+                	  html += '<label><input type="radio" name="rating'+index+'" value="2">2</label>';
+                	  html += '<label><input type="radio" name="rating'+index+'" value="3">3</label>';
+                	  html += '<label><input type="radio" name="rating'+index+'" value="4">4</label>';
+                	  html += '<label><input type="radio" name="rating'+index+'" value="5">5</label>';
+                	  html += '<input type="hidden" value="'+style+'" name="style'+index+'" />';
+                	  html += '<p>'+title+'</p>';
+                	  html += '<p>'+style+'</p>';
+                	  html += '</div></div></div>';
+                            	  
+                	  return html;
+                  }
+           
                	});
                </script>
-             
-               <% 
-               RecommendationDAO dao = new RecommendationDAO();
-               ArrayList<RecommendationDTO> imgList = dao.showIMG(rec_space, rec_size, rec_familyShape);
-               //System.out.println(imgList);
-         //      System.out.println(rec_space);
-          //     System.out.println(rec_size);
-           //    System.out.println(rec_familyShape);
-               %>
-					<%
-						if (imgList.isEmpty()) {
-					%>
+ 
 
-					<h2>추천해주세요!</h2>
-					<%
-						} else {
-					%>
-					<%
-						for (int i = 0; i < 4; i++) {
-					%>
-
-					<div class="col-md-6" style="float: right;">
-						<%-- <img src="<%= rec_imgurl %>"></img>	 --%>
+	<%-- 				<div class="col-md-6" style="float: right;">
+						<img src="<%= rec_imgurl %>"></img>	
 						<a href=<%=imgList.get(i).getRec_img()%> class="img-pop-up">
 							<div class="single-gallery-image"
 								style="background: url(<%=imgList.get(i).getRec_img()%>); width: 400px; height: 300px;"></div>
@@ -255,17 +271,12 @@
 								 <label><input type="radio" name="rating<%=i + 1%>" value="4">4</label> 
 								 <label><input type="radio" name="rating<%=i + 1%>" value="5">5</label> 
 								 <input type="hidden" value=<%=imgList.get(i).getRec_style()%> name="style<%=i + 1%>" />
-								 <%-- <p><%=imgList.get(i).getRec_title()%></p> --%>
+								 <p><%=imgList.get(i).getRec_title()%></p>
 								<p><%=imgList.get(i).getRec_style()%></p>
 							</div>
 						</div>
-					</div>
-					<%
-						}
-					%>
-					<%
-						}
-					%>
+					</div> --%>
+		
 
 				</div>
 			</div>
