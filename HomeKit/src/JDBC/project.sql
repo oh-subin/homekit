@@ -9,7 +9,7 @@ TEL VARCHAR2(50)
 
 SELECT * FROM interior_user
 테이블 값 삽입(멤버)
-INSERT INTO MEMBER values('2주0', 'ken0000@naver.com', '1234567', '집2', '010-4128-3480')
+INSERT INTO MEMBER values('테스터', '집2','tester@roominterior.com', '123', '010-1233-3480')
 
 테이블 조회(멤버)
 SELECT * FROM MEMBER

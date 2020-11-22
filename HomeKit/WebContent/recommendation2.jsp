@@ -4,7 +4,7 @@
 <%@ page import="com.DAO.RecommendationDAO"%>
 <%@ page import="com.DTO.RecommendationDTO"%>
 
-
+<script src="js/jquery-1.12.1.min.js"></script>
 <!doctype html>
 <html lang="en">
 
@@ -40,13 +40,53 @@
 </head>
 
 <body>
+<script type="text/javascript">
+		$(document).ready(function()
+
+		{
+
+			$("#select").click(function()
+
+			{
+
+				var formData = $("#recommend1").serialize();
+
+				$.ajax({
+					type : "POST",
+					//url : "http://192.168.219.129:5000/secondrec",//호남
+					url : "http://192.168.219.129:5000/secondrec",//집
+					cache : false,
+					data : formData,
+					success : onSuccess,
+					error : onError
+				});
+				$.ajax({
+					type : "POST",
+					url : "SecondRecommendation",
+					cache : false,
+					data : formData,
+					success : onSuccess,
+					error : onError
+				});
+			});
+		});
+		function onSuccess(json, status) {
+			alert($.trim(json));
+		}
+		function onError(data, status) {
+			alert("error");
+		}
+	</script>
 	<%
-		String get_email = (String) session.getAttribute("email");
+	String get_email = (String) session.getAttribute("email");
 
 	String email = "";
 
 	if (get_email != null) {
 		email = get_email.substring(0, get_email.lastIndexOf("@"));
+	//	System.out.println("************");
+		System.out.println(email);
+	//	System.out.println("************");
 	} else {
 	}
 
@@ -155,22 +195,38 @@
 					style="margin-left: 350.; margin-left: 250px; width: 1200px;">
 
 					<!-- 반복문 시작 지점 -->
-					<script>
-						function loadtag() {
-							localStorage.getItem("select_space");
-							localStorage.getItem("select_size");
-							localStorage.getItem("select_familyShape");
-						}
-					</script>
-					<%
-					String rec_space = (String) request.getAttribute("rec_space");
-					String rec_size = (String) request.getAttribute("rec_size");
-					String rec_familyShape = (String) request.getAttribute("rec_familyShape");
-
-					RecommendationDAO dao = new RecommendationDAO();
-					ArrayList<RecommendationDTO> imgList = dao.showIMG(rec_space, rec_size, rec_familyShape);
-					System.out.println(imgList);
-					%>
+					               <% 
+					               String rec_space="oneroom";
+					               String rec_size="10under";
+					               String rec_familyShape="single";
+					               %>
+              
+   
+               
+               <script>
+              
+               $(document).ready(function(){
+                  function loadtag() {
+                	  
+                     rec_space = sessionStorage.getItem("select_space");
+                     rec_size = sessionStorage.getItem("select_size");
+                     rec_familyShape = sessionStorage.getItem("select_familyShape");
+                  }
+               	loadtag();
+               	console.log(rec_space);
+               	console.log(rec_size);
+               	console.log(rec_familyShape);
+               	});
+               </script>
+             
+               <% 
+               RecommendationDAO dao = new RecommendationDAO();
+               ArrayList<RecommendationDTO> imgList = dao.showIMG(rec_space, rec_size, rec_familyShape);
+               //System.out.println(imgList);
+         //      System.out.println(rec_space);
+          //     System.out.println(rec_size);
+           //    System.out.println(rec_familyShape);
+               %>
 					<%
 						if (imgList.isEmpty()) {
 					%>
@@ -191,15 +247,15 @@
 						</a>
 						<div class="switch-wrap d-flex justify-content-between">
 							<div class="ratingVal<%=i + 1%>">
-								<input type="hidden" name=<%=email%> value=<%=email%>> <label><input
-									type="radio" name="rating<%=i + 1%>" value="1">1</label> <label><input
-									type="radio" name="rating<%=i + 1%>" value="2">2</label> <label><input
-									type="radio" name="rating<%=i + 1%>" value="3">3</label> <label><input
-									type="radio" name="rating<%=i + 1%>" value="4">4</label> <label><input
-									type="radio" name="rating<%=i + 1%>" value="5">5</label> <input
-									type="hidden" value=<%=imgList.get(i).getRec_style()%>
-									name="style<%=i + 1%>" />
-								<%-- <p><%=imgList.get(i).getRec_title()%></p>--%>
+								<input type="hidden" name="email" value=<%=email %>> 
+								<% System.out.print(email);%>
+								<label><input type="radio" name="rating<%=i + 1%>" value="1">1</label> 
+								<label><input type="radio" name="rating<%=i + 1%>" value="2">2</label>
+								 <label><input type="radio" name="rating<%=i + 1%>" value="3">3</label> 
+								 <label><input type="radio" name="rating<%=i + 1%>" value="4">4</label> 
+								 <label><input type="radio" name="rating<%=i + 1%>" value="5">5</label> 
+								 <input type="hidden" value=<%=imgList.get(i).getRec_style()%> name="style<%=i + 1%>" />
+								 <%-- <p><%=imgList.get(i).getRec_title()%></p> --%>
 								<p><%=imgList.get(i).getRec_style()%></p>
 							</div>
 						</div>
@@ -224,43 +280,7 @@
 	<br>
 	<br>
 
-	<script type="text/javascript">
-		$(document).ready(function()
-
-		{
-
-			$("#select").click(function()
-
-			{
-
-				var formData = $("#recommend1").serialize();
-
-				$.ajax({
-					type : "POST",
-					//url : "http://192.168.219.129:5000/secondrec",//호남
-					url : "http://192.168.219.129:5000/secondrec",//집
-					cache : false,
-					data : formData,
-					success : onSuccess,
-					error : onError
-				});
-				$.ajax({
-					type : "POST",
-					url : "SecondRecommendation",
-					cache : false,
-					data : formData,
-					success : onSuccess,
-					error : onError
-				});
-			});
-		});
-		function onSuccess(json, status) {
-			alert($.trim(json));
-		}
-		function onError(data, status) {
-			alert("error");
-		}
-	</script>
+	
 
 
 
@@ -294,7 +314,7 @@
 	<!-- footer part end-->
 
 	<!-- jquery plugins here-->
-	<script src="js/jquery-1.12.1.min.js"></script>
+	
 	<!-- popper js -->
 	<script src="js/popper.min.js"></script>
 	<!-- bootstrap js -->

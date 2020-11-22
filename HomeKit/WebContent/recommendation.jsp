@@ -3,7 +3,7 @@
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="com.DAO.RecommendationDAO"%>
 <%@ page import="com.DTO.RecommendationDTO"%>
-   
+  <script src="js/jquery-1.12.1.min.js"></script> 
 
 <!doctype html>
 <html lang="en">
@@ -133,8 +133,8 @@
                                                                              
                               <div class="form-row">
                                  <div class="form_colum">
-                                    <select class="nc_select" name="select_space" value="select_space">
-                                       <option selected>공간</option>
+                                    <select class="nc_select" name="select_space" id="select_space" >
+                                       <option value="">공간</option>
                                        <option value="oneroom">원룸&오피스텔</option>
                                        <option value="apartment">아파트</option>
                                        <option value="villa">빌라&연립</option>
@@ -142,8 +142,8 @@
                                     </select>
                                  </div>
                                  <div class="form_colum">
-                                    <select class="nc_select" name="select_size" value="select_size">
-                                       <option selected>평수</option>
+                                    <select class="nc_select" name="select_size" id="select_size" >
+                                       <option value="">평수</option>
                                        <option value="10under">10평미만</option>
                                        <option value="10pyeong">10평대</option>
                                        <option value="20pyeong">20평대</option>
@@ -153,8 +153,8 @@
                                     </select>
                                  </div>
                                  <div class="form_colum"  style="margin-right: 290px" >
-                                    <select class="nc_select" name="select_familyShape">
-                                       <option selected>가족형태</option>
+                                    <select class="nc_select" name="select_familyShape" id="select_familyShape">
+                                       <option value="">가족형태</option>
                                        <option value="single">싱글라이프</option>
                                        <option value="parent">부모님과 함께 사는 집</option>
                                        <option value="couple">신혼부부</option>
@@ -171,18 +171,27 @@
                                  </div>
                               </div>
                            </form>
+                          
                            <script>
-                           const form = document.querySelector("#recommend1")
-                           const inputSpace = form.getElementsByName('select_space')
-                           const inputSize = form.getElementsByName('select_size')
-                           const inputFamily = form.getElementsByName('select_familyShape')
+                          
+
                            
+                          
+                          
+                         
+                    
+                  
                            function savetag(){
-                            	   localStorage.setItem("select_space", inputSpace.value);
-                            	   localStorage.setItem("select_size", inputSize.value);
-                            	   localStorage.setItem("select_familyShape", inputFamily.value);
-                               }
-                                                  
+                        	   
+                        	   inputFamily= $("select[name=select_familyShape] option:selected").val();
+                               inputSpace= $("select[name=select_space] option:selected").val();
+                               inputSize= $("select[name=select_size] option:selected").val();
+                               localStorage.clear();
+                               sessionStorage.setItem("select_space", inputSpace);
+                               sessionStorage.setItem("select_size", inputSize);
+                               sessionStorage.setItem("select_familyShape", inputFamily);
+                               
+                       	}          
                            </script>
                            
                            <script type="text/javascript">
@@ -194,7 +203,7 @@
 				$("#select").click(function()
 		
 				{
-					savetag();  
+					savetag();
 					var formData = $("#recommend1").serialize();
 		
 					$.ajax({
@@ -206,14 +215,7 @@
 			 					success : onSuccess,
 			 					error : onError
 					});
-					$.ajax({
-			 					type : "POST",
-			 					url : "FirstRecommendation",
-			 					cache : false,
-			 					data : formData,
-			 					success : onSuccess,
-			 					error : onError
-					});
+					
 				});
 			});
 			function onSuccess(json, status){alert($.trim(json));}
@@ -253,7 +255,7 @@
    <!-- footer part end-->
 
    <!-- jquery plugins here-->
-   <script src="js/jquery-1.12.1.min.js"></script>
+   
    <!-- popper js -->
    <script src="js/popper.min.js"></script>
    <!-- bootstrap js -->
