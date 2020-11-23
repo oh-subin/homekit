@@ -4235,8 +4235,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 257, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
 .genric-btn.info {
-	color: #rgba(168, 167, 167, 0.5);
-	background: #B2A59F;
+	color: white;
+	background: #5a4b7657;
 	border: 1px solid transparent;
 }
 

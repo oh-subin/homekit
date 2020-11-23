@@ -189,9 +189,9 @@
 						</div>
 						<br> <br>
 						<div class="result_btn" style="margin-top:110px;">
-						<a href="recommendation2.jsp" class="genric-btn info radius" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left;">재추천받기</a>
+						<a href="recommendation2.jsp" class="genric-btn info radius" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left;background-color:#5a4b7657">재추천받기</a>
 							<a href="payment.jsp" class="genric-btn info radius"
-							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;">구매하기</a>
+							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;background-color:#5a4b7657">구매하기</a>
 
 						</div>
 					</div>
@@ -258,7 +258,7 @@
                         <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
                         <p>미니멀&심플</p><br>
                         <span>홈키트 가격 = 5만원</span><br><hr>
-                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                        <a href="#" class="genric-btn info circle" style="background-color:#5a4b7657; color:white">홈키트 구경하기</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
