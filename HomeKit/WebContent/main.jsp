@@ -156,10 +156,10 @@
                  <div class="row justify-content-center">
                      <div class="col-xl-6">
                          <div class="section_tittle text-center">
-                             <h2>인테리어 인기테마</h2>
- 		 					 <p style="font-size:25px;color:#B2A59F;">당신의 일상이 아름다워지는 순간</p>
+                             <h2 style="color:#756595;">인테리어 인기테마</h2>
+ 		 					 <p style="font-size:25px;color:#808080;">당신의 일상이 아름다워지는 순간</p>
                          </div>
-                         <div style="text-align:right;width: 850px;"><a href=""> 더보기 > </a></div><br>
+                         <div style="text-align:right;width: 850px; color:#808080;">더보기 ></div><br>
                      </div>
                  </div>
                     <div class="row">
@@ -170,16 +170,14 @@
                                     <br>
                                 </div>
                                 <div class="hotel_text_iner"><br>
-                                    <h3 style="color:black;">시바견과 함께하는 모던 하우스</h3><hr>
+                                    <h3 style="color:black;">시바견과 함께하는 행복한 모던 하우스</h3><hr>
                                     <div>
-		                                <p style="color:#B2A59F;">모던, 가족</p>
-		                                <p style="color:#B2A59F;">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:#756595; text-align: right; font-size:30px;">12%</b></p>
+		                                <p style="color:rgb(105,72,52);">모던, 가족</p>
+		                                <p style="color:rgb(105,72,52);">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+		                                <p style="color:black;">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
-		                                <span class="fa fa-star"></span>
-		                                <span class="fa fa-star"></span>
 									</div>
 								</div>
                             </div>
@@ -193,14 +191,14 @@
                                 <div class="hotel_text_iner">
                                     <h3 style="color:black;">빈티지 가구와 독특한 구조, 맥시멀리스트의 아파트</h3><hr>
                                     <div>
-		                                <p style="color:#B2A59F;">빈티지, 신혼부부</p>
-		                                <p style="color:#B2A59F;">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:#756595; text-align: right; font-size:30px;">12%</b></p>
+		                                <p style="color:rgb(105,72,52);">빈티지, 신혼부부</p>
+		                                <p style="color:rgb(105,72,52);">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+		                                <p style="color:black;">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
-		                                <span class="fa fa-star"></span>
-		                                <span class="fa fa-star"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                
 									</div>
 								</div>
                             </div>
@@ -214,14 +212,12 @@
                                 <div class="hotel_text_iner">
                                     <h3 style="color:black;">꼭 필요한 것들로만 채운 10평대의 나홀로 아파트 생활</h3><hr>
                                     <div>
-		                                <p style="color:#B2A59F;">모던, 자취생</p>
-		                                <p style="color:#B2A59F;">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-		                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:#756595; text-align: right; font-size:30px;">12%</b></p>
+		                                <p style="color:rgb(105,72,52);">모던, 자취생</p>
+		                                <p style="color:rgb(105,72,52);">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+		                                <p style="color:black;">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
-		                                <span class="fa fa-star checked"></span>
-		                                <span class="fa fa-star"></span>
-		                                <span class="fa fa-star"></span>
+		                                
 									</div>
                             </div>
                         </div>
@@ -229,13 +225,6 @@
              </div>
          </section><br><br><br>
          <!--top place end-->
-         
-         <div class="img" style="height:150px;width:1600px;margin-left: 0px; background-image: url(img/homepage/color2.JPG);">
-	        <div class="content">
-	            <h2 style="color:black;">장바구니 가기</h2>
-	            <h3 style="color:black;">"뭐? 아직도 구매를 안했다고? 구매는 타이밍이다..."</h3> 
-	        </div>
-     	 </div>
      	 
          <!--::industries start::-->
          <section class="hotel_list section_padding">
@@ -243,10 +232,10 @@
                  <div class="row justify-content-center">
                      <div class="col-xl-6" style="padding-top: 140px;">
                          <div class="section_tittle text-center">
-                             <h2>인기 키워드</h2>
-                             <p style="font-size:25px;color:#B2A59F;">대체 뭣이 중헌디!</p>
+                             <h2 style="color:#756595;">인기 키워드</h2>
+                             <p style="font-size:25px;color:#808080;">다른 사람들의 일상 속으로 들어가보세요</p>
                          </div>
-                         <div style="text-align:right;width: 850px;"><a href=""> 더보기 > </a></div>
+                         <div style="text-align:right;width: 850px;color:#808080;">더보기 ></div>
                      </div>
                  </div>
                  <div class="section-top-border" style="padding-top: 0px;">
@@ -304,23 +293,16 @@
              </div>
          </section><br><br><br>
          <!--::industries end::-->
-       
-		<div class="img" style="height:150px;width:1600px;margin-left: 0px; background-image: url(img/homepage/color.JPG);">
-	        <div class="content">
-	            <h2 style="color:white;">배송 조회하기</h2>
-	            <h3 style="color:white;">"내 홈키트는 잘 오고 있는걸까?"</h3> 
-	        </div>
-     	</div>
 
          <section class="hotel_list section_padding">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="section_tittle text-center">
-                            <h2 style="padding-top: 100px;">중고키트 핫딜</h2>
-                             <p style="font-size:25px;color:#B2A59F;">인생은 타이밍</p>
+                            <h2 style="padding-top: 100px; color:#756595;">중고키트 핫딜</h2>
+                             <p style="font-size:25px;color:#808080;">서두르지 않으면 품절될 수 있습니다</p>
                         </div>
-                        <div style="text-align:right;width: 850px;"><a href=""> 더보기 > </a></div><br>
+                        <div style="text-align:right;width: 850px; color:#808080;">더보기 ></div><br>
                     </div>
                 </div>
                 <div class="row">
@@ -337,8 +319,8 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
-                                <p style="color:#B2A59F">모던, 젊은 남성</p>
-                                <h5><span style="color:#B2A59F">구매가격 201,000원 → 판매가격 65,000원</span></h5>
+                                <p style="color:rgb(105,72,52);">모던, 젊은 남성</p>
+                                <h5><span style="color:black;">구매가격 201,000원 → <b style="color:red;">판매가격 65,000원</b></span></h5>
                             </div>
                         </div>
                     </div>
@@ -355,8 +337,8 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
-                                <p style="color:#B2A59F">북유럽, 가족</p>
-                                <h5><span style="color:#B2A59F">구매가격 175,000원 → 판매가격 100,000원</span></h5>
+                                <p style="color:rgb(105,72,52);">북유럽, 가족</p>
+                                <h5><span style="color:black;">구매가격 175,000원 → <b style="color:red;">판매가격 100,000원</b></h5>
                             </div>
                         </div>
                     </div>
@@ -373,8 +355,8 @@
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <span>(210 review)</span>
                                 </div>
-                                <p style="color:#B2A59F">빈티지, 중년부부</p>
-                                <h5><span style="color:#B2A59F">구매가격 150,000원 → 판매가격 120,000원</span></h5>
+                                <p style="color:rgb(105,72,52);">빈티지, 중년부부</p>
+                                <h5><span style="color:black;">구매가격 150,000원 → <b style="color:red;">판매가격 120,000원</b></span></h5>
                             </div>
                         </div>
                     </div>
