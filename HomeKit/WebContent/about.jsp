@@ -111,11 +111,11 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about_text">
-                        <h5>홈키트란?</h5>
-                        <h2>셀프 인테리어를 어려워하는 당신을 위한 키트</h2>
-                        <p>코로나19, 사회적 거리두기 시행으로 집에 머무는 시간이 증가하는 시대, 인테리어의 관심은 점점 더 증가하고 있습니다.</p>
-                        <p>하지만 오늘도 당신은 인테리어 플랫폼에서 장바구니에 물건만 담으셨나요? 인테리어 소품은 이쁜데 막상 인테리어를 하는 건 어려우셨죠?</p>
-                        <p>그런 당신을 위해 준비했습니다. 우리 사이트에서 제공하는 홈키트로 당신의 방을 쉽고 빠르게 꾸며보세요. 오늘부터 당신도 인테리어 전문가가 될 수 있습니다!</p>
+                        <h5><b style="color:black;">홈키트란?</b></h5>
+                        <h2><b style="color:#756595">셀프 인테리어를 어려워하는 당신을 위한 키트</b></h2>
+                        <p style="color:#808080;">코로나19, 사회적 거리두기 시행으로 집에 머무는 시간이 증가하는 시대, 인테리어의 관심은 점점 더 증가하고 있습니다.</p>
+                        <p style="color:#808080;">하지만 오늘도 당신은 인테리어 플랫폼에서 장바구니에 물건만 담으셨나요? 인테리어 소품은 이쁜데 막상 인테리어를 하는 건 어려우셨죠?</p>
+                        <p style="color:#808080;">그런 당신을 위해 준비했습니다. 우리 사이트에서 제공하는 홈키트로 당신의 방을 쉽고 빠르게 꾸며보세요. 오늘부터 당신도 인테리어 전문가가 될 수 있습니다!</p>
                     </div>
                 </div>
             </div>
@@ -123,11 +123,10 @@
     </section>
     <!-- about us css end-->
 
-	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3sS4he7onv0omSZNBR26vDxthKU5oj9Xzw&usqp=CAU"
-	style="margin-top: 400px;margin-left: 700px;">
+	<img src="img/homepage/point.JPG;" style="margin-top: 400px;margin-left: 700px;">
 
     <!--top place start-->
-    <div><h1 style="margin-top: 40px;margin-left: 740px;">메뉴 구성</h1></div>
+    <div><h1 style="margin-top: 40px;margin-left: 700px;">메뉴 구성</h1></div>
     <section class="event_part section_padding" style="margin-top: 50px;height: 570px;padding-top: 10px;">
         <div class="container">
             <div class="row">
@@ -141,7 +140,7 @@
                                         <h5>머신러닝이 당신에게 맞는 홈키트를 추천해드립니다!</h5>
                                         <p><strong>태그 선택</strong> 인테리어에 필요한 사항을 태그로 입력해주세요.<br></p>
                                         <p><strong>혹시 마음에 들지 않으시나요?</strong> 재추천 받기 버튼을 눌러 인테리어 스타일을 보고 선호하는 인테리어 순으로 평점을 등록해주세요.</p>
-                                        <a href="recommendation.jsp" class="btn_1">추천받으러 이동하기</a> 
+                                        <a href="recommendation.jsp" class="btn_1" style="background-color: #5a4b7657; color:#fff;">추천받으러 이동하기</a> 
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +153,7 @@
                                         <p>새로운 홈키트로 인테리어를 바꾸고 싶은 사용자를 위한 페이지입니다. 사용하지 않는 홈키트를 되팔고 새로운 홈키트를 구매할 수 있습니다.
                                         	<br>구매자는 홈키트를 값싼 가격에 구매할 수 있어 인테리어 비용의 부담을 덜어드립니다.</p>
                                         <!-- "javascript:void(0)" : 클릭 안 되게  -> 페이지 이동할 게 없기 때문에 -->
-                                        <a href="Used_Homekit_Sale.jsp" class="btn_1">중고키트 판매하러 이동하기</a>
+                                        <a href="Used_Homekit_Sale.jsp" class="btn_1" style="background-color: #5a4b7657; color:#fff;">중고키트 판매하러 이동하기</a>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +165,7 @@
                                         <h2>쇼핑몰</h2>
                                         <p>다양한 홈키트를 한번에 만나볼 수 있는 홈키트 쇼핑몰입니다. 
                                         <br>여러 상품을 비교해보며 원하는 홈키트를 골라보세요!</p>
-                                        <a href="products.jsp" class="btn_1">쇼핑몰 구경하러 이동하기</a>
+                                        <a href="products.jsp" class="btn_1" style="background-color: #5a4b7657; color:#fff;">쇼핑몰 구경하러 이동하기</a>
                                     </div>
                                         
                                 </div>
