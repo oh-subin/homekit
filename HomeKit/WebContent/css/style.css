@@ -5706,7 +5706,7 @@ element.style {
 
 /* product.html의 별점 css */
 .checked {
-  color: rgb(255, 166, 240);
+  color: #cdb4ff;
 }
 
 /* product_detail.html 사이드 바 css */
