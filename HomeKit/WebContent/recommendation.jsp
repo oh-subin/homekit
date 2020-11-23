@@ -118,7 +118,7 @@
             <div class="col-lg-12" >
                <div class="booking_menu">
                   <h2 style="color:#012a4a; font-size:40px;">1. 태그 선택</h2><br>
-                  <p style="color:#01497c; font-size:20px;background-color:#e2eafc;">인테리어 추천을 위해 아래의 태그를 선택해주세요.</p>
+                  <p style="color:#756595; font-size:20px;background-color:#f2f0f594;">인테리어 추천을 위해 아래의 태그를 선택해주세요.</p>
                   
                   
                </div>
@@ -133,7 +133,7 @@
                                                                              
                               <div class="form-row">
                                  <div class="form_colum">
-                                    <select class="nc_select" name="select_space" id="select_space" >
+                                    <select class="nc_select" name="select_space" id="select_space" style="border:#808080" >
                                        <option value="">공간</option>
                                        <option value="oneroom">원룸&오피스텔</option>
                                        <option value="apartment">아파트</option>
@@ -167,7 +167,7 @@
 
                                  <div class="form_btn">
                                    <input type="submit" value="추천 받기" id = "select" class="btn_1"
-                                   			style="height: 55px;">
+                                   			style="height: 55px; background-color: #5a4b7657; color:white; border-color:#f2f0f594">
                                  </div>
                               </div>
                            </form>

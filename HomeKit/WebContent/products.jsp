@@ -113,7 +113,7 @@
 				<div class="col-lg-12">
 					<div class="breadcrumb_iner">
 						<div class="breadcrumb_iner_item text-center">
-                             <h2 style="font-family:'S-CoreDream-2ExtraLight'; color:rgb(168, 167, 167); margin-bottom: 100px">Homekit Products</h2>
+                             <h2 style="font-family:'S-CoreDream-2ExtraLight'; color:#808080; margin-bottom: 100px">Homekit Products</h2>
                          </div>
                      </div>
                  </div>
@@ -138,33 +138,32 @@
                %>
                    <div class="col-md-4">
                           <a href="kit-detail.jsp">
-                          <div class="single-gallery-image" style="background: url(img/homepage/310.jpg); background-size: contain; background-repeat: no-repeat;"></div></a>
-                          <div style="padding-top: 20px;"><span style="font-size:20px;">집에서도 휴양지에 온 것처럼ㅣ라탄&빈티지의 아름다운 무드</span>
+                          <div class="single-gallery-image" style="background: url(img/homepage/514.jpg); background-size: contain; background-repeat: no-repeat;"></div></a>
+                          <div style="padding-top: 20px;"><span><strong style="font-size:20px;">집에서도 휴양지에 온 것처럼ㅣ라탄&빈티지의 아름다운 무드</strong></span>
                             <div>
-                                <p>빈티지&레트로</p>
-                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                                <p style="color:#808080">빈티지&레트로</p>
+                                <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+           
 							</div>
                            </div>
                        </div> 
                    <div class="col-md-4">
                        <a href="img/homepage/318.jpg" class="img-pop-up" href="kit-detail.jsp">
-                           <div class="single-gallery-image" style="background: url(img/homepage/318.jpg);"></div></a>
+                           <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                            <div style="padding-top: 20px;"><span><strong style="font-size:20px;">프로 홈베이커의 아담하고 달콤한 자취방</strong></span>
                             <div>
-                                <p>내추럴</p>
-                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                                <p style="color:#808080">내추럴</p>
+                                <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                               
 							</div>
                            </div>
                    </div>
@@ -173,158 +172,151 @@
                            <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                            <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">오후의 빛과 색감이 어우러진 자매의 복층 오피스텔</strong></span>
                             <div>
-                                <p>모던</p>
-                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                                <p style="color:#808080">모던</p>
+                                <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                              
 						   </div>
                            </div>
                    </div>
                    <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
-                        <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
+                        <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
-                             <p>미니멀&심플</p>
-                             <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                             <p style="color:#808080">미니멀&심플</p>
+                             <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star"></span>
-                             <span class="fa fa-star"></span>
+                             
+                           
                         </div>
                         </div>
                 </div>
                    <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
-                        <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
+                        <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
-                             <p>미니멀&심플</p>
-                             <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                             <p style="color:#808080">미니멀&심플</p>
+                             <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star"></span>
-                             <span class="fa fa-star"></span>
+                            
                         </div>
                         </div>
                 </div>
                    <div class="col-md-4">
                        <a href="img/homepage/787.jpg" class="img-pop-up" href="kit-detail.jsp">
-                           <div class="single-gallery-image" style="background: url(img/homepage/787.jpg);"></div></a>
+                           <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                            <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">따뜻한 햇살이 스며든 봄날의 카페 같은 집</strong></span>
                             <div>
-								<p>클래식&앤틱</p>
-                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+								<p style="color:#808080">클래식&앤틱</p>
+                                <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                            
 						   </div>
                            </div>
                    </div>
                    <div class="col-md-4">
                        <a href="img/homepage/1016.jpg" class="img-pop-up" href="kit-detail.jsp">
-                           <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
+                           <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                            <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
-                                <p>유니크&믹스매치</p>
-                                <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p>200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                                <p style="color:#808080">유니크&믹스매치</p>
+                                <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                              
 						   </div>
                            </div>
                    </div>
                    <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
-                        <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
+                        <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
-                             <p>미니멀&심플</p>
-                             <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                             <p style="color:#808080">미니멀&심플</p>
+                             <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star"></span>
-                             <span class="fa fa-star"></span>
+                          
+                         
                         </div>
                         </div>
                 </div>
                 <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
-                        <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
+                        <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
-                             <p>미니멀&심플</p>
-                             <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                             <p style="color:#808080">미니멀&심플</p>
+                             <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star"></span>
-                             <span class="fa fa-star"></span>
+                         
                         </div>
                         </div>
                 </div>
                 <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
-                        <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
+                        <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
-                             <p>미니멀&심플</p>
-                             <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                             <p style="color:#808080">미니멀&심플</p>
+                             <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star"></span>
-                             <span class="fa fa-star"></span>
+                             <span class="fa fa-star checked"></span>
+                          
                         </div>
                         </div>
                 </div>
                 <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
-                        <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
+                        <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
-                             <p>미니멀&심플</p>
-                             <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                             <p style="color:#808080">미니멀&심플</p>
+                             <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star"></span>
-                             <span class="fa fa-star"></span>
+                          
                         </div>
                         </div>
                 </div>
                 <div class="col-md-4">
                     <a href="img/homepage/119.jpg" class="img-pop-up" href="kit-detail.jsp">
-                        <div class="single-gallery-image" style="background: url(img/homepage/1016.jpg);"></div></a>
+                        <div class="single-gallery-image" style="background: url(img/homepage/514.jpg);"></div></a>
                         <div style="padding-top: 20px;"><span ><strong style="font-size:20px;">빌딩 숲 가운데 우리만의 아지트, 뉴욕 맨해튼 신혼집</strong></span>
                             <div>
-                             <p>미니멀&심플</p>
-                             <p>[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p>133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:coral; text-align: right; font-size:30px;">12%</b></p>
+                             <p style="color:#808080">미니멀&심플</p>
+                             <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
+                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
-                             <span class="fa fa-star"></span>
-                             <span class="fa fa-star"></span>
+                             <span class="fa fa-star checked"></span>
+                           	 <span class="fa fa-star checked"></span>
                         </div>
                         </div>
                 </div>
