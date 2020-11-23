@@ -99,18 +99,14 @@ public class RecommendationDAO {
 
 			getConn();
 
-			String sql = "insert into INTERIOR_USER(USERID,?,?,?,?) values (?,?,?,?,?) ";
+			String sql = "insert into INTERIOR_USER(USERID,style15,style24,style54,style55) values (?,?,?,?,?) ";
 	         psmt = conn.prepareStatement(sql);
 	         
-	         psmt.setString(2, style1);
-	         psmt.setString(3, style2);
-	         psmt.setString(4, style3);
-	         psmt.setString(5, style4);
-	         psmt.setString(6, email);
-	         psmt.setInt(7, rating1);
-	         psmt.setInt(8, rating2);
-	         psmt.setInt(9, rating3);
-	         psmt.setInt(10, rating4);
+	         psmt.setString(1, email);
+	         psmt.setInt(2, rating1);
+	         psmt.setInt(3, rating2);
+	         psmt.setInt(4, rating3);
+	         psmt.setInt(5, rating4);
 
 			System.out.println(style1 +"의 평점은?: " + rating1);
 

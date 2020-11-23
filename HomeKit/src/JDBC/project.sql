@@ -7,16 +7,21 @@ ADDRESS VARCHAR2(50),
 TEL VARCHAR2(50)
 )
 
+insert into INTERIOR_USER(USERID,style97,style122,style134,style143) values (3,1,2,3,4) 
 
-SELECT * FROM interior_user
+SELECT * FROM interior_user where userid="3"
 테이블 값 삽입(멤버)
 INSERT INTO MEMBER values('테스터', '집2','tester@roominterior.com', '123', '010-1233-3480')
 
+
+delete from INTERIOR_CONTENTS where rec_style='style143'
+
+
 테이블 조회(멤버)
 SELECT * FROM MEMBER
-
+DELETE FROM interior_user WHERE userid='3'
 SELECT * FROM interior_user;
-
+SELECT * FROM interior_contents;
 INSERT INTO interior_user (style15,style24,style54,style55)values('5', '3', '4', '3')
 
 행 삭제(멤버)

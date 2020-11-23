@@ -40,7 +40,8 @@
 </head>
 
 <body>
-<script type="text/javascript">
+ <!-- 
+ <script type="text/javascript">
 		$(document).ready(function()
 
 		{
@@ -49,25 +50,18 @@
 
 			{
 
-				var formData = $("#recommend1").serialize();
+				var formData = $("#email").value();
 
 				$.ajax({
 					type : "POST",
-					//url : "http://192.168.219.129:5000/secondrec",//호남
-					url : "http://192.168.219.129:5000/secondrec",//집
+					//url : "http://192.168.50.26:5000/secondrec",//호남
+					url : "http://192.168.50.26:5000/secondrec",//집
 					cache : false,
 					data : formData,
 					success : onSuccess,
 					error : onError
 				});
-				$.ajax({
-					type : "POST",
-					url : "SecondRecommendation",
-					cache : false,
-					data : formData,
-					success : onSuccess,
-					error : onError
-				});
+				
 			});
 		});
 		function onSuccess(json, status) {
@@ -76,7 +70,9 @@
 		function onError(data, status) {
 			alert("error");
 		}
-	</script>
+	</script> 
+	-->
+
 	<%
 	String get_email = (String) session.getAttribute("email");
 
@@ -84,9 +80,9 @@
 
 	if (get_email != null) {
 		email = get_email.substring(0, get_email.lastIndexOf("@"));
-	//	System.out.println("************");
+		System.out.println("************");
 		System.out.println(email);
-	//	System.out.println("************");
+		System.out.println("************");
 	} else {
 	}
 
@@ -178,7 +174,7 @@
 
 	<!--::industries start::-->
 	<section class="hotel_list section_padding" style="margin-top: 100px">
-		<form action="SecondRecommendation" method="post">
+		<form action="SecondRecommendation" method="post" id="recom2">
 			<div class="container" style="margin-left: 0px; margin-right: 0px;">
 				<div class="row justify-content-center" style="margin-right: 340px;">
 					<div class="col-xl-6">
@@ -212,15 +208,15 @@
                 	  url:'FirstRecommendation2',
                 	  data:rec_obj,
                 	  dataType:'json',
-                	  success:function(result){
-                		  console.log(result);
+                	  success:function(jsonArr){
+                		  console.log(jsonArr);
                 		  
                 		  let html = '';
                 		  
-                		  for(let i=0; i<result.length; i++){
-                			let title = result[i].rec_title;
-                			let img_path = result[i].rec_img;
-                			let style= result[i].rec_style;
+                		  for(let i=0; i<jsonArr.length; i++){
+                			let title = jsonArr[i].rec_title;
+                			let img_path = jsonArr[i].rec_img;
+                			let style= jsonArr[i].rec_style;
                 			html += rec_productList(i+1, title, img_path, style);
                     		  }
 
@@ -228,6 +224,8 @@
                 	  }
                   })
               
+                 
+                  
                   
                   //재추천 상품 리스트
                   function rec_productList(index, title, img_path, style){
@@ -239,7 +237,7 @@
                 	  html += '</a>';
                 	  html += '<div class="switch-wrap d-flex justify-content-between">';
                 	  html += '<div class="ratingVal'+index+'">';
-                	  html += '<input type="hidden" name="email" value="<%=email%>">';
+                	  html += '<input type="hidden" id="email" name="email" value="<%=email%>">';
                 	  html += '<label><input type="radio" name="rating'+index+'" value="1">1</label>';
                 	  html += '<label><input type="radio" name="rating'+index+'" value="2">2</label>';
                 	  html += '<label><input type="radio" name="rating'+index+'" value="3">3</label>';
@@ -252,7 +250,7 @@
                             	  
                 	  return html;
                   }
-                	  for(let i=0; i<result.length; i++){
+                	 /*  for(let i=0; i<result.length; i++){
                           let style= result[i].rec_style;
                           let check_count = document.getElementsByName("rating").length;
                           
@@ -265,7 +263,7 @@
                              
                        }
                           consol.log(style+"의 평점은 : "+ratings);
-                  }
+                  } */
            
                	});
                
@@ -301,6 +299,32 @@
 			<input type="submit" id="select" value="2차 추천" class="btn_1"
 				style="margin-left: 1230px; margin-top: 70px;">
 		</form>
+		<script type="text/javascript">
+
+         $(document).ready(function() 
+      
+         {
+      
+            $("#select").click(function()
+      
+            {
+             var formData = $("#recom2").serialize();
+      
+               $.ajax({
+                   type : "POST",
+                   url : "http://192.168.50.26:5000/secondrec",//호남
+                   //      url : "http://192.168.50.26:5000/firstrec",//집
+                   cache : false,
+                   data : formData,
+                   success : onSuccess,
+                   error : onError
+               });
+               
+            });
+         });
+         function onSuccess(json, status){alert($.trim(json));}
+         function onError(data, status){alert("error");}
+         </script>
 	</section>
 	<br>
 	<br>

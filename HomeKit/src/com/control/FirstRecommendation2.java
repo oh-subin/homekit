@@ -36,7 +36,7 @@ public class FirstRecommendation2 extends HttpServlet {
         Gson gson = new Gson();
         String jsonArr = gson.toJson(imgList);
         
-        System.out.println(jsonArr);
+       // System.out.println(jsonArr);
         
         response.setContentType("text/plain; charset=utf-8");
         response.getWriter().print(jsonArr);

@@ -40,16 +40,13 @@
 <body>
 	<% request.setCharacterEncoding("UTF-8"); %>
 	<%
-	 String results2 = request.getParameter("results2");
-	// String rec_title2 = results2.substring(0, 24);
-	// String rec_style2 = results2.substring(24, 34);
-	// String rec_imgurl2 = results2.substring(55,90);
-	
+	 String results = request.getParameter("results");
 	
      String email = (String)session.getAttribute("email");
 	  
-     if(results2 != null){
-    	 
+     if(results != null){
+    	System.out.println(results);
+    	
 	  }
 	
      
@@ -149,7 +146,7 @@
 				<h4>테마 추천 완료!</h4><br>
 					<div class="about_img">
 																	<!-- 이미지 src안에 rec_imgurl넣기 -->
-						<img src= alt="#"
+						<img src= "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/projects/160050389689420607.jpg?gif=1&w=960"
 							style="height: 400px; width: 500px;"><br>
 						
 					</div>
