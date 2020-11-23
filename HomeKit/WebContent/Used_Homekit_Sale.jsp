@@ -362,7 +362,7 @@
                     <div class="blog_right_sidebar">
                     	<aside class="single_sidebar_widget tag_cloud_widget">
                     		<h4 class="widget_title"><input type="button" onClick="location.href='simple_registration.jsp'" value="상품 등록하기" 
-                    		style="background-color:#5a4b7657;border-color:#fff;height: 45.98438px;width: 155.98438px;"></h4>
+                    		style="background-color:#5a4b7657;border-color: #f2f0f594; color: white;height: 45.98438px;width: 155.98438px;"></h4>
 							<p>위의 버튼을 클릭해서 중고로 판매할 상품을 등록해보세요.</p>   
 		    	   		</aside>
                         <aside class="single_sidebar_widget post_category_widget">
