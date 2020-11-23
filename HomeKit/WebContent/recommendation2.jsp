@@ -182,7 +182,7 @@
 							<h2>2. 평점 매기기</h2>
 							<br>
 							<p
-								style="color: #01497c; font-size: 20px; background-color: #e2eafc; margin-left: 40px; width: 1100px; text-align: left;">사진을
+								style="color: #756595; font-size: 20px; background-color: #f2f0f594; margin-left: 40px; width: 1100px; text-align: left;">사진을
 								클릭하여 평점을 1~5까지 입력해주세요.</p>
 						</div>
 					</div>
@@ -297,7 +297,8 @@
 				</div>
 			</div>
 			<input type="submit" id="select" value="2차 추천" class="btn_1"
-				style="margin-left: 1230px; margin-top: 70px;">
+				style="margin-left: 715px; margin-top: 70px;
+						background-color:#5a4b7657; border-color:#f2f0f594; color:white">
 		</form>
 		<script type="text/javascript">
 

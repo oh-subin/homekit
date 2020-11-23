@@ -498,7 +498,7 @@ ul {
 	text-transform: capitalize;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
-	background-color: #d9dee98c;
+	background-color: #B2A59F;
 ;
 	font-weight: 500;
 }
@@ -1512,8 +1512,8 @@ ul {
 
 /* line 842, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_blog.scss */
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-	background: #508164;
-	color: #756595 !important;
+	background: #756595;
+	color: #white !important;
 	-webkit-text-fill-color: #fff;
 	text-decoration: none;
 	-webkit-transition: 0.5s;
@@ -1562,7 +1562,7 @@ ul {
 	height: 45px;
 	border-radius: 0 !important;
 	color: #8a8a8a;
-	border: 1px solid #f0e9ff;
+	border: 1px solid #756595;
 	margin-right: 10px;
 }
 
@@ -1573,9 +1573,9 @@ ul {
 
 /* line 1017, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_blog.scss */
 .blog-pagination .page-item.active .page-link {
-	background-color: #fbf9ff;
-	border-color: #f0e9ff;
-	color: #888888;
+	background-color: #fff;
+	border-color: #756595;
+	color: black;
 }
 
 /* line 1024, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_blog.scss */
@@ -2651,7 +2651,7 @@ ul {
 	width: 100%;
 	border-color: #8F8681;
 	border-radius: 0;
-	color: #8F8681;
+	color: #808080;
 	height: 50px;
 	display: flex;
 	align-items: center;
@@ -4278,14 +4278,14 @@ h1, h2, h3, h4, h5, h6 {
 /* line 287, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
 .genric-btn.warning-border {
 	color: #B2A59F;
-	border: 1px solid #B2A59F;
+	border: 1px solid #756595;
 	background: #fff;
 }
 
 /* line 291, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_elements.scss */
 .genric-btn.warning-border:hover {
 	color: #fff;
-    background: #cebcbadb;
+    background: #756595;
     border: 1px solid transparent;
 }
 
@@ -5706,7 +5706,7 @@ element.style {
 
 /* product.html의 별점 css */
 .checked {
-  color: rgb(255, 166, 240);
+  color: #cdb4ff;
 }
 
 /* product_detail.html 사이드 바 css */

@@ -116,7 +116,7 @@
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <h1>첫번째 집들이</h1><hr>
-                                <img class="card-img rounded-0" src="img/homepage/23.jpg" alt="">
+                                <img class="card-img rounded-0" src="img/homepage/84.jpg" alt="">
                                 <a href="#" class="blog_item_date" style="background-color:#756595">
                                     <h3>15</h3>
                                     <p>Jan</p>
@@ -124,7 +124,7 @@
                             </div>
                             
                             <div class="blog_details"> 
-                                <h2>모던한 분위기가 가득한 인테리어</h2>
+                                <h2>인테리어 디자이너를 꿈꾸는 빈티지 하우스</h2>
                                 <p style="margin-bottom: 0px;">사용기간: 5개월</p>
                                 <p>가격: ~~원</p>
                                 <ul class="blog-info-link">
@@ -137,39 +137,7 @@
                                     <h3 class="widget_title">홈키트 구성</h3><br>
                                     <ul class="instagram_row flex-wrap" >
                                         <li style="float:left; margin-right:5px;">
-                                            <a href="#">
-                                                <img class="img-fluid" src="img/post/post_5.png" alt="" >
-                                            </a>
-                                        </li >
-                                        <li style="float:left; margin-right:5px;" >
-                                            <a href="#">
-                                                <img class="img-fluid" src="img/post/post_6.png" alt="">
-                                            </a>
-                                        </li>
-                                        <li style="float:left; margin-right:5px;">
-                                            <a href="#">
-                                                <img class="img-fluid" src="img/post/post_7.png" alt="">
-                                            </a>
-                                        </li>
-                                        <li style="float:left; margin-right:5px;">
-                                            <a href="#">
-                                                <img class="img-fluid" src="img/post/post_8.png" alt="">
-                                            </a>
-                                        </li>
-                                        <li style="float:left; margin-right:5px;">
-                                            <a href="#">
-                                                <img class="img-fluid" src="img/post/post_9.png" alt="">
-                                            </a>
-                                        </li>
-                                        <li style="float:left; margin-right:5px;">
-                                            <a href="#">
-                                                <img class="img-fluid" src="img/post/post_10.png" alt="">
-                                            </a>
-                                        </li>
-                                        <li style="float:left; margin-right:5px;">
-                                            <a href="#">
-                                                <img class="img-fluid" src="img/post/post_10.png" alt="">
-                                            </a>
+                                            <img class="img-fluid" src="img/homepage/homkit_com.JPG" alt="" >
                                         </li>
                                     </ul><br>
                                 </aside>
@@ -362,7 +330,7 @@
                     <div class="blog_right_sidebar">
                     	<aside class="single_sidebar_widget tag_cloud_widget">
                     		<h4 class="widget_title"><input type="button" onClick="location.href='simple_registration.jsp'" value="상품 등록하기" 
-                    		style="background-color:#5a4b7657;border-color:#fff;height: 45.98438px;width: 155.98438px;"></h4>
+                    		style="background-color:#5a4b7657;border-color: #f2f0f594; color: white;height: 45.98438px;width: 155.98438px;"></h4>
 							<p>위의 버튼을 클릭해서 중고로 판매할 상품을 등록해보세요.</p>   
 		    	   		</aside>
                         <aside class="single_sidebar_widget post_category_widget">
