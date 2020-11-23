@@ -271,7 +271,7 @@
                         <h3>호텔리조트 풍으로 원없이 꾸민 드림하우스</h3>
                         <p>프렌츠&프로방스</p><br>
                         <span>홈키트 가격 = 5만원</span><br><hr>
-                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                        <a href="#" class="genric-btn info circle"  style="background-color:#5a4b7657; color:white">홈키트 구경하기</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -280,7 +280,7 @@
                         <h3>글씨를 쓰는 나, 고양이 둘 그리고 11평 우리 집</h3>
                         <p>빈티지&레트로</p><br>
                         <span>홈키트 가격 = 5만원</span><br><hr>
-                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                        <a href="#" class="genric-btn info circle"  style="background-color:#5a4b7657; color:white">홈키트 구경하기</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -289,7 +289,7 @@
                         <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
                         <p>미니멀&심플</p><br>
                         <span>홈키트 가격 = 5만원</span><br><hr>
-                        <a href="#" class="genric-btn info circle">홈키트 구경하기</a>
+                        <a href="#" class="genric-btn info circle"  style="background-color:#5a4b7657; color:white">홈키트 구경하기</a>
                     </div>
                 </div>
             </div>
