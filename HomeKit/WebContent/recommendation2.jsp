@@ -178,7 +178,7 @@
 
 	<!--::industries start::-->
 	<section class="hotel_list section_padding" style="margin-top: 100px">
-		<form action="http://192.168.219.129:5000/secondrec" method="post">
+		<form action="SecondRecommendation" method="post">
 			<div class="container" style="margin-left: 0px; margin-right: 0px;">
 				<div class="row justify-content-center" style="margin-right: 340px;">
 					<div class="col-xl-6">
@@ -222,15 +222,17 @@
                 			let img_path = result[i].rec_img;
                 			let style= result[i].rec_style;
                 			html += rec_productList(i+1, title, img_path, style);
-                		  }
+                    		  }
 
                 		  $('div.row.gallery-item').html(html);
                 	  }
                   })
+              
                   
                   //재추천 상품 리스트
                   function rec_productList(index, title, img_path, style){
                 	  console.log(index, img_path, style);
+                	  
                 	  let html='<div class="col-md-6" style="float: right;">';
                 	  html += '<a href='+img_path+' class="img-pop-up">';
                 	  html += '<div class="single-gallery-image" style="background: url('+img_path+'); width: 400px; height: 300px;"></div>';
@@ -245,13 +247,29 @@
                 	  html += '<label><input type="radio" name="rating'+index+'" value="5">5</label>';
                 	  html += '<input type="hidden" value="'+style+'" name="style'+index+'" />';
                 	  html += '<p>'+title+'</p>';
-                	  html += '<p>'+style+'</p>';
+                	//html += '<p>'+style+'</p>';
                 	  html += '</div></div></div>';
                             	  
                 	  return html;
                   }
+                	  for(let i=0; i<result.length; i++){
+                          let style= result[i].rec_style;
+                          let check_count = document.getElementsByName("rating").length;
+                          
+                          for (let j=0; j<check_count; j++) {
+                             if (document.getElementsByName("rating")[j].checked == true) {
+                                  let ratings = document.getElementsByName("rating")[j].value
+                                  
+                            
+                                                   }
+                             
+                       }
+                          consol.log(style+"의 평점은 : "+ratings);
+                  }
            
                	});
+               
+               
                </script>
  
 

@@ -7,6 +7,7 @@ ADDRESS VARCHAR2(50),
 TEL VARCHAR2(50)
 )
 
+
 SELECT * FROM interior_user
 테이블 값 삽입(멤버)
 INSERT INTO MEMBER values('테스터', '집2','tester@roominterior.com', '123', '010-1233-3480')

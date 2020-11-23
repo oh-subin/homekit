@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="com.DAO.productDAO"%>
 <%@ page import="com.DTO.productDTO"%>
@@ -42,9 +41,9 @@
 	<% request.setCharacterEncoding("UTF-8"); %>
 	<%
 	 String results2 = request.getParameter("results2");
-	 String rec_title2 = results2.substring(0, 24);
-	 String rec_style2 = results2.substring(24, 34);
-	 String rec_imgurl2 = results2.substring(55,90);
+	// String rec_title2 = results2.substring(0, 24);
+	// String rec_style2 = results2.substring(24, 34);
+	// String rec_imgurl2 = results2.substring(55,90);
 	
 	
      String email = (String)session.getAttribute("email");
@@ -150,7 +149,7 @@
 				<h4>테마 추천 완료!</h4><br>
 					<div class="about_img">
 																	<!-- 이미지 src안에 rec_imgurl넣기 -->
-						<img src=<%=rec_imgurl2 %> alt="#"
+						<img src= alt="#"
 							style="height: 400px; width: 500px;"><br>
 						
 					</div>
@@ -159,7 +158,7 @@
 				<div class="col-lg-6" style="display: auto; padding-left: 0px;">
 					<div class="about_text" style="width: 500px; margin-top: 50px; margin-left: 20px">
 						
-						<h3 style="font-size: 30px;"><%= rec_title2 %></h3>		<!-- rec_title넣기 -->
+						<h3 style="font-size: 30px;"></h3>		<!-- rec_title넣기 -->
 						<br>
 						<div class="rating">
 							<span>별점</span>
@@ -170,7 +169,7 @@
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
 
-							<p style="color: black;">추천 사용자: <%= rec_style2 %>, 1~2인 가구</p>	<!-- rec_style -->
+							<p style="color: black;">추천 사용자:, 1~2인 가구</p>	<!-- rec_style -->
 
 							<p style="color: black;">
 								가격 <b style="color: red;">30만원</b>				
