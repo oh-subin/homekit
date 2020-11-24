@@ -181,7 +181,7 @@
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
 
-							<p style="color: black;">추천 사용자:1~2인 가구</p>	<!-- rec_style -->
+							<p style="color: black;">추천 사용자:1~2인 가구, 원룸 , 싱글라이프</p>	<!-- rec_style -->
 
 							<p style="color: black;">
 								가격 <b style="color: red;">30만원</b>				
@@ -255,7 +255,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
                         <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
-                        <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
+                        <h3>온전히 취향대로 꾸몄더니 마음에 드는 집</h3>
                         <p>미니멀&심플</p><br>
                         <span>홈키트 가격 = 5만원</span><br><hr>
                         <a href="#" class="genric-btn info circle" style="background-color:#5a4b7657; color:white">홈키트 구경하기</a>
@@ -282,7 +282,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_ihotel_list">
                         <a href="#" ><img src="img/homepage/27.jpg" alt=""></a>
-                        <h3>온전히 취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
+                        <h3>취향대로 꾸몄더니 머무는 내내 마음에 드는 집</h3>
                         <p>미니멀&심플</p><br>
                         <span>홈키트 가격 = 5만원</span><br><hr>
                         <a href="#" class="genric-btn info circle" style="background-color:#5a4b7657; color:white">홈키트 구경하기</a>
