@@ -58,7 +58,7 @@ public class cartDAO {
 		
 		try {
 			// DB연결 기능
-			String sql = "insert into cart(?,?) values(CART_SEQ.nextval, ?, ?, ?, ?, ?)";
+			String sql = "insert into cart values(CART_SEQ.nextval, ?, ?, ?, ?, ?)";
 
 			psmt = conn.prepareStatement(sql);
 

@@ -4,6 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+
+import com.DTO.MemberDTO;
 
 public class MemberDAO {
 
@@ -132,6 +135,37 @@ public class MemberDAO {
 			close();
 		}
 		return check;
+	}
+	
+	// 회원정보 보여주는 기능
+	public MemberDTO getUserInfo(String email) {
+
+		MemberDTO member = null;
+		
+		try {
+			getConn();
+
+			String sql = "select * from member where email =? ";
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, email);
+			
+			// db에 sql문 명령준비
+
+			rs = psmt.executeQuery();
+			if (rs.next()) {
+			
+			member = new MemberDTO(rs.getString(1), 
+									rs.getString(4), 
+									email, 
+									rs.getString(3), 
+									rs.getString(5));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return member;
 	}
 
 	// 회원정보수정

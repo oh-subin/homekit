@@ -118,18 +118,13 @@
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head" style="font-size: 18px">
-							<div class="country" style="margin-left: 50px; width:230px"><strong>상품사진</strong><br><hr style="width:1050px">
-							<img src="img/homepage/28.jpg" alt="28_img" style="width: 160px;height: 120px;margin-top: 20px;margin-right: 20px;"></div>
-							
-							<div class="country" style="width:210px; margin-left:20px"><strong>상품명</strong><br><br>
-							<p style="margin-top:40px; font-size:20px">호텔리조트 풍으로<br>원없이 꾸민 드림하우스</p></div>
-							<div class="country" style="width:200px;margin-left:70px"><strong>수량</strong><br><br>
-							<p style="margin-top:50px; margin-left:10px; font-size:20px">1</p></div>
-							<div class="country" style="width: 200px;"><strong>상품금액</strong><br><br>
-							<p style="margin-top:50px; font-size:20px">130,000원</p></div>
+							<div class="country" style="margin-left: 50px; width:230px"><strong>상품사진</strong><br><hr style="width:1050px"></div>
+							<div class="country" style="width:210px; margin-left:20px"><strong>상품명</strong><br><br></div>
+							<div class="country" style="width:200px;margin-left:70px"><strong>수량</strong><br><br></div>
+							<div class="country" style="width: 200px;"><strong>상품금액</strong><br><br></div>
 							<div class="choice"><strong>삭제</strong></div>
 						</div>
-						</div>
+					
 						<form action="DeleteCart" method="get">
 						<%
 								cartDAO dao = new cartDAO();
@@ -137,7 +132,7 @@
 								int sum=0;
 
 								for (int i = 0; i < cartList.size(); i++) {
-									out.println("<div class='table-row' style='margin-top: 30px; margin-bottom: 30px;'>");
+									out.println("<div class='table-row' style='margin-top: 15px;margin-bottom: 15px;'>");
 									out.println("<div class='country' ><img src='" + cartList.get(i).getCart_img() + "'width='50' height='50'></div>");
 									out.println("<div class='country' >" + cartList.get(i).getCart_name() + "</div>");
 									out.println("<div class='country' >" + cartList.get(i).getCart_cnt() + "</div>");
@@ -173,11 +168,10 @@
 
 	<!-- 구매하기 버튼 begin -->
 	<div class="purchase_btn">
-		<a href="#" class="btn_1 d-none d-lg-block"
-			style="width: 150px; height: 56px; float: left; margin-left: 650px; margin-top: 100px; background-color:#5a4b7657; color:white">집들이
-			가기</a>
+		<a href="products.jsp" class="btn_1 d-none d-lg-block"
+			style="width: 150px; height: 56px; float: left; margin-left:650px; margin-top: 50px; background-color:#5a4b7657; color:white">쇼핑몰 보기</a>
 		<a href="payment.jsp" class="btn_1 d-none d-lg-block"
-			style="margin-left: 50px; width: 150px; height: 56px; float: left; padding-left: 40px; margin-top: 100px; background-color:#5a4b7657; color:white">구매하기</a>
+			style="margin-left: 50px; width: 150px; height: 56px; float: left; padding-left: 40px; margin-top: 50px; background-color:#5a4b7657; color:white">구매하기</a>
 	</div>
 	<!-- 구매하기 버튼 end -->
 

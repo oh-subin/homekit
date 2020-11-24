@@ -55,7 +55,6 @@ public class CartInsert extends HttpServlet {
 			response.sendRedirect("basket.jsp");
 		} else {
 			System.out.println("상품 넣기 실패");
-			response.sendRedirect("404.jsp");
 		}
 	}
 

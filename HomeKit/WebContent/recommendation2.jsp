@@ -203,11 +203,11 @@
                 	  html += '<div class="ratingVal'+index+'">';
                 	  html += '<input type="hidden" id="email" name="email" value="<%=email%>">';
                 	  html += '<br>'
-                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="1" style="font-size:17px; width:23px;height:23px"> 1</label>';
-                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="2" style="font-size:17px; width:23px;height:23px"> 2</label>';
-                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="3" style="font-size:17px; width:23px;height:23px"> 3</label>';
-                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="4" style="font-size:17px; width:23px;height:23px"> 4</label>';
-                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="5" style="font-size:17px; width:23px;height:23px"> 5</label>';
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="1" style="font-size:17px; width:20px;height:20px"> 1</label>';
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="2" style="font-size:17px; width:20px;height:20px"> 2</label>';
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="3" style="font-size:17px; width:20px;height:20px"> 3</label>';
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="4" style="font-size:17px; width:20px;height:20px"> 4</label>';
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="5" style="font-size:17px; width:20px;height:20px"> 5</label>';
                 	  html += '<input type="hidden" value="'+style+'" name="style'+index+'" />';
                     //html += '<p>'+title+'</p>';
                 	//html += '<p>'+style+'</p>';
@@ -236,8 +236,8 @@
       
                $.ajax({
                    type : "POST",
-                   url : "http://192.168.50.26:5000/secondrec",//호남
-                   //      url : "http://192.168.50.26:5000/firstrec",//집
+                   url : "http://192.168.219.105:5000/secondrec",//호남
+                   //      url : "http://192.168.219.105:5000/firstrec",//집
                    cache : false,
                    data : formData,
                    success : onSuccess,

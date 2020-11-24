@@ -7,25 +7,14 @@ ADDRESS VARCHAR2(50),
 TEL VARCHAR2(50)
 )
 
-select rec_title, rec_imgurl, rec_style from INTERIOR_CONTENTS where rec_style='style2'
-
-SELECT * FROM interior_user where userid="3"
 테이블 값 삽입(멤버)
-INSERT INTO MEMBER values('테스터', '집2','tester@roominterior.com', '123', '010-1233-3480')
-
-
-delete from INTERIOR_user where userid='3'
-
+INSERT INTO MEMBER values('관리자','admin@admin','123','', '')
 
 테이블 조회(멤버)
 SELECT * FROM MEMBER
-DELETE FROM interior_user WHERE userid='3'
-SELECT * FROM interior_user;
-SELECT * FROM interior_contents;
-INSERT INTO interior_user (style15,style24,style54,style55)values('5', '3', '4', '3')
 
 행 삭제(멤버)
-DELETE FROM MEMBER WHERE TEL='123'
+DELETE FROM MEMBER WHERE TEL='010'
 ----------------------------------------------------------------
 홈키트 테이블 생성
 CREATE TABLE HOMEKIT (
@@ -67,34 +56,35 @@ STAR VARCHAR2(20) NOT NULL
 )
 
 테이블 값 삽입(상품)
-INSERT INTO PRODUCT values('유리 화병', '클래식', 17000, 'Product_img/Classic/787_7(유리 화병-17000).PNG')
+INSERT INTO PRODUCT values('라탄 러그', '빈티지', 11800, 'Product_img/Vintage/310_7(라탄 러그-11800).PNG')
 
 테이블 조회(상품)
-SELECT * FROM PRODUCT
+SELECT * FROM PRODUCT 
 
 행 삭제(상품)
-DELETE FROM PRODUCT WHERE PRO_NAME='컬러볼 시계'
+DELETE FROM PRODUCT WHERE PRO_NAME='우드 플리츠 램프'
 
 ----------------------------------------------------------------
 장바구니 테이블 생성
 CREATE TABLE CART (
 CART_SEQ NUMBER(30) NOT NULL PRIMARY KEY,
 EMAIL VARCHAR2(50) NOT NULL,
-CONSTRAINT FK_CART FOREIGN KEY (EMAIL) REFERENCES MEMBER (EMAIL),
+CONSTRAINT FK_CART FOREIGN KEY (EMAIL) REFERENCES MEMBER (EMAIL) ON DELETE CASCADE,
 PRO_NAME VARCHAR2(50) NOT NULL,
 PRO_CNT NUMBER(30) NOT NULL,
 PRO_PRICE NUMBER(30) NOT NULL,
 PRO_IMGPATH VARCHAR2(300) NOT NULL
 )
 
+
 테이블 값 삽입(장바구니)
-INSERT INTO CART values(CART_SEQ.nextval, 'ken1204@naver.com', '유리 화병', 1, 17000, 'Product_img/Classic/787_7(유리 화병-17000).PNG')
+INSERT INTO CART values(CART_SEQ.nextval, 'test@test', '유리 화병', 1, 17000, 'Product_img/Classic/787_7(유리 화병-17000).PNG')
 
 테이블 조회(장바구니)
 SELECT * FROM CART
 
 행 삭제(장바구니)
-DELETE FROM CART WHERE PRO_NAME='접이식 스탠드'
+DELETE FROM CART WHERE PRO_NAME='유리 화병'
 
 시퀀스 생성(장바구니)
 CREATE SEQUENCE CART_SEQ

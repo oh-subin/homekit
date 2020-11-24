@@ -153,13 +153,13 @@
                         <p style="font-size: 15px;">조건부 무료배송 3000원 (5만원 이상 구매 시 무료)</p>
                     </div><br>
                     <div class="order_part" >
-                        <br><br><div class="default-select" id="default-select">
+                        <!-- <br><br><div class="default-select" id="default-select">
                             <select style="height: 51.99074px;width: 401.99074px;">
-                                <option value="1">상품을 선택하세요</option>
-                                <option value="1">원목 서랍 1단 (30000원)</option>
-                                <option value="1">원목 서랍 2단 세트 (50000원)</option>
+                                <option name ="cnt" value="1">수량</option>
+                                <option name ="cnt" value="2">원목 서랍 1단 (30000원)</option>
+                                <option name ="cnt" value="3">원목 서랍 2단 세트 (50000원)</option>
                             </select>
-                        </div><br><br>
+                        </div><br><br> -->
                         <div style="font-size: 20px;">주문금액<b style="padding-left: 290px;"><%=product.getPro_price() %>원</b></div><br><br>
                         <div class="result_btn">
 	                   	<form action="CartInsert" method="get">
@@ -170,10 +170,8 @@
 	                        class="genric-btn info radius" 
 	                        style="style=;width: 181.99074000000002px;
 	                        height: 51.99074px;margin-right: 30px;">
-	                        
-	             
 	                      
-	                        <a href="#" class="genric-btn info radius" style="width: 181.99074000000002px;height: 51.99074px;padding-left: 30px;"><span style="font-size:18px;">바로 구매</span></a>
+	                        <a href="payment.jsp" class="genric-btn info radius" style="width: 181.99074000000002px;height: 51.99074px;padding-left: 30px;"><span style="font-size:18px;">바로 구매</span></a>
 	                   </form>
 	                   </div>
                     </div>

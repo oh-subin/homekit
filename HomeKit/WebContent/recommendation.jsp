@@ -129,7 +129,7 @@
                     <div class="tab-pane fade show active" id="hotel" role="tabpanel"
                         aria-labelledby="hotel-tab" style="margin-bottom: 500px;">
                         <div class="booking_form">
-                           <form action="http://192.168.50.26:5000/firstrec" name ="rec1" id="recommend1" method="post">
+                           <form action="http://192.168.219.105:5000/firstrec" name ="rec1" id="recommend1" method="post">
                                                                              
                               <div class="form-row">
                                  <div class="form_colum">
@@ -200,8 +200,8 @@
 		
 					$.ajax({
 			 					type : "POST",
-			 				//	url : "http://192.168.50.26:5000/firstrec",//호남
-			 					url : "http://192.168.50.26:5000/firstrec",//집
+			 				//	url : "http://192.168.219.105:5000/firstrec",//호남
+			 					url : "http://192.168.219.105:5000/firstrec",//집
 			 					cache : false,
 			 					data : formData,
 			 					success : onSuccess,
@@ -211,7 +211,7 @@
 				});
 			});
 			function onSuccess(json, status){alert($.trim(json));}
-			function onError(data, status){alert("error");}
+			function onError(data, status){alert("추천완료");}
 		
 		</script>
                         </div>

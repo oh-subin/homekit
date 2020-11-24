@@ -1,3 +1,6 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.DAO.MemberDAO"%>
+<%@page import="com.DTO.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -27,7 +30,9 @@
 
 <body class="bg-gradient-primary">
 	<%
-		String email = (String)session.getAttribute("email");	
+		String email = (String)session.getAttribute("email");
+		MemberDAO dao = new MemberDAO();
+		MemberDTO member = dao.getUserInfo(email);
 	%>
 
   <div class="container">
@@ -50,27 +55,21 @@
                   </div>
                   <form class="user" action="UpdateService" method="post">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Name">
+                      <input type="text" name="name" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Name : <%=member.getName() %>">
                     </div>
                     <div class="form-group">
-                      <input type="text" name="address" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Address">
+                      <input type="text" name="address" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Address : <%=member.getAddress() %>">
                     </div>
                     <div class="form-group">
-                      <input type="password" name="pw" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Password">
+                      <input type="password" name="pw" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="PassWord : <%=member.getPw() %>">
                     </div>
                     <div class="form-group">
-                      <input type="text" name ="tel" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Tel">
+                      <input type="text" name ="tel" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Tel : <%=member.getTel() %>">
                     </div>
                     <input type="submit" value="수정" class="btn btn-primary btn-user btn-block" style="background-color: #B2A59F; border-color: #B2A59F">
                     
                   </form>
                   <hr>
-                  <div class="text-center">
-                    <a class="small" href="register.jsp">회원가입</a>
-                  </div>
-                  <div class="text-center">
-                    <a class="small" href="login.jsp">이미 계정이 있습니다. 로그인</a>
-                  </div>
                   <div class="text-center">
                     <a class="small" href="main.jsp">메인 페이지로 돌아가기</a>
                   </div>

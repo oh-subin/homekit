@@ -206,13 +206,13 @@
 
 			<section
 				style="margin-top: 200px; padding-top: 50px; padding-left: 100px; width: 1130px;">
-				<p style="width: 300px; color: black;">홈키트 구성소품</p>
+				<p style="width: 300px; color: black;">빈티지 스타일 연관소품</p>
 				<hr style="width: 1000px;margin-right: 0px;margin-left: 0px;">
 				<br>
 				<table>
 					<tr>
 						<%
-						String pro_style="모던";
+						String pro_style="빈티지";
 						productDAO dao = new productDAO();
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
 						

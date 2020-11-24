@@ -205,7 +205,7 @@
 
 			<section
 				style="margin-top: 200px; padding-top: 50px; padding-left: 100px; width: 1130px;">
-				<p style="width: 300px; color: black;">홈키트 연관 상품</p>
+				<p style="width: 300px; color: black;"><%=rec_style1 %>스타일 연관 상품</p>
 				<hr style="width: 1000px;margin-right: 0px;margin-left: 0px;">
 				<br>
 				<table>
@@ -215,7 +215,6 @@
 						productDAO dao = new productDAO();
 						ArrayList<productDTO> productsLists = dao.showProducts(pro_style);
 							for (int i=0; i < productsLists.size(); i++) {%>
-						for (int i=0; i < productsLists.size(); i++) {%>
 						<td class="products">
 							<button type="button" class="btn"
 								data-toggle="popover"
