@@ -178,7 +178,7 @@
 								<a href="#"><i class="fas fa-star"></i></a> <a href="#"><i
 									class="fas fa-star"></i></a> <a href="#"><i class="fas fa-star"></i></a>
 								<a href="#"><i class="fas fa-star"></i></a> <a href="#"><i
-									class="fas fa-star"></i></a> <span>(개수)</span>
+									class="fas fa-star"></i></a> <span>(5/5)</span>
 							</div>
 
 							<p style="color: black;">추천 사용자:1~2인 가구, 원룸 , 싱글라이프</p>	<!-- rec_style -->
