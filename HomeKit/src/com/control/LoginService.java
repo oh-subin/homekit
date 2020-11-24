@@ -19,9 +19,6 @@ public class LoginService extends HttpServlet {
 		// 1. 입력한 값 가져오기
 		String email = request.getParameter("email");
 		String pw = request.getParameter("pw");
-		
-		System.out.println(email);
-		System.out.println(pw);
 				
 		MemberDAO dao = new MemberDAO();
 		boolean check = dao.Login(email, pw);

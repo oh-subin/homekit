@@ -173,14 +173,6 @@
                            </form>
                           
                            <script>
-                          
-
-                           
-                          
-                          
-                         
-                    
-                  
                            function savetag(){
                         	   
                         	   inputFamily= $("select[name=select_familyShape] option:selected").val();
@@ -194,7 +186,7 @@
                        	}          
                            </script>
                            
-                           <script type="text/javascript">
+       <script type="text/javascript">
 		
 			$(document).ready(function() 
 		

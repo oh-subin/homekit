@@ -92,7 +92,7 @@ public class RecommendationDAO {
 	}
 
 	// 2차 추천 시 사용자가 입력한 평점 값을 INTERIOR_USER 테이블에 담는 기능
-	public int rating_insert(String email, int rating1, int rating2, int rating3, int rating4, String style1, String style2, String style3, String style4) {
+	public int rating_insert(String email, int rating1, int rating2, int rating3, int rating4) {
 		int cnt = 0;
 
 		try {
@@ -108,7 +108,7 @@ public class RecommendationDAO {
 	         psmt.setInt(4, rating3);
 	         psmt.setInt(5, rating4);
 
-			System.out.println(style1 +"의 평점은?: " + rating1);
+//			System.out.println(style1 +"의 평점은?: " + rating1);
 
 			cnt = psmt.executeUpdate();
 
@@ -118,5 +118,42 @@ public class RecommendationDAO {
 			close();
 		}
 		return cnt;
+	}
+	
+	// 2차추천 결과를 보여주는 기능
+	public ArrayList<RecommendationDTO> result(String style) {
+		
+		RecommendationDTO imgs = null;
+		ArrayList<RecommendationDTO> imgList = new ArrayList<>();
+
+		try {
+			// DB 연결
+			getConn();
+
+			// ------------------- DB에 SQL 명령문 준비
+			String sql = "select rec_title, rec_imgurl, rec_style from INTERIOR_CONTENTS where rec_style=?";
+			psmt = conn.prepareStatement(sql); // rec_style, rec_title, rec_imgurl
+			psmt.setString(1, style);
+			
+			rs = psmt.executeQuery();
+
+			while (rs.next()) {
+
+				// 전체 스타일, 이미지, 제목 출력
+				String rec_style = rs.getString(1);
+				String rec_title = rs.getString(2);
+				String rec_img = rs.getString(3);
+
+				// cartDTO 객체를 1개씩 DB에서 받은 후, ArrayList인 cartList에 저장
+				imgs = new RecommendationDTO(rec_style,rec_title, rec_img);
+				imgList.add(imgs);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return imgList;
 	}
 }

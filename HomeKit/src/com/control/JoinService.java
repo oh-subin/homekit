@@ -32,7 +32,7 @@ public class JoinService extends HttpServlet {
 		if (cnt > 0) { // SQL문 실행이 성공하면
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter writer = response.getWriter();
-			writer.println("<script>alert('회원가입 성공 환영합니다!'); location.href='" + "main.jsp" + "';</script>");
+			writer.println("<script>alert('회원가입 성공 환영합니다!'); location.href='" + "login.jsp" + "';</script>");
 			writer.close();
 		} else {
 			response.setContentType("text/html; charset=UTF-8");

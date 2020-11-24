@@ -1,3 +1,5 @@
+<%@page import="com.DTO.RecommendationDTO"%>
+<%@page import="com.DAO.RecommendationDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="com.DAO.productDAO"%>
@@ -39,18 +41,20 @@
 
 <body>
 	<% request.setCharacterEncoding("UTF-8"); %>
+	<% String email = (String)session.getAttribute("email"); %>
 	<%
 	 String results = request.getParameter("results");
 	
-     String email = (String)session.getAttribute("email");
-	  
+	 String style = results.substring(21,28);
+	 //style="";
+	 
+	 RecommendationDAO recdao = new RecommendationDAO();
+	 ArrayList<RecommendationDTO> imgList = recdao.result(style);
+	 
      if(results != null){
     	System.out.println(results);
-    	
+    	System.out.println(style);
 	  }
-	
-     
-     
      
 
    %>
@@ -145,8 +149,8 @@
 				<div class="col-lg-6">
 				<h4>테마 추천 완료!</h4><br>
 					<div class="about_img">
-																	<!-- 이미지 src안에 rec_imgurl넣기 -->
-						<img src= "https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/projects/160050389689420607.jpg?gif=1&w=960"
+						<% for(int i =0; i<imgList.size(); i++){%>										<!-- 이미지 src안에 rec_imgurl넣기 -->
+						<img src= <%=imgList.get(i).getRec_img() %>
 							style="height: 400px; width: 500px;"><br>
 						
 					</div>
@@ -155,7 +159,8 @@
 				<div class="col-lg-6" style="display: auto; padding-left: 0px;">
 					<div class="about_text" style="width: 500px; margin-top: 50px; margin-left: 20px">
 						
-						<h3 style="font-size: 30px;"></h3>		<!-- rec_title넣기 -->
+						<h3 style="font-size: 30px;">//<%=imgList.get(i).getRec_title() %></h3>		<!-- rec_title넣기 -->
+						<h5 style="font-size: 25px;"><%=imgList.get(i).getRec_style() %>스타일</h5>
 						<br>
 						<div class="rating">
 							<span>별점</span>
@@ -166,7 +171,13 @@
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
 
-							<p style="color: black;">추천 사용자:, 1~2인 가구</p>	<!-- rec_style -->
+							<p style="color: black;">추천 사용자:, 1~2인 가구</p>	
+							
+							<p style="color: black;">
+							STYLE    :  모던에 미니멀&심플, 내추럴이 믹스된 스타일<br>
+							COLOR    :  화이트 & 우드<br>
+							MATERIAL :  패브릭, 우드, 메탈
+							</p>
 
 							<p style="color: black;">
 								가격 <b style="color: red;">30만원</b>				
@@ -184,6 +195,7 @@
 					</div>
 				</div>
 			</div>
+			<%} %>
 	</section>
 	<!-- about us css end-->
 

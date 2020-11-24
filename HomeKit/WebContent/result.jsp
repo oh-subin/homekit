@@ -43,31 +43,24 @@
 	<% request.setCharacterEncoding("UTF-8"); %>
 	<%
 	 String results = request.getParameter("results");
-	 String rec_title1 = results.substring(0, 18);
-	 String rec_imgurl1 = "https://image.ohou.se/i/bucketplace-v2-development/uploads/"+results.substring(77, 128)+"&w=960";
-	 String rec_style1 = results.substring(126,127);
-
+	 String rec_title1 = results.substring(8, 26);
+	 String rec_imgurl1 = "https://image.ohou.se/i/bucketplace-v2-development/uploads/"+results.substring(85, 136)+"&w=960";
+	 String rec_style1 = results.substring(0,8);
+	 rec_style1 = "모던";
 	 
      String email = (String)session.getAttribute("email");
-     String email2 = email.substring(0,1);
+        
      String rec_space = (String) request.getAttribute("rec_space");
      String rec_size = (String) request.getAttribute("rec_size");
      String rec_familyShape = (String) request.getAttribute("rec_familyShape");
-   
-     
 	  
-     if(results != null){
-    	 System.out.println(email2);
-    	 System.out.println("-------");
+    /*  if(results != null){
+    	 System.out.println(results);
+    	 System.out.println("---------------");
     	 System.out.println(rec_title1);
   	 	 System.out.println(rec_imgurl1);
-    	 System.out.println("-------"); 
-     }
-	
-     
-     
-     
-
+    	 System.out.println(rec_style1);
+     } */
    %>
    	<!--::header part start::-->
         <header class="main_menu">
@@ -153,14 +146,13 @@
 
 	<!-- about us css start-->
 	<section class="about_us section_padding"
-		style="margin-bottom: 100px; margin-top: 0px; margin-left:200px">
+		style="margin-bottom: 130px; margin-top: 0px; margin-left:200px">
 		
 		<div class="container">
 			<div class="row align-items-center" style="height: 200px;">
 				<div class="col-lg-6">
 				<h4>테마 추천 결과</h4><br>
 					<div class="about_img">
-																	<!-- 이미지 src안에 rec_imgurl넣기 -->
 						<img src=<%="'"+rec_imgurl1+"'" %> alt="#"
 							style="height: 400px; width: 500px;"><br>
 						
@@ -170,7 +162,8 @@
 				<div class="col-lg-6" style="display: auto; padding-left: 0px;">
 					<div class="about_text" style="width: 500px; margin-top: 50px; margin-left: 20px">
 						
-						<h3 style="font-size: 30px;"><%= rec_title1 %></h3>		<!-- rec_title넣기 -->
+						<h3 style="font-size: 30px;"><%= rec_title1 %></h3>
+						<h5 style="font-size: 25px;"><%= rec_style1 %>스타일</h5> 
 						<br>
 						<div class="rating">
 							<span>별점</span>
@@ -181,14 +174,20 @@
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
 
-							<p style="color: black;">추천 사용자:1~2인 가구</p>	<!-- rec_style -->
-
+							<p style="color: black;">추천 사용자:1~2인 가구</p>	 
+							
+							<p style="color: black;">
+							STYLE    :  모던에 미니멀&심플, 내추럴이 믹스된 스타일<br>
+							COLOR    :  화이트 & 우드<br>
+							MATERIAL :  패브릭, 우드, 메탈
+							</p>
+							
 							<p style="color: black;">
 								가격 <b style="color: red;">30만원</b>				
 							</p>
 						</div>
-						<br> <br>
-						<div class="result_btn" style="margin-top:110px;">
+						
+						<div class="result_btn" style="margin-top:30px;">
 						<a href="recommendation2.jsp" class="genric-btn info radius" style="margin-right: 30px; width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; float:left;background-color:#5a4b7657">재추천받기</a>
 							<a href="payment.jsp" class="genric-btn info radius"
 							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px;background-color:#5a4b7657">구매하기</a>
@@ -196,6 +195,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			</div>
 	</section>
 	<!-- about us css end-->
@@ -207,7 +207,7 @@
 
 			<section
 				style="margin-top: 200px; padding-top: 50px; padding-left: 100px; width: 1130px;">
-				<p style="width: 300px; color: black;">홈키트 구성소품</p>
+				<p style="width: 300px; color: black;">홈키트 연관 상품</p>
 				<hr style="width: 1000px;margin-right: 0px;margin-left: 0px;">
 				<br>
 				<table>

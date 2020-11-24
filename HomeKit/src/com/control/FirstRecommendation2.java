@@ -26,10 +26,6 @@ public class FirstRecommendation2 extends HttpServlet {
 		String rec2_size = request.getParameter("size");
 		String rec2_familyShape = request.getParameter("familyShape");
 		
-		System.out.println(rec2_space);
-		System.out.println(rec2_size);
-		System.out.println(rec2_familyShape);
-		
 		RecommendationDAO dao = new RecommendationDAO();
         ArrayList<RecommendationDTO> imgList = dao.showIMG(rec2_space, rec2_size, rec2_familyShape);
         

@@ -40,38 +40,6 @@
 </head>
 
 <body>
- <!-- 
- <script type="text/javascript">
-		$(document).ready(function()
-
-		{
-
-			$("#select").click(function()
-
-			{
-
-				var formData = $("#email").value();
-
-				$.ajax({
-					type : "POST",
-					//url : "http://192.168.50.26:5000/secondrec",//호남
-					url : "http://192.168.50.26:5000/secondrec",//집
-					cache : false,
-					data : formData,
-					success : onSuccess,
-					error : onError
-				});
-				
-			});
-		});
-		function onSuccess(json, status) {
-			alert($.trim(json));
-		}
-		function onError(data, status) {
-			alert("error");
-		}
-	</script> 
-	-->
 
 	<%
 	String get_email = (String) session.getAttribute("email");
@@ -80,13 +48,9 @@
 
 	if (get_email != null) {
 		email = get_email.substring(0, get_email.lastIndexOf("@"));
-		System.out.println("************");
-		System.out.println(email);
-		System.out.println("************");
 	} else {
 	}
 
-	String rec_imgurl = request.getParameter("rec_imgurl");
 	%>
 	<script>
 		function loadtag() {
@@ -182,8 +146,8 @@
 							<h2>2. 평점 매기기</h2>
 							<br>
 							<p
-								style="color: #756595; font-size: 20px; background-color: #f2f0f594; margin-left: 40px; width: 1100px; text-align: left;">사진을
-								클릭하여 평점을 1~5까지 입력해주세요.</p>
+								style="color: #756595; font-size: 20px; background-color: #f2f0f594; margin-left: 40px; width: 1100px; text-align: left;">
+								사진별로 평점을 1~5까지 입력해주세요. (숫자가 높을 수록 좋은 점수)</p>
 						</div>
 					</div>
 				</div>
@@ -238,62 +202,21 @@
                 	  html += '<div class="switch-wrap d-flex justify-content-between">';
                 	  html += '<div class="ratingVal'+index+'">';
                 	  html += '<input type="hidden" id="email" name="email" value="<%=email%>">';
-                	  html += '<label><input type="radio" name="rating'+index+'" value="1">1</label>';
-                	  html += '<label><input type="radio" name="rating'+index+'" value="2">2</label>';
-                	  html += '<label><input type="radio" name="rating'+index+'" value="3">3</label>';
-                	  html += '<label><input type="radio" name="rating'+index+'" value="4">4</label>';
-                	  html += '<label><input type="radio" name="rating'+index+'" value="5">5</label>';
+                	  html += '<br>'
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="1" style="font-size:17px; width:23px;height:23px"> 1</label>';
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="2" style="font-size:17px; width:23px;height:23px"> 2</label>';
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="3" style="font-size:17px; width:23px;height:23px"> 3</label>';
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="4" style="font-size:17px; width:23px;height:23px"> 4</label>';
+                	  html += '<label style="padding-left: 10px; padding-right: 35px;"><input type="radio" name="rating'+index+'" value="5" style="font-size:17px; width:23px;height:23px"> 5</label>';
                 	  html += '<input type="hidden" value="'+style+'" name="style'+index+'" />';
-                	  html += '<p>'+title+'</p>';
+                    //html += '<p>'+title+'</p>';
                 	//html += '<p>'+style+'</p>';
                 	  html += '</div></div></div>';
                             	  
                 	  return html;
                   }
-                	 /*  for(let i=0; i<result.length; i++){
-                          let style= result[i].rec_style;
-                          let check_count = document.getElementsByName("rating").length;
-                          
-                          for (let j=0; j<check_count; j++) {
-                             if (document.getElementsByName("rating")[j].checked == true) {
-                                  let ratings = document.getElementsByName("rating")[j].value
-                                  
-                            
-                                                   }
-                             
-                       }
-                          consol.log(style+"의 평점은 : "+ratings);
-                  } */
-           
                	});
-               
-               
                </script>
- 
-
-	<%-- 				<div class="col-md-6" style="float: right;">
-						<img src="<%= rec_imgurl %>"></img>	
-						<a href=<%=imgList.get(i).getRec_img()%> class="img-pop-up">
-							<div class="single-gallery-image"
-								style="background: url(<%=imgList.get(i).getRec_img()%>); width: 400px; height: 300px;"></div>
-						</a>
-						<div class="switch-wrap d-flex justify-content-between">
-							<div class="ratingVal<%=i + 1%>">
-								<input type="hidden" name="email" value=<%=email %>> 
-								<% System.out.print(email);%>
-								<label><input type="radio" name="rating<%=i + 1%>" value="1">1</label> 
-								<label><input type="radio" name="rating<%=i + 1%>" value="2">2</label>
-								 <label><input type="radio" name="rating<%=i + 1%>" value="3">3</label> 
-								 <label><input type="radio" name="rating<%=i + 1%>" value="4">4</label> 
-								 <label><input type="radio" name="rating<%=i + 1%>" value="5">5</label> 
-								 <input type="hidden" value=<%=imgList.get(i).getRec_style()%> name="style<%=i + 1%>" />
-								 <p><%=imgList.get(i).getRec_title()%></p>
-								<p><%=imgList.get(i).getRec_style()%></p>
-							</div>
-						</div>
-					</div> --%>
-		
-
 				</div>
 			</div>
 			<input type="submit" id="select" value="2차 추천" class="btn_1"
@@ -333,14 +256,6 @@
 		style="background: url(img/homepage/text_img3.JPG); width: 1200px; height: 150px; margin-left: 200px; background-repeat: no-repeat;"></div>
 	<br>
 	<br>
-
-	
-
-
-
-
-
-
 	<!-- footer part start-->
 	<footer class="footer-area">
 
