@@ -163,7 +163,7 @@
 					<div class="about_text" style="width: 500px; margin-top: 50px; margin-left: 20px">
 						
 						<h3 style="font-size: 30px;"><%= rec_title1 %></h3>
-						<h5 style="font-size: 25px;"><%= rec_style1 %>스타일</h5> 
+					
 						<br>
 						<div class="rating">
 							<span>별점</span>
