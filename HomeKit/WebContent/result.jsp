@@ -173,9 +173,7 @@
 								<a href="#"><i class="fas fa-star"></i></a> <a href="#"><i
 									class="fas fa-star"></i></a> <span>(개수)</span>
 							</div>
-
-							<p style="color: black;">추천 사용자:1~2인 가구</p>	 
-							
+													
 							<p style="color: black;">
 							STYLE    :  모던에 미니멀&심플, 내추럴이 믹스된 스타일<br>
 							COLOR    :  화이트 & 우드<br>

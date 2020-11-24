@@ -51,7 +51,7 @@
                     <div class="form-group">
                       <input type="password" name = "pw" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     </div>
-                    <input type= "submit" value ="탈퇴하기" class="btn btn-primary btn-user btn-block" style="background-color: #B2A59F; border-color: #B2A59F">
+                    <input type= "submit" value ="탈퇴하기" class="btn btn-primary btn-user btn-block" style="background-color: #5a4b7657; border-color: white">
                   </form>
                   <hr>
                   <div class="text-center">
