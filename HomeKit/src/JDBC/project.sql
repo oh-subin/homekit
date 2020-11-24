@@ -9,7 +9,7 @@ TEL VARCHAR2(50)
 
 
 
-SELECT * FROM interior_user where userid="3"
+
 테이블 값 삽입(멤버)
 INSERT INTO MEMBER values('테스터', '집2','tester@roominterior.com', '123', '010-1233-3480')
 
@@ -18,7 +18,7 @@ delete from INTERIOR_user where userid='3'
 
 
 테이블 조회(멤버)
-SELECT * FROM MEMBER
+SELECT * FROM MEMBER;
 DELETE FROM interior_user WHERE userid='3'
 SELECT * FROM interior_user;
 SELECT * FROM interior_contents;
