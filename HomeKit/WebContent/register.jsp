@@ -99,7 +99,7 @@
                         <label class="custom-control-label" for="customCheck">이용약관에 동의합니다.</label>
                       </div>
                 </div>
-                <input type="submit" value ="가입"  class="btn btn-primary btn-user btn-block" style="background-color: #B2A59F; border-color: #B2A59F">
+                <input type="submit" value ="가입"  class="btn btn-primary btn-user btn-block" style="background-color: #5a4b7657; border-color: white">
               </form>
               <hr style="width: 400px">
               <div class="text-center" style="width: 400px">
