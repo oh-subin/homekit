@@ -174,7 +174,9 @@
                                     <div>
 		                                <p style="color:rgb(105,72,52);">모던, 가족</p>
 		                                <p style="color:rgb(105,72,52);">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-		                                <p style="color:black;">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+		                                <p><strong style="color:#756595; font-size: 22px">180,000원</strong><del style="color: #adb5bd; padding-right: 20px;padding-left: 10px;">200,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
@@ -193,7 +195,7 @@
                                     <div>
 		                                <p style="color:rgb(105,72,52);">빈티지, 신혼부부</p>
 		                                <p style="color:rgb(105,72,52);">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-		                                <p style="color:black;">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+		                                <p><strong style="color:#756595; font-size: 22px">180,000원</strong><del style="color: #adb5bd; padding-right: 20px;padding-left: 10px;">200,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
@@ -214,7 +216,9 @@
                                     <div>
 		                                <p style="color:rgb(105,72,52);">모던, 자취생</p>
 		                                <p style="color:rgb(105,72,52);">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-		                                <p style="color:black;">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+		                                <p><strong style="color:#756595; font-size: 22px">180,000원</strong><del style="color: #adb5bd; padding-right: 20px;padding-left: 10px;">200,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                <span class="fa fa-star checked"></span>
 		                                
@@ -309,36 +313,33 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="single_ihotel_list">
                             <a href="#"><img src="img/homepage/4.jpg" alt=""></a>
-                            <div class="hotel_text_iner">
-                                <h3 style="color:black;">인테리어 디자이너의 싱글라이프가 담긴 셀프 인테리어</h3><hr>
-                                <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                                <p style="color:rgb(105,72,52);">모던, 젊은 남성</p>
-                                <h5><span style="color:black;">구매가격 201,000원 → <b style="color:red;">판매가격 65,000원</b></span></h5>
-                            </div>
+                            
+                                 <div class="hotel_text_iner">
+                       				<h3 style="color:black;">인테리어 디자이너의 싱글라이프가 담긴 셀프 인테리어</h3><hr>
+                                    <div>
+                                    	<span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <p style="color:rgb(105,72,52);">모던, 젊은 남성</p>
+		                                <h5 style="color:black;">구매가격 201,000원 → <b style="color:red;">판매가격 65,000원</b></h5>     
+									</div>
+								</div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="single_ihotel_list">
                             <a href="#"><img src="img/homepage/9.jpg" alt=""></a>
                             <div class="hotel_text_iner">
-                                <h3 style="color:black;">군더더기 없는 깔끔한 인테리어에 풍경 한 스푼</h3><hr>
-                                <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                                <p style="color:rgb(105,72,52);">북유럽, 가족</p>
-                                <h5><span style="color:black;">구매가격 175,000원 → <b style="color:red;">판매가격 100,000원</b></h5>
+                               <h3 style="color:black;">군더더기 없는 깔끔한 인테리어에 풍경 한 스푼</h3><hr>
+                                    <div>
+                                    	<span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <p style="color:rgb(105,72,52);">북유럽, 가족</p>
+		                                <h5 style="color:black;">구매가격 175,000원  → <b style="color:red;">판매가격 100,000원</b></h5>     
+									</div>          
                             </div>
                         </div>
                     </div>
@@ -346,17 +347,16 @@
                         <div class="single_ihotel_list">
                             <a href="#"><img src="img/homepage/10.jpg" alt=""></a>
                             <div class="hotel_text_iner">
-                                <h3 style="color:black;">부암동 주택살이┃일상과 비일상의 경계에 있는 집</a></h3><hr>
-                                <div class="place_review">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(210 review)</span>
-                                </div>
-                                <p style="color:rgb(105,72,52);">빈티지, 중년부부</p>
-                                <h5><span style="color:black;">구매가격 150,000원 → <b style="color:red;">판매가격 120,000원</b></span></h5>
+                                <h3 style="color:black;">부암동 주택살이:일상과 비일상의 경계에 있는 집</h3><hr>
+                                    <div>
+                                    	<span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <span class="fa fa-star checked"></span>
+		                                <p style="color:rgb(105,72,52);">빈티지, 중년부부</p>
+		                                <h5 style="color:black;">구매가격  150,000원  → <b style="color:red;">판매가격 120,000원</b></h5>     
+									</div>          
                             </div>
                         </div>
                     </div>

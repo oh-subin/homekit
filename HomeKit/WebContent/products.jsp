@@ -143,7 +143,7 @@
                             <div>
                                 <p style="color:#808080">모던&미니멀</p>
                                 <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                                <p><strong style="font-size:22px">180,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">200,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -159,7 +159,8 @@
                             <div>
                                 <p style="color:#808080">내추럴</p>
                                 <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                                <p><strong style="font-size:22px">150,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">250,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
+                                <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -174,7 +175,7 @@
                             <div>
                                 <p style="color:#808080">모던&미니멀</p>
                                 <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                                <p><strong style="font-size:22px">120,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">180,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -189,7 +190,10 @@
                             <div>
                              <p style="color:#808080">내추럴&유니크</p>
                              <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                             <p><strong style="font-size:22px">70,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">100,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
+                             <span class="fa fa-star checked"></span>
+                             <span class="fa fa-star checked"></span>
+                             <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              
@@ -204,7 +208,8 @@
                             <div>
                              <p style="color:#808080">프렌치&프로방스</p>
                              <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                             <p><strong style="font-size:22px">130,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">200,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
+                             <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
@@ -219,7 +224,8 @@
                             <div>
 								<p style="color:#808080">내추럴&북유럽</p>
                                 <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                                <p><strong style="font-size:22px">160,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">180,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
+                                <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -234,7 +240,7 @@
                             <div>
                                 <p style="color:#808080">미니멀&심플</p>
                                 <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                                <p style="font-size:20px">200,000<del style="padding-right: 20px;padding-left: 10px;">180,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                                <p><strong style="font-size:22px">80,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">100,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -251,10 +257,12 @@
                             <div>
                              <p style="color:#808080">모던&내추럴</p>
                              <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                             <p><strong style="font-size:22px">110,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">170,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
-                          
+                          	 <span class="fa fa-star checked"></span>
+                          	 <span class="fa fa-star checked"></span>
+                          	 <span class="fa fa-star checked"></span>
                          
                         </div>
                         </div>
@@ -266,7 +274,7 @@
                             <div>
                              <p style="color:#808080">미니멀&심플</p>
                              <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                             <p><strong style="font-size:22px">150,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">200,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
@@ -281,7 +289,7 @@
                             <div>
                              <p style="color:#808080">내추럴</p>
                              <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                             <p><strong style="font-size:22px">180,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">200,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
@@ -297,7 +305,9 @@
                             <div>
                              <p style="color:#808080">미니멀&심플</p>
                              <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                             <p><strong style="font-size:22px">170,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">200,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
+                             <span class="fa fa-star checked"></span>
+                             <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                           
@@ -311,7 +321,7 @@
                             <div>
                              <p style="color:#808080">미니멀&심플</p>
                              <p style="font-size:18px">[48H POP UP][12%쿠폰][~11/19까지]</p><br>
-                             <p style="font-size:20px">133,500<del style="padding-right: 20px;padding-left: 10px;">178,000</del><b style="color:red; text-align: right; font-size:30px;">12%</b></p>
+                             <p><strong style="font-size:22px">180,000원</strong><del style="padding-right: 20px;padding-left: 10px;color: #adb5bd">200,000원</del><b style="color:red; text-align: right; font-size:18px;">12%</b></p>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>
                              <span class="fa fa-star checked"></span>

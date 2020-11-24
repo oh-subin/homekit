@@ -325,15 +325,12 @@
                     </div>
                 </div>
                 
-                <!-- 옆에 카테고리 화면 begin -->
-                <div class="col-lg-4">
+                <!-- 옆에 카테고리 화면 begin -->                
+                <div class="col-lg-4" style="left: 40px;">
                     <div class="blog_right_sidebar">
-                    	<aside class="single_sidebar_widget tag_cloud_widget">
-                    		<h4 class="widget_title"><input type="button" onClick="location.href='simple_registration.jsp'" value="상품 등록하기" 
-                    		style="background-color:#5a4b7657;border-color: #f2f0f594; color: white;height: 45.98438px;width: 155.98438px;"></h4>
-							<p>위의 버튼을 클릭해서 중고로 판매할 상품을 등록해보세요.</p>   
-		    	   		</aside>
-                        <aside class="single_sidebar_widget post_category_widget">
+                    	<input type="button" onClick="location.href='simple_registration.jsp'" value="상품 등록하기" 
+                    		style="background-color:#5a4b7657;margin-left: 205px;margin-bottom: 20px; border-color: #f2f0f594; color: white;height: 45.98438px;width: 155.98438px;">
+                        <aside class="single_sidebar_widget post_category_widget" style="margin-left: 120px;">
                             <h4 class="widget_title">Category</h4>
                             <ul class="list cat-list">
                                 <li>
@@ -357,7 +354,7 @@
                             </ul>
                         </aside>
 
-                        <aside class="single_sidebar_widget tag_cloud_widget">
+                        <aside class="single_sidebar_widget tag_cloud_widget" style="margin-left: 120px;padding-left: 40px;">
                             <h4 class="widget_title">Related tags </h4>
                             <ul class="list">
                                 <li>
@@ -380,9 +377,6 @@
                                 </li>
                                 <li>
                                     <a href="#">거실</a>
-                                </li>
-                                <li>
-                                    <a href="#">댕냥이</a>
                                 </li>
                             </ul>
                         </aside>

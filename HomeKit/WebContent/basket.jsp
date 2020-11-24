@@ -118,11 +118,17 @@
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head" style="font-size: 18px">
-							<div class="country" style="margin-left: 50px;">상품사진</div>
-							<div class="country" style="margin-left: 50px;">상품명</div>
-							<div class="country">수량</div>
-							<div class="country">상품금액</div>
-							<div class="choice">삭제</div>
+							<div class="country" style="margin-left: 50px; width:230px"><strong>상품사진</strong><br><hr style="width:1050px">
+							<img src="img/homepage/28.jpg" alt="28_img" style="width: 160px;height: 120px;margin-top: 20px;margin-right: 20px;"></div>
+							
+							<div class="country" style="width:210px; margin-left:20px"><strong>상품명</strong><br><br>
+							<p style="margin-top:40px; font-size:20px">호텔리조트 풍으로<br>원없이 꾸민 드림하우스</p></div>
+							<div class="country" style="width:200px;margin-left:70px"><strong>수량</strong><br><br>
+							<p style="margin-top:50px; margin-left:10px; font-size:20px">1</p></div>
+							<div class="country" style="width: 200px;"><strong>상품금액</strong><br><br>
+							<p style="margin-top:50px; font-size:20px">130,000원</p></div>
+							<div class="choice"><strong>삭제</strong></div>
+						</div>
 						</div>
 						<form action="DeleteCart" method="get">
 						<%
@@ -168,10 +174,10 @@
 	<!-- 구매하기 버튼 begin -->
 	<div class="purchase_btn">
 		<a href="#" class="btn_1 d-none d-lg-block"
-			style="width: 150px; height: 56px; float: left; margin-left: 650px; margin-top: 100px;">집들이
+			style="width: 150px; height: 56px; float: left; margin-left: 650px; margin-top: 100px; background-color:#5a4b7657; color:white">집들이
 			가기</a>
 		<a href="payment.jsp" class="btn_1 d-none d-lg-block"
-			style="margin-left: 50px; width: 150px; height: 56px; float: left; padding-left: 40px; margin-top: 100px;">구매하기</a>
+			style="margin-left: 50px; width: 150px; height: 56px; float: left; padding-left: 40px; margin-top: 100px; background-color:#5a4b7657; color:white">구매하기</a>
 	</div>
 	<!-- 구매하기 버튼 end -->
 

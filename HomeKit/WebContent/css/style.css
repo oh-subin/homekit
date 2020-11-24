@@ -457,7 +457,7 @@ ul {
 
 /* line 251, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_common.scss */
 .place_review a {
-	color: #ffc962;
+	color: #cdb4ff;
 }
 
 /**************** common css end ****************/
@@ -494,19 +494,18 @@ ul {
 	padding: 15px 33px;
 	border-radius: 0;
 	font-size: 16px;
-	color:#415094d8;
+	color:white;
 	text-transform: capitalize;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
-	background-color: #B2A59F;
-;
+	background-color: #5a4b7657;
 	font-weight: 500;
 }
 
 /* line 35, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_button.scss */
 .btn_1:hover, .btn_2:hover {
-	color: #415094;
-	background-color: #869bccab;
+	color: white;
+	background-color: #5a4b7657;
 }
 
 @media ( max-width : 991px) {
