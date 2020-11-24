@@ -7,7 +7,7 @@ ADDRESS VARCHAR2(50),
 TEL VARCHAR2(50)
 )
 
-
+select rec_title, rec_imgurl, rec_style from INTERIOR_CONTENTS where rec_style='style2'
 
 SELECT * FROM interior_user where userid="3"
 Å×ÀÌºí °ª »ðÀÔ(¸â¹ö)

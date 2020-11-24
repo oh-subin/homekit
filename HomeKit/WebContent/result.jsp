@@ -175,7 +175,7 @@
 							</div>
 													
 							<p style="color: black;">
-							STYLE    :  모던에 미니멀&심플, 내추럴이 믹스된 스타일<br>
+							STYLE    :  모던, 미니멀&심플, 내추럴 스타일<br>
 							COLOR    :  화이트 & 우드<br>
 							MATERIAL :  패브릭, 우드, 메탈
 							</p>

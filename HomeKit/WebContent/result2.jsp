@@ -43,13 +43,13 @@
 	<% request.setCharacterEncoding("UTF-8"); %>
 	<% String email = (String)session.getAttribute("email"); %>
 	<%
-	 String results = request.getParameter("results");
+	 String results = request.getParameter("results2");
 	
-	 String style = results.substring(21,28);
-	 //style="";
+	// String style = results.substring(22,28);
+	 String style="style2";
 	 
 	 RecommendationDAO recdao = new RecommendationDAO();
-	 ArrayList<RecommendationDTO> imgList = recdao.result(style);
+	 ArrayList<RecommendationDTO> imgList2 = recdao.result(style);
 	 
      if(results != null){
     	System.out.println(results);
@@ -149,8 +149,8 @@
 				<div class="col-lg-6">
 				<h4>테마 추천 완료!</h4><br>
 					<div class="about_img">
-						<% for(int i =0; i<imgList.size(); i++){%>										<!-- 이미지 src안에 rec_imgurl넣기 -->
-						<img src= <%=imgList.get(i).getRec_img() %>
+						<% for(int i =0; i<imgList2.size(); i++){%>										<!-- 이미지 src안에 rec_imgurl넣기 -->
+						<img src= <%=imgList2.get(i).getRec_title() %>
 							style="height: 400px; width: 500px;"><br>
 						
 					</div>
@@ -159,8 +159,8 @@
 				<div class="col-lg-6" style="display: auto; padding-left: 0px;">
 					<div class="about_text" style="width: 500px; margin-top: 50px; margin-left: 20px">
 						
-						<h3 style="font-size: 30px;">//<%=imgList.get(i).getRec_title() %></h3>		<!-- rec_title넣기 -->
-						<h5 style="font-size: 25px;"><%=imgList.get(i).getRec_style() %>스타일</h5>
+						<h3 style="font-size: 30px;"><%=imgList2.get(i).getRec_style() %></h3>		<!-- rec_title넣기 -->
+			
 						<br>
 						<div class="rating">
 							<span>별점</span>
@@ -174,17 +174,17 @@
 							<p style="color: black;">추천 사용자:, 1~2인 가구</p>	
 							
 							<p style="color: black;">
-							STYLE    :  모던에 미니멀&심플, 내추럴이 믹스된 스타일<br>
-							COLOR    :  화이트 & 우드<br>
-							MATERIAL :  패브릭, 우드, 메탈
+							STYLE    :  빈티지&레트로 스타일<br>
+							COLOR    :  어두운 우드<br>
+							MATERIAL :  우드
 							</p>
 
 							<p style="color: black;">
 								가격 <b style="color: red;">30만원</b>				
 							</p>
 						</div>
-						<br> <br>
-						<div class="result_btn" style="margin-top:110px;">
+					
+						<div class="result_btn" style="margin-top:50px;">
 						<a href="basket.jsp" class="genric-btn info radius"
 							style="width: 181.99074000000002px; height: 51.99074px; margin-right: 30px; font-size: 18px; padding-top: 5px; background-color:#5a4b7657
 							">장바구니</a>

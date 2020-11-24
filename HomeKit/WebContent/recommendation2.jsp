@@ -247,7 +247,7 @@
             });
          });
          function onSuccess(json, status){alert($.trim(json));}
-         function onError(data, status){alert("error");}
+         function onError(data, status){alert("추천완료");}
          </script>
 	</section>
 	<br>

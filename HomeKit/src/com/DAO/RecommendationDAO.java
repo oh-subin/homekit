@@ -124,7 +124,7 @@ public class RecommendationDAO {
 	public ArrayList<RecommendationDTO> result(String style) {
 		
 		RecommendationDTO imgs = null;
-		ArrayList<RecommendationDTO> imgList = new ArrayList<>();
+		ArrayList<RecommendationDTO> imgList2 = new ArrayList<>();
 
 		try {
 			// DB 연결
@@ -146,14 +146,14 @@ public class RecommendationDAO {
 
 				// cartDTO 객체를 1개씩 DB에서 받은 후, ArrayList인 cartList에 저장
 				imgs = new RecommendationDTO(rec_style,rec_title, rec_img);
-				imgList.add(imgs);
+				imgList2.add(imgs);
 			}
-
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			close();
 		}
-		return imgList;
+		return imgList2;
 	}
 }
